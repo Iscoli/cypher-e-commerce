@@ -7,11 +7,23 @@
   
 }
 .section-2{
-  margin-top: 150px;
+  margin-top:2rem;
   display: flex;
   /* margin-left: 50px; */
   flex-direction: column;
   align-items: center;
   width:100vw;
   background: #f3f4f6;
+}
+
+
+@media(max-width:995px){
+  .section-1{
+  
+    margin-top: -91px;
+  
+  } 
+  .section-2{
+    margin-top:1.8rem;
+  }
 }

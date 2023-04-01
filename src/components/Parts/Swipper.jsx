@@ -57,11 +57,11 @@ import { Autoplay, Pagination, Navigation } from "swiper";
       </Swiper>
       <div className="main-swipper-flex1">
         <div className="swipper-flex1">
-           <h3>100% Natural Quality Organic Product</h3>
-           <p>See Our latest discounted products from here and get a special discount product</p>
+           <h3><span>100% Natural Quality </span>Organic Product</h3>
+           <p>See Our latest discounted products from here and get a special<span> discount product</span></p>
         </div>
         <div className="swipper-flex2">
-           <Link to='/' className="btn"><button>Shop Now</button></Link>
+           <Link to='/' ><button className="btn">Shop Now</button></Link>
         </div>
       </div>
       
