@@ -1,0 +1,33 @@
+.menu-trigger{
+  position: relative;
+  background-color: #fff;
+}
+
+
+
+.dropdown-menu{
+ 
+  top: 133px;
+  left:40px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  width: 200px;
+  display: block;
+  position: fixed;
+  z-index: 2147483647 !important; 
+}
+
+.dropdown-menu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
