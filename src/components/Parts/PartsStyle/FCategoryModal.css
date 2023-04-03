@@ -1,6 +1,7 @@
 .menu-trigger{
   position: relative;
   background-color: #fff;
+  cursor: pointer;
 }
 
 
