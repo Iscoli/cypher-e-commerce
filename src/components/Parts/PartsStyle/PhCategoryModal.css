@@ -1,0 +1,38 @@
+
+  .main-phmodal{
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+  }
+  
+  .phmodal-flex1{
+    background: #10b981;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+   
+  }
+
+  .phmodal-flex11{
+    width:100px;
+    margin-left:20px;
+    
+  }
+  
+  .phmodal-flex12{
+   
+    margin-right:40px;
+    background-color: #ffffff;
+    border-radius:210%;
+    width:30px;
+  }
+  .close-btn{
+    color: red;
+    width:10px;
+    height:23px;
+    position: relative;
+    padding-left: 10px;
+  }
+
+  
