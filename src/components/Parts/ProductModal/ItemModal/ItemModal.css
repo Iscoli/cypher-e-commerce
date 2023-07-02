@@ -1,0 +1,30 @@
+.main-modalimg {
+  width: 13px;
+  height: 19px;
+  margin-top: 13px;
+}
+.arrow-left {
+  margin-top: 20px;
+}
+.arrow-down {
+  transform: rotate(90deg);
+  margin-top: 19px;
+}
+.product-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.modalimg-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.subopen {
+  display: block;
+}
+
+.subclose {
+  display: none;
+}

@@ -1,0 +1,140 @@
+.main-phmodal {
+  position: fixed;
+  width: 100%;
+  height: 95%;
+  top: 59px;
+  min-width: 246px;
+  z-index: 10000;
+  background: #ffffff;
+  overflow-y: scroll;
+}
+.moveaway,
+.movehere {
+  transition: transform 0.9s ease-in-out, -webkit-transform 0.9s ease-in-out;
+}
+.movehere {
+  transform: translateX(-800px);
+  transition: transform 900ms ease-out;
+}
+.moveaway {
+  transform: translateX(0);
+  transition: transform 900ms ease-in;
+}
+.phmodal-flex1 {
+  /* margin-top: 77px; */
+  background: #10b981;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phmodal-flex11 {
+  width: 100px;
+  margin-left: 20px;
+}
+
+.phmodal-flex12 {
+  margin-right: 40px;
+  background-color: #ffffff;
+  border-radius: 210%;
+  width: 30px;
+}
+.close-btn {
+  color: red;
+  width: 10px;
+  height: 23px;
+  position: relative;
+  padding-left: 10px;
+}
+
+@media (min-width: 550px) {
+  .main-phmodal {
+    position: fixed;
+    width: 55%;
+    z-index: 10000;
+  }
+}
+
+.main-phm {
+  position: fixed;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  min-width: 246px;
+  z-index: 10000;
+
+  overflow-y: scroll;
+}
+
+@media (min-width: 550px) {
+  .main-phm {
+    position: fixed;
+    width: 55%;
+    z-index: 10000;
+  }
+}
+
+/* .main-phmodal{
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  min-width:246px;
+  z-index: 10000;
+  transition: transform 900ms ease-out;
+  }
+  .moveaway,
+  .movehere{
+    transition: transform .9s ease-in-out,-webkit-transform .9s ease-in-out;
+  }
+  .movehere{
+    transform: translateX(-800px);
+    transition:transform 900ms ease-out;
+   
+  }
+  .moveaway{
+    transform: translateX(0);
+    transition:transform 900ms ease-in;
+  }
+  .phmodal-flex1 {
+    /* margin-top: 77px; */
+/* background: #10b981;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .phmodal-flex11 {
+    width: 100px;
+    margin-left: 20px;
+  }
+  
+  .phmodal-flex12 {
+    margin-right: 40px;
+    background-color: #ffffff;
+    border-radius: 210%;
+    width: 30px;
+  }
+  .close-btn {
+    color: red;
+    width: 10px;
+    height: 23px;
+    position: relative;
+    padding-left: 10px;
+  }
+  
+  
+  @media (min-width: 550px){
+      
+    .main-phmodal {
+      position: fixed;
+      width: 55%;
+      height: 100%;
+      background: #ffffff;
+      top: 0;
+      z-index: 10000;
+    }
+  }  */

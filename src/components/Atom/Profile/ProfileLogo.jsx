@@ -6,8 +6,10 @@ import { useSelector,useDispatch } from 'react-redux';
 
 
     function Profile(){
+        const dispatch = useDispatch()
         const auth = getAuth();
         const user = auth.currentUser
+        
      
     return  <div>
         {user !== null ? <div className='user-email'><Link to='/DashBoard' className='  link-style'><h1>{user.email.charAt(0)}</h1> </Link></div> : <div> <Link to='/DashBoard' ><FontAwesomeIcon className='svg' icon={faUser}/></Link></div>}

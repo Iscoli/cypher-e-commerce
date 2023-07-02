@@ -1,0 +1,42 @@
+
+.main-cartitem{
+  margin-top: 10px;
+  bottom: 10px;
+}
+
+.cart-container{
+  display:flex;
+  align-items: center;
+  flex-direction:row;
+  padding-bottom:30px;
+}
+.cart-imagediv{
+  flex-basis: 20%;
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  border-radius: 50%;
+  
+ 
+}
+.cart-img{
+  width:40px;
+  margin-left:20px;
+  
+}
+.cart-details{
+  flex-basis: 70%;
+  padding-left: 30px;
+}
+
+.bottom-cart{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+
+
+.del-btn{
+  width: 20px;
+}

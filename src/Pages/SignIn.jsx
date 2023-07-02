@@ -57,7 +57,6 @@
      
     return <div>
            <div className="main-navbar">
-           <Navbar/>
            </div>
            <div className="main-signin">
             <div className='sec-1'>

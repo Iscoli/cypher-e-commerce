@@ -1,0 +1,13 @@
+.cart-bottom{
+  align-items: center;
+    background: #10b981;
+    border-color: transparent;
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    font-family: Open Sans,sans-serif;
+    justify-content: space-between;
+    padding: 0.65rem;
+    text-transform: capitalize;
+    width:90%;
+}

@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import {db} from '../firebase.config';
+import { setDoc, doc, serverTimestamp } from 'firebase/firestore'
+import { db } from '../firebase.config'
 import Navbar from "../Header/Navbar"
 import '../Pages/PagesStyle/SignUp.css'
 import visibilityIcon from '../components/assets/visibilityIcon.svg'
@@ -42,13 +43,19 @@ function SignUp(){
       try{
         const auth = getAuth()
 
-        const userCredential = await createUserWithEmailAndPassword(auth,email,password)
+        const userCredential = await createUserWithEmailAndPassword(auth,email,password,number)
     
             const user = userCredential.user
                 updateProfile(auth.currentUser,{
                 displayName:name
                 })
                
+                const formDataCopy = { ...formData }
+                delete formDataCopy.password
+                formDataCopy.timestamp = serverTimestamp()
+
+                await setDoc(doc(db, 'users', user.uid), formDataCopy)
+      
 
         navigate('/')
       }catch (error){
@@ -62,7 +69,7 @@ function SignUp(){
    
   return <div>
          <div className="main-navbar">
-         <Navbar/>
+     
          </div>
          <div className="main-signin">
           <div className='sec-1'>
@@ -83,7 +90,7 @@ function SignUp(){
           <input
           type='name'
           className='emailInput'
-          placeholder=' enter your email'
+          placeholder=' enter your name'
           id='name'
           value={name}
           onChange={onChange}

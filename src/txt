@@ -1,0 +1,44 @@
+ console.log(data['baby-care'])
+          const vir = data['baby-care']
+            const dit = Object.values(vir)
+       
+
+            {dit.map((index)=>(
+              console.log(index.imgUrl)
+            ))}
+
+        const categories = Object.entries(data);
+         
+       
+        
+        
+        categories.forEach(([category, products], index) => {
+            
+                    const items = Object.values(products);
+                        
+                    //  set value of category in categoriesHashMap object
+              categoriesHashMap[category] = [];
+      
+              // get value of category from categoriesHashMap object
+              const currentCategory =  categoriesHashMap[category];
+      
+              items.forEach((item) => {
+                  if (!currentCategory.includes(item.subcategory)) {
+                      currentCategory.push(item.subcategory);
+                  }
+              });
+          })
+        
+      
+          const categoriesHash = Object.entries(categoriesHashMap);
+    {categoriesHash.forEach(([key,value])=>{
+         const items = Object.values(value);
+         subCategory.push(items)
+    })}
+
+    {
+      subCategories.forEach(([key,value])=>{
+        const items = Object.values(value);
+        console.log("item",items)
+      })
+    }  

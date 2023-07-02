@@ -1,0 +1,109 @@
+     
+[
+  
+     {
+   
+      "Name":"baby-care",
+      "subCategory":["baby-food", "baby-accessories"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fo.png?alt=media&token=f8cd5cca-44a4-476f-8936-5b1a25ed258a"
+      
+     },
+     {
+     
+      "Name":"beauty-health",
+      "subCategory":["body-care","cosmetics","oral-care"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fq.png?alt=media&token=3ff611af-e7fb-40a9-b272-6423bf06972b"
+
+      },
+    {
+      "Name":"biscuits-cakes",
+      "subCategory":["biscuits","cakes"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fm.png?alt=media&token=57c5711e-db8f-4281-9cbe-641f4c23cf9e"
+    },
+   
+   {
+      "Name":"breakfast",
+      "subCategory":["bread","cereal"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fe.png?alt=media&token=e77b1a49-8efe-4a09-8307-979c4b47bc85"
+    
+    },
+   {
+    "Name": "cooking-essentials",
+    "subCategory":["rice","oil", "flour"],
+    "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fd.png?alt=media&token=76197f12-bb01-443b-8057-c67df4846f64"
+    
+    },
+
+ {
+
+      "Name":"drinks",
+      "subCategory":["juice", "water","coffee"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Ff.png?alt=media&token=9d4fc2d7-fde6-483c-a4d7-f0758fac0069"
+    },
+   {
+      "Name":"fish-meat",
+      "subCategory":["fish","meat"],
+      "img":"https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fa.png?alt=media&token=d6f3db13-947d-4a2e-a62b-f2b49b1dc310"
+    
+    },
+    {
+      "Name":"fresh-seafood",
+      "subCategory":[ "sea-food"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fc.png?alt=media&token=9cba9c4a-4571-4002-9e56-680f6726d17b"
+    },
+    {
+      "Name":"fruits-vegetable",
+      "subCategory":["fresh-vegetables", "fresh-fruits","dry-vegetables"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fb.png?alt=media&token=59849163-7dbc-4998-80fd-33e69c2697e8"
+    },
+
+    {
+      "Name":"honey",
+      "subCategory":["honey"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fi.png?alt=media&token=d0748ea1-614c-41a2-a5f9-47f6790c62fc"
+    },
+    {
+      "Name": "household-tools",
+      "subCategory":["air-freshener", "cleaner", "laundry"],
+       "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fn.png?alt=media&token=80e8db22-47a8-48f6-ab59-eb29e7efee2c"
+    },
+    
+    {
+      "Name":"jam-jelly",
+      "subCategory":["jam & jelly"],
+       "img" : "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fk.png?alt=media&token=aadac652-fe7a-4ebf-becb-4c964c26cc0a"
+    }, 
+
+   {
+    "Name":"milk-diary ",
+    "subCategory":["butter & ghee", "ice-cream","diary"],
+    "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fg.png?alt=media&token=5bbac5be-2a97-45ee-9d48-f15e181c1065"
+    }, 
+   {
+    "Name": "organic-food " ,
+      "subCategory":["organic-food"],
+     "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fh.png?alt=media&token=c93bb7ad-1760-416f-9d96-513f753c7e43"
+    },
+   {
+    "Name":"pet-care" ,
+    "subCategory":["bird-care", "cat-care", "dog-care"],
+    "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fp.png?alt=media&token=41d707d6-3444-4ba4-96fc-297ef31e9dd7"
+    }, 
+
+   {
+    "Name":"sauces-pickles" ,
+    "subCategory":["pickles", "sauces"],
+    "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fj.png?alt=media&token=fcb8d8ff-aed8-487a-a20e-a6c8dc14f0b5"
+    }, 
+
+   {
+      
+      "Name":"snacks-instant" ,
+      "subCategory": ["canned-food", "chips & nuts", "chocolate","noodles"],
+      "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fl.png?alt=media&token=4564eaf7-ea5c-4eb5-ba21-4394da772613"
+    }
+
+
+
+
+]
