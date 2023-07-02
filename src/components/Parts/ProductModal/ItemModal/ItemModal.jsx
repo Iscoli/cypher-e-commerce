@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./ItemModal.css";
 import arrow from "../../../assets/left-arrow.svg";
 
-function ItemModal({item}) {
+function ItemModal({item,closeModalHandler}) {
   const [open, setOpen] = useState(false);
 
   const Toggle = () => {
@@ -28,8 +28,8 @@ function ItemModal({item}) {
                   <p className="categoty-name" >{item.Name}</p>
                 </div>
 
-                <div>
-                  <img src={arrow} alt="arrow" />
+                <div onClick={Toggle}>
+                  <img className={open ?'arrow-down' : 'arrow-left' } src={arrow} alt="arrow" />
                 </div>
               </div>
 
@@ -37,15 +37,15 @@ function ItemModal({item}) {
                 
                   {item.subCategory.map((subCategory, index) => (
                     <Link
-                      className="link-tag link"
+                      className="link-tag link sub-category"
                       to={`/sub-category/${subCategory}`}
                       key={index}
-                    >
+                      onClick={closeModalHandler}>
                     
-                      <li key={index}>
+                      <p key={index}>
                         <span>- {subCategory}</span>
                        
-                      </li>
+                      </p>
                     </Link>
                   ))}
                 

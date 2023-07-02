@@ -28,3 +28,7 @@
 .subclose {
   display: none;
 }
+
+.sub-category p{
+  padding: 0 22px;
+}
