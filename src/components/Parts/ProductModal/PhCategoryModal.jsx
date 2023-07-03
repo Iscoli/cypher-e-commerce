@@ -55,10 +55,7 @@ function PhCategoryModal(props) {
             categories.map((item,index)=>{
               return  <ItemModal key={index} item={item}  closeModalHandler={props.closeModalHandler} />
             })
-            // <ItemModal
-            //   closeModalHandler={props.closeModalHandler}
-            //   categories={categories}
-            // />
+            
           )}
 
           <h3>Pages</h3>

@@ -29,7 +29,7 @@ function SubCategoryItem(props) {
     }
     getSubCategories()
 
-},[])
+},[props.param])
   return (
     <div  className='product'>
     {

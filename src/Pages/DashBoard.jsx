@@ -20,6 +20,16 @@ import { ReactComponent as DashBod } from "../components/assets/Dashboard.svg";
 import { ReactComponent as Orders } from "../components/assets/orders.svg";
 import { ReactComponent as PassWord } from "../components/assets/change-pwd.svg";
 import { ReactComponent as LogOut } from "../components/assets/log-out.svg";
+import {
+  updateDoc,
+  doc,
+  collection,
+  getDocs,
+  query,
+  where,
+  orderBy,
+} from "firebase/firestore";
+import { db } from "../firebase.config";
 function DashBoard() {
   const dispatch = useDispatch();
   const auth = getAuth();
@@ -27,10 +37,34 @@ function DashBoard() {
 
   const { photoURL, email } = auth.currentUser;
 
+  useEffect(() => {
+    const fetchUserOrders = async () => {
+      const ordersRef = collection(db, "orders");
+
+      const q = query(
+        ordersRef,
+        where("userRef", "==", auth.currentUser.uid),
+        orderBy("timestamp", "desc")
+      );
+
+      const querySnap = await getDocs(q);
+
+      let orders = [];
+
+      querySnap.forEach((doc) => {
+        return orders.push({
+          id: doc.id,
+          data: doc.data(),
+        });
+      });
+      console.log(orders, "poppo");
+    };
+    fetchUserOrders();
+  }, [auth.currentUser.uid]);
+
   const users = useSelector((state) => state.user);
   useEffect(() => {
     if (user !== null) {
-      // dispatch(userDetails(data, 'nam ey'));
       dispatch(userDetails(user));
     }
   }, []);
@@ -102,7 +136,10 @@ function DashBoard() {
                 />
               </div>
 
-              <li style={{ listStyleType: "none" , padding:'10px'}} onClick={onLogout}>
+              <li
+                style={{ listStyleType: "none", padding: "10px" }}
+                onClick={onLogout}
+              >
                 <LogOut /> LogOut
               </li>
             </ul>
