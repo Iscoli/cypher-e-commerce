@@ -8,6 +8,7 @@ export {removeProductFromCart} from './CartData/CartDataAction';
 export {fetchCartData } from './CartData/CartDataAction' ; 
 export {decreaseProductQuantity} from './CartData/CartDataAction';  
 export * from "./MainCategory/MainCatAction"
+export * from "./Orders/OrdersAction"
 // export {buyCake} from './cake/cakeActions'
 
 // export * from './user/UserActions'

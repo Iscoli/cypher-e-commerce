@@ -1,48 +1,50 @@
 
    import { useEffect } from 'react';
-   import { 
-    updateDoc,
-    doc,
-    collection,
-    getDocs,
-    query,
-    where,
-    orderBy} from "firebase/firestore";
-    import {
-      getAuth
-    } from 'firebase/auth'
-    import {db} from '../firebase.config'
+    import { useSelector } from 'react-redux'; 
+    import DisplaySpinner from '../components/Atom/DisplaySpinner';
 
     function Orders(){
-     const auth = getAuth()
-      
-     useEffect(()=>{
-          const fetchUserOrders = async()=>{
-           const ordersRef = collection(db,'orders')
-
-           const q = query( 
-            ordersRef,
-            where('userRef', '==', auth.currentUser.uid),
-            orderBy('timestamp', 'desc')
-           )
-           const querySnap = await getDocs(q)
-           
-            let orders = []
-
-              querySnap.forEach((doc)=>{
-                return orders.push({
-                  id: doc.id,
-                  data: doc.data()
-                })
-              })
-                console.log(orders,'poppo')
-          }
-          fetchUserOrders()
-     },[auth.currentUser.uid])
- 
+      const mainOrders = useSelector((state) => state.orders);
+      const {loading,
+        error,
+        allUserOrders} = mainOrders 
+       console.log(allUserOrders,'pppp')
       return <div>
-        My Orders
-        
+       {
+        loading ? (
+          <p className='order-spin'>loading....
+          </p>
+        ) : error ? (
+          <p className="text-danger">network error!</p>
+        ) : (
+           <table>
+             <thead>
+                <tr>
+                  <th>status</th>
+                  <th>name</th>
+                  <th>method</th>
+                  <th>total</th>
+                  <th>action</th>
+                </tr>
+              </thead>
+              {
+                allUserOrders.map((order,index)=>{
+                  const {
+                   status,
+                   name
+                  }=order
+                  return <tbody key={index}>
+                  <tr>
+                    <td>{status}</td>
+                    <td>{name}</td>
+                    
+                  </tr>
+                </tbody>
+                })
+              }
+           </table>
+        )
+       }
       </div>
     }
 

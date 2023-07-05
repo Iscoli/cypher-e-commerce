@@ -1,0 +1,27 @@
+
+.orders-maincontainer {
+  display: flex;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
+  border-image: initial;
+  border-radius: 10px;
+  align-items: center;
+  margin: 8px;
+}
+
+.cartsummary-image {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+@media(min-width:950px){
+  .ordersummary-contain {
+    width:350px;
+  }
+}

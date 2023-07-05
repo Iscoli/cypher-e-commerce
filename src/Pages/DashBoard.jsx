@@ -1,16 +1,8 @@
 import { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDashboard,
-  faPassport,
-  faReorder,
-} from "@fortawesome/free-solid-svg-icons";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { userDetails } from "../Redux";
-import Dashboard from "../components/assets/Dashboard.png";
-import Navbar from "../Header/Navbar";
+import { fetchAllUserOrders } from "../Redux";
 import { Outlet } from "react-router";
-import { NavLink } from "react-router-dom";
 import "../Pages/PagesStyle/DashBoard.css";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
@@ -20,16 +12,7 @@ import { ReactComponent as DashBod } from "../components/assets/Dashboard.svg";
 import { ReactComponent as Orders } from "../components/assets/orders.svg";
 import { ReactComponent as PassWord } from "../components/assets/change-pwd.svg";
 import { ReactComponent as LogOut } from "../components/assets/log-out.svg";
-import {
-  updateDoc,
-  doc,
-  collection,
-  getDocs,
-  query,
-  where,
-  orderBy,
-} from "firebase/firestore";
-import { db } from "../firebase.config";
+
 function DashBoard() {
   const dispatch = useDispatch();
   const auth = getAuth();
@@ -38,28 +21,7 @@ function DashBoard() {
   const { photoURL, email } = auth.currentUser;
 
   useEffect(() => {
-    const fetchUserOrders = async () => {
-      const ordersRef = collection(db, "orders");
-
-      const q = query(
-        ordersRef,
-        where("userRef", "==", auth.currentUser.uid),
-        orderBy("timestamp", "desc")
-      );
-
-      const querySnap = await getDocs(q);
-
-      let orders = [];
-
-      querySnap.forEach((doc) => {
-        return orders.push({
-          id: doc.id,
-          data: doc.data(),
-        });
-      });
-      console.log(orders, "poppo");
-    };
-    fetchUserOrders();
+    dispatch(fetchAllUserOrders(auth.currentUser.uid));
   }, [auth.currentUser.uid]);
 
   const users = useSelector((state) => state.user);

@@ -1,0 +1,18 @@
+.text-danger {
+  font-size: 13px;
+  color: red;
+}
+.main-ordersummary {
+  width: 100%;
+}
+@media (min-width: 995px) {
+  .main-ordersummary {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+  }
+}
+
+.order-spin {
+  width: 30px;
+}
