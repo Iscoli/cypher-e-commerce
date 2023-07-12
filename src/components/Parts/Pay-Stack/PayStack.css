@@ -1,0 +1,36 @@
+
+.payment-content{
+  display: flex;
+    justify-content: space-around;
+    background: #fff;
+    border: 1px solid #e6dfdf;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media(min-width:768px){
+ 
+  
+   .payment-type{
+    display: flex;
+    justify-content:space-around;
+  }
+  .payment-content{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+    background: #fff;
+    border: 1px solid #e6dfdf;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    margin:10px;
+    align-items: center;
+  }
+
+  
+}

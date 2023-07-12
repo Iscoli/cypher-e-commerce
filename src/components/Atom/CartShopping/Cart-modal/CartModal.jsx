@@ -29,7 +29,7 @@ function CartModal(props) {
      <CartItem/>
      </div>
      <div className={props.bude? "main-botphmoda cartaway " : "main-botphmoda carthere"}> 
-     <CartBottom/>
+     <CartBottom closeHandler={props.closeModalHandler}/>
      
      </div>
      

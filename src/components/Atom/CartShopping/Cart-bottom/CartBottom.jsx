@@ -1,8 +1,9 @@
     import React from 'react';
     import './CartBottom.css';
     import { useSelector } from 'react-redux';
+    import { Link } from 'react-router-dom';
     
-    function CartBottom() {
+    function CartBottom({closeHandler}) {
       const data = useSelector(state => state.cartdata);
       const cart = [data.product]
             const TotalPrice =cart ?. map((product,index)=>{
@@ -12,10 +13,14 @@
       return (
         <>
           
-          <div className='cart-bottom'>
+          <Link className='cart-bottom' to='/check' style={{
+            textDecoration:'none'
+          }}
+          onClick={closeHandler}
+          >
             <p>Proceed To Checkout</p>
             <span>${TotalPrice}</span>
-          </div>
+          </Link>
         </>
       )
     }

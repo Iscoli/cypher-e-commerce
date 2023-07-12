@@ -1,0 +1,130 @@
+.proceeds-container {
+
+  margin-top: 68px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.order-summarry {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.mainorder {
+  align-self: start;
+  background: #fff;
+  border: 1px solid #e6dfdf;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  width: 90%;
+}
+
+.proceed-item {
+  margin-top: 30px;
+  height: 330px;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sum-total p,h2{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+@media(min-width:768px){
+  .overall-summary{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0px;
+   
+  }
+  .proceed-item {
+    margin-top: 30px;
+    height: 230px;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .mainorder {
+    align-self: start;
+    background: #fff;
+    border: 1px solid #e6dfdf;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    width: 75%;
+    margin-bottom: 200px;
+  }
+  .radio-button {
+    position: absolute;
+    top:-11px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #40c24e; /* Default border color */
+  }
+  
+  
+}
+@media(min-width:995px){
+  .overall-summary{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+    position: relative;
+  }
+}
+
+
+
+
+
+/* RadioButton.css */
+
+.radio-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+  margin:10px;
+  margin-top: 13px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.radio-label input[type="radio"] {
+  display: none;
+}
+
+.radio-button {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #40c24e; /* Default border color */
+}
+
+.radio-label input[type="radio"]:checked + .radio-button {
+  border-color: #40c24e; /* Green border color */
+}
+
+.radio-label input[type="radio"]:checked + .radio-button::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #40c24e; /* Green color */
+}

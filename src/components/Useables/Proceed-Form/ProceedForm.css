@@ -1,0 +1,101 @@
+.personal-details {
+  padding-left: 20px;
+}
+.proceeds-label {
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .personal-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ship-container {
+    display: flex;
+  }
+
+  .shippin {
+    display: flex;
+    justify-content: space-around;
+   
+  }
+}
+
+.shippin {
+  width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.shippin-cost1 {
+  display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+    background: #fff;
+    border: 1px solid #e6dfdf;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    margin: 10px
+}
+
+.shippin-cost2 {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-around;
+  background: #fff;
+  border: 1px solid #e6dfdf;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  margin: 10px
+}
+
+.car-shippin {
+  margin: 8px;
+}
+
+.check-detailee {
+  display: flex;
+  justify-content: space-between;
+}
+
+.snpm install react-paystack --saveec66 {
+  margin-top: 150px;
+}
+
+
+
+
+   /* form styling */
+   /* .form-container {
+   width:100%;
+    margin: 90px auto;
+    padding: 20px;
+   
+  } */
+  
+  .major-proceed {
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0px auto 30px;
+    padding: 20px;
+  }
+  .major-proceed input{
+      padding: 10px;
+      width:100%;
+  }
+  .major-proceed label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  @media(min-width:768px){
+    .major-proceed {
+     
+      display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
+  }
+  }

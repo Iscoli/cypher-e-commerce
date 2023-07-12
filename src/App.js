@@ -26,6 +26,7 @@ import SubCategory from './Pages/SubCategory';
 import MainCategory from './Pages/MainCategory';
 import Navbar from './Header/Navbar';
 import IndexRoute from './Pages/IndexRoute';
+import Proceeds from './Pages/Proceeds';
 
 function App() {
   let persistor = persistStore(store)
@@ -68,6 +69,8 @@ function App() {
       <Route path='/privacy' element={<PrivacyPolicy/>} />
 
       <Route path='/terms' element={<Terms/>} />
+
+      <Route path='/check' element={<Proceeds/>} />
 
       <Route path='/sub-category/:product' element={<SubCategory/>} />
       <Route path='/main-category/:category' element={<MainCategory/>} />

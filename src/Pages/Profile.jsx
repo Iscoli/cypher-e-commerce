@@ -126,7 +126,7 @@ function  Profile(){
   return<>
    <form className='profile '>
          <label>Name</label>
-        <input
+         <input
               type='text'
               id='username'
               className={!changeDetails ? 'profileOutlet' : 'profileOutletActive'}
