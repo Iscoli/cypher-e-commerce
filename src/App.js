@@ -70,7 +70,10 @@ function App() {
 
       <Route path='/terms' element={<Terms/>} />
 
-      <Route path='/check' element={<Proceeds/>} />
+      <Route path='/check' element={<PrivateRoute />}>
+            <Route path='/check' element={<Proceeds/>} />
+          </Route>
+     
 
       <Route path='/sub-category/:product' element={<SubCategory/>} />
       <Route path='/main-category/:category' element={<MainCategory/>} />

@@ -1,7 +1,6 @@
 import {useState,useEffect} from 'react';
 import { getAuth, updateProfile } from 'firebase/auth';
 import './PagesStyle/profile.css'
-
 import {updateDoc,doc} from 'firebase/firestore';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import { db,storage } from '../firebase.config';

@@ -1,23 +1,27 @@
 import React from "react";
 import { PaystackConsumer } from "react-paystack";
+import { getAuth, updateProfile } from "firebase/auth";
 import "./PayStack.css";
 import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
+function PayStark({ formData, amount }) {
+  const auth = getAuth();
 
-function PayStark({formData,amount}) {
+  const { email } = auth.currentUser;
+  console.log(auth, "rerere");
+  const {
+    firstname,
+    useremail,
+    usernumber,
+    lastname,
+    usercode,
+    useraddress,
+    usercountry,
+    usercity,
+  } = formData;
 
-    const {firstname,
-      useremail,
-      usernumber,
-      lastname,
-      usercode,
-      useraddress,
-      usercountry,
-      usercity} = formData
-    
- 
   const [selectedOption, setSelectedOption] = useState("");
 
   // you can call this function anything
@@ -32,17 +36,17 @@ function PayStark({formData,amount}) {
     console.log("closed");
   };
 
-   const  totalamount = (parseFloat(amount + '00'))
-   console.log(typeof(totalamount))
+  const totalamount = parseFloat(amount + "00");
+  console.log(typeof totalamount);
 
   const config = {
     reference: new Date().getTime().toString(),
-    email:useremail,
-    amount:totalamount, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
+    email,
+    amount: totalamount, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
     publicKey: "pk_test_5a4e23446df0c49c615306bdb20b6a22c3447915",
-    phone:usernumber,
+    phone: usernumber,
     metadata: {
-      name:firstname
+      name: firstname,
     },
   };
 
@@ -57,38 +61,35 @@ function PayStark({formData,amount}) {
   };
   return (
     <div className="payment-type">
-         <div className="payment-content">
-          <CashDelivery/>
-          <p>Cash on Delivery</p>
-         <label className="radio-label">
-            <input
-              type="radio"
-              value="30.00"
-              checked={selectedOption === "30.00"}
-              onChange={handleRadioChange}
-            />
-            <span className="radio-button"></span>
-          </label>
-         </div>
-
-         <div className="payment-content">
-      <PayStack/>
-      <p>Pay Via PayStark</p>
-      <PaystackConsumer {...componentProps}>
-        {({ initializePayment }) => (
-          <label className="radio-label">
-            <input
-              type="radio"
-              
-              onClick={() => initializePayment(handleSuccess, handleClose)}
-            />
-            <span className="radio-button"></span>
-          </label>
-        )}
-      </PaystackConsumer>
-
+      <div className="payment-content">
+        <CashDelivery />
+        <p>Cash on Delivery</p>
+        <label className="radio-label">
+          <input
+            type="radio"
+            value="30.00"
+            checked={selectedOption === "30.00"}
+            onChange={handleRadioChange}
+          />
+          <span className="radio-button"></span>
+        </label>
       </div>
-      
+
+      <div className="payment-content">
+        <PayStack />
+        <p>Pay Via PayStark</p>
+        <PaystackConsumer {...componentProps}>
+          {({ initializePayment }) => (
+            <label className="radio-label">
+              <input
+                type="radio"
+                onClick={() => initializePayment(handleSuccess, handleClose)}
+              />
+              <span className="radio-button"></span>
+            </label>
+          )}
+        </PaystackConsumer>
+      </div>
     </div>
   );
 }
