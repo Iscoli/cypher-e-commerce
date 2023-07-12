@@ -54,12 +54,12 @@ function Proceeds() {
           </p>
           <p>
             <span>Discount</span>
-            <span>#100</span>
+            <span>$00.00</span>
           </p>
 
           <h2>
             <span>Total Cost</span>
-            <span>{amount}</span>
+            <span>${amount}</span>
           </h2>
         </div>
       </div>

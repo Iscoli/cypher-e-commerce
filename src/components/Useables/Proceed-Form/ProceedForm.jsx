@@ -203,23 +203,3 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
 
 export default ProceedForm;
 
-{
-  /* <label>
-            <input
-              type="radio"
-              value="30.00"
-              checked={selectedOption === "30"}
-              onChange={handleRadioChange}
-            />
-          </label> */
-}
-
-//   <label>
-
-//   <input
-//     type="radio"
-//     value="18.50"
-//     checked={selectedOption === "18.50"}
-//     onChange={handleRadioChange}
-//   />
-// </label>
