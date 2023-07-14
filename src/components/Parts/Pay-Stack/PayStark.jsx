@@ -6,7 +6,7 @@ import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
-function PayStark({ formData, amount }) {
+function PayStark({ formData, amount,handleRadioChange }) {
   const auth = getAuth();
 
   const { email } = auth.currentUser;
@@ -56,9 +56,7 @@ function PayStark({ formData, amount }) {
     onSuccess: (reference) => handleSuccess(reference),
     onClose: handleClose,
   };
-  const handleRadioChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
+ 
   return (
     <div className="payment-type">
       <div className="payment-content">
@@ -67,8 +65,8 @@ function PayStark({ formData, amount }) {
         <label className="radio-label">
           <input
             type="radio"
-            value="30.00"
-            checked={selectedOption === "30.00"}
+            value="59.00"
+            checked={selectedOption === "59.00"}
             onChange={handleRadioChange}
           />
           <span className="radio-button"></span>
@@ -84,6 +82,9 @@ function PayStark({ formData, amount }) {
               <input
                 type="radio"
                 onClick={() => initializePayment(handleSuccess, handleClose)}
+                value="30.00"
+                checked={selectedOption === "30.00"}
+                onChange={handleRadioChange}
               />
               <span className="radio-button"></span>
             </label>

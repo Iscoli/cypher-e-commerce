@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import "./ProceedForm.css";
+import { Link } from "react-router-dom";
 import { usePaystackPayment } from "react-paystack";
 import { PaystackConsumer } from "react-paystack";
 import { PaystackButton } from "react-paystack";
@@ -53,8 +54,9 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
 
   return (
     <>
+    <form >
       <div className="form-container">
-        <form >
+        
           <span>shiping</span>
           <div className="major-proceed">
           <div>
@@ -144,15 +146,10 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
             />
           </div>
           </div>
-        </form>
+      
       </div>
 
-      <section>
-        <form >
-          
-        </form>
-      </section>
-
+  
       <section className="shippin">
         <div className="payment-content">
           <Car />
@@ -196,7 +193,23 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
         </div>
       </section>
 
-      <PayStark formData={formData} amount={amount} />
+      <PayStark formData={formData} amount={amount} handleRadioChange={handleRadioChange}/>
+      <div className="submitBtn">
+								<Link to="/">
+									<span>
+										oooooo
+									</span>
+									continue shopping
+								</Link>
+								<button type="submit">
+									confirm order
+									<span>
+									ppp
+									</span>
+								</button>
+                
+							</div>
+              </form>
     </>
   );
 }
