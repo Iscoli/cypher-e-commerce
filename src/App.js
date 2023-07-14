@@ -1,5 +1,7 @@
  import React from 'react';
  import {BrowserRouter as Router, Route, Routes} from 'react-router-dom' ;
+ import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
  import { Provider } from 'react-redux';
  import store from './Redux/store';
  import { PersistGate } from 'redux-persist/integration/react';
@@ -83,6 +85,8 @@ function App() {
     
 
 </Router>
+
+<ToastContainer />
 </PersistGate>
 </Provider>
      

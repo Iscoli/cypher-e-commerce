@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { toast } from 'react-toastify';
 import { PaystackConsumer } from "react-paystack";
 import { getAuth, updateProfile } from "firebase/auth";
 import "./PayStack.css";
@@ -6,11 +7,11 @@ import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
-function PayStark({ formData, amount }) {
+function PayStark({ formData, amount,selectedOption }) {
   const auth = getAuth();
 
   const { email } = auth.currentUser;
-  console.log(auth, "rerere");
+
   const {
     firstname,
     useremail,
@@ -22,7 +23,9 @@ function PayStark({ formData, amount }) {
     usercity,
   } = formData;
 
-  const [selectedOption, setSelectedOption] = useState("");
+  const [cardOption, setCardOption] = useState("");
+  const [paystack, setPaystack] = useState(true);
+ 
 
   // you can call this function anything
   const handleSuccess = (reference) => {
@@ -36,8 +39,15 @@ function PayStark({ formData, amount }) {
     console.log("closed");
   };
 
-  const totalamount = parseFloat(amount + "00");
-  console.log(typeof totalamount);
+  
+  
+  const handleCardRadioChange = () => {
+    setCardOption("card");
+  };
+
+
+     const totalamount = parseFloat(amount + "00");
+  
 
   const config = {
     reference: new Date().getTime().toString(),
@@ -57,7 +67,7 @@ function PayStark({ formData, amount }) {
     onClose: handleClose,
   };
   const handleRadioChange = (event) => {
-    setSelectedOption(event.target.value);
+    setCardOption(event.target.value);
   };
   return (
     <div className="payment-type">
@@ -67,8 +77,8 @@ function PayStark({ formData, amount }) {
         <label className="radio-label">
           <input
             type="radio"
-            value="30.00"
-            checked={selectedOption === "30.00"}
+            value="Delivery"
+            checked={cardOption === "Delivery"}
             onChange={handleRadioChange}
           />
           <span className="radio-button"></span>
@@ -83,7 +93,18 @@ function PayStark({ formData, amount }) {
             <label className="radio-label">
               <input
                 type="radio"
-                onClick={() => initializePayment(handleSuccess, handleClose)}
+                value='card'
+                checked={selectedOption === "card"}
+                onClick={() => {
+                  if (!selectedOption) {
+                    toast.error('please select a method')
+                  } else {
+                    handleCardRadioChange();
+                    initializePayment(handleSuccess, handleClose);
+                  }
+                }}
+                onChange={handleRadioChange}
+              
               />
               <span className="radio-button"></span>
             </label>

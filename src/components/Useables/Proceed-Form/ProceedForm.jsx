@@ -9,13 +9,15 @@ import PayStark from "../../Parts/Pay-Stack/PayStark";
 
 function ProceedForm({ onRadioChange,TotalPrice}) {
   const [selectedOption, setSelectedOption] = useState("");
-  const [amount , setAmount] = useState(0)
+  const [amount , setAmount] = useState(0);
+  const [empty, setempty] = useState("")
   useEffect(()=>{
     setAmount( TotalPrice + parseFloat(selectedOption, 10))
   })
 
-  
- console.log(amount,'ooooo')
+    
+    
+ 
   const [formData, setFormData] = useState({
     firstname: '',
     lastname:'',
@@ -49,7 +51,7 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
     )
   };
 
-  console.log(formData)
+  
 
   return (
     <>
@@ -196,7 +198,7 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
         </div>
       </section>
 
-      <PayStark formData={formData} amount={amount} />
+      <PayStark formData={formData} amount={amount} selectedOption={selectedOption}/>
     </>
   );
 }
