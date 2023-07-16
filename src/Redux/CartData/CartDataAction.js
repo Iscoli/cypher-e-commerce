@@ -1,4 +1,4 @@
-import { ADD_CART_DATA,REMOVE_PRODUCT,DECREASE_QUANTITY } from "./CartDataTypes";
+import { ADD_CART_DATA,REMOVE_PRODUCT,DECREASE_QUANTITY,EMPTY_CART_CONTENT } from "./CartDataTypes";
 
 export const fetchCartData = (product,numOfItemPurchased)  => (dispatch) => {
   
@@ -23,3 +23,4 @@ export const decreaseProductQuantity = (id) => (dispatch) => {
     payload: id,
   });
 };
+

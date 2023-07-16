@@ -8,6 +8,7 @@
  function CartItem() {
   const data = useSelector(state => state.cartdata);
   const cart = [data.product]
+  console.log(data,'ooo')
    
    const dispatch= useDispatch()
    const numOfItemsPurchased = 1;
@@ -32,6 +33,7 @@
     
      <div className='main-cartitem'>
        {
+       
          cart ?.map((product,index)=>{
           return product.map(({imgUrl,id,name,price,count})=>(
             <div key={id}>

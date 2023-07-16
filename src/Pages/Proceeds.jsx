@@ -68,7 +68,11 @@ function Proceeds() {
 
      <div className="proceeds-container">
      <div>
-       <ProceedForm onRadioChange={handleRadioChange} TotalPrice={TotalPrice}/>
+       <ProceedForm onRadioChange={handleRadioChange}
+        TotalPrice={TotalPrice} 
+        amount={amount}
+        shippingDetails={shippingDetails}
+        />
      </div> 
     </div>
     </div>

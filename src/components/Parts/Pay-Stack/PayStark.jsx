@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { PaystackConsumer } from "react-paystack";
 import { getAuth, updateProfile } from "firebase/auth";
 import "./PayStack.css";
@@ -7,7 +7,7 @@ import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
-function PayStark({ formData, amount,selectedOption }) {
+function PayStark({ formData, amount, selectedOption }) {
   const auth = getAuth();
 
   const { email } = auth.currentUser;
@@ -25,7 +25,6 @@ function PayStark({ formData, amount,selectedOption }) {
 
   const [cardOption, setCardOption] = useState("");
   const [paystack, setPaystack] = useState(true);
- 
 
   // you can call this function anything
   const handleSuccess = (reference) => {
@@ -39,15 +38,11 @@ function PayStark({ formData, amount,selectedOption }) {
     console.log("closed");
   };
 
-  
-  
   const handleCardRadioChange = () => {
     setCardOption("card");
   };
 
-
-     const totalamount = parseFloat(amount + "00");
-  
+  const totalamount = parseFloat(amount + "00");
 
   const config = {
     reference: new Date().getTime().toString(),
@@ -93,18 +88,17 @@ function PayStark({ formData, amount,selectedOption }) {
             <label className="radio-label">
               <input
                 type="radio"
-                value='card'
+                value="card"
                 checked={selectedOption === "card"}
                 onClick={() => {
                   if (!selectedOption) {
-                    toast.error('please select a method')
+                    toast.error("please select a method");
                   } else {
                     handleCardRadioChange();
                     initializePayment(handleSuccess, handleClose);
                   }
                 }}
                 onChange={handleRadioChange}
-              
               />
               <span className="radio-button"></span>
             </label>
