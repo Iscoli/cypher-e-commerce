@@ -18,6 +18,7 @@ function CategoryBox(props) {
                 <ul className='category-list'>                 
                    {category.subCategory.map((subCategory,index)=>(
                      <Link className='link-tag link' to={`/sub-category/${subCategory}`} key={index}> <li key={index}><FontAwesomeIcon className='category-pionter' icon={faAngleRight}/>{subCategory}</li></Link>
+                     
                    ))}
                 </ul>
                 </div>

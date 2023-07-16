@@ -148,6 +148,7 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
           </div>
         </form>
       </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, sapiente.
 
       <section>
         <form >
