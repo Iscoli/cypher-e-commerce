@@ -93,23 +93,23 @@ function PayStark({ formData, amount,selectedOption }) {
             <label className="radio-label">
               <input
                 type="radio"
-                value='card'
+                value="card"
                 checked={selectedOption === "card"}
                 onClick={() => {
                   if (!selectedOption) {
-                    toast.error('please select a method')
+                    toast.error("please select a method");
                   } else {
                     handleCardRadioChange();
                     initializePayment(handleSuccess, handleClose);
                   }
                 }}
                 onChange={handleRadioChange}
-              
               />
               <span className="radio-button"></span>
             </label>
           )}
         </PaystackConsumer>
+
       </div>
     </div>
   );
