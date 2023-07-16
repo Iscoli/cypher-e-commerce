@@ -60,7 +60,7 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
           <span>shiping</span>
           <div className="major-proceed">
           <div>
-            <label>FirstName</label>
+            <label>FirstName:</label>
             <input
               type="text"
               id="firstname"
@@ -148,7 +148,6 @@ function ProceedForm({ onRadioChange,TotalPrice}) {
           </div>
         </form>
       </div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, sapiente.
 
       <section>
         <form >
