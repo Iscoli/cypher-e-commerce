@@ -32,7 +32,7 @@
     
      <div className='main-cartitem'>
        {
-         cart ?.map((product,index)=>{
+         cart?.map((product,index)=>{
           return product.map(({imgUrl,id,name,price,count})=>(
             <div key={id}>
             <div  className='cart-container'>
