@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import { getAuth } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
-import { db} from '../../../firebase.config';
+import { db } from "../../../firebase.config";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import React from "react";
@@ -16,7 +16,13 @@ import { useSelector, useDispatch } from "react-redux";
 import { ReactComponent as Car } from "../../assets/car.svg";
 import PayStark from "../../Parts/Pay-Stack/PayStark";
 
-function ProceedForm({ onRadioChange, TotalPrice, shippingDetails }) {
+function ProceedForm({
+  onRadioChange,
+  TotalPrice,
+  shippingDetails,
+  TotalAmount,
+}) {
+  const [amount, setAmount] = useState(0);
   const data = useSelector((state) => state.cartdata);
   const cart = [data.product];
   const navigate = useNavigate();
@@ -25,8 +31,8 @@ function ProceedForm({ onRadioChange, TotalPrice, shippingDetails }) {
   const user = auth.currentUser;
 
   const [selectedOption, setSelectedOption] = useState("");
-  const [amount, setAmount] = useState(0);
-  const [empty, setempty] = useState("");
+
+  const discountPrice = "00.00";
 
   useEffect(() => {
     setAmount(TotalPrice + parseFloat(selectedOption, 10));
@@ -64,6 +70,8 @@ function ProceedForm({ onRadioChange, TotalPrice, shippingDetails }) {
     }));
   };
 
+  console.log(auth.currentUser.displayName, "uuid");
+
   const onOrderSubmit = async (e) => {
     e.preventDefault();
 
@@ -74,52 +82,52 @@ function ProceedForm({ onRadioChange, TotalPrice, shippingDetails }) {
         const invoice = Math.floor(Math.random() * (99999 - 10000 + 1) + 10000);
         const order_id = uuidv4();
         const userUid = auth.currentUser.uid;
-        const senderName = user.name || '';
+        const senderName = auth.currentUser.displayName || firstname;
+        const items = cart[0];
+
         const invoice_form = {
+          senderName: senderName,
+          items,
+          senderAddress: useraddress,
+          firstName: firstname,
+          lastName: lastname,
+          email: useremail,
+          address: useraddress,
+          country: usercountry,
+          code: usercode,
+          city: usercity,
+          number: usernumber,
+          totalPriceInCart: TotalPrice,
+          totalPriceToPay: TotalAmount,
+          shipping_cost: shippingDetails,
           order_id,
+          invoice,
+          discountPrice,
           status: "pending",
+          userRef: userUid,
           created_at: new Date().getTime(),
-        
         };
 
-        // senderName:firstname,
-        // senderAddress: useraddress,
-        // userUid,
-        // cart,
-        // firstName: firstname,
-        // lastName: lastname,
-        // email: useremail,
-        // address: useraddress,
-        // country: usercountry,
-        // code: usercode,
-        // city: usercity,
-        // totalPriceInCart: TotalPrice,
-        // totalPriceToPay: amount,
-        // number: usernumber,
-        // shipping_cost: shippingDetails,
-        // invoice,
-        // order_id,
-        // status: "pending",
-        // created_at: new Date().getTime(),
-        // discountPrice,
-          // payment_option,
-          console.log()
+        //
+        //
+        // payment_option,
+        console.log();
 
         await setDoc(doc(db, "orders", order_id), invoice_form);
 
         toast.success("Your order has been confirmed!");
 
-        setTimeout(() => {
-          dispatch({ type: "EMPTY_CART_CONTENT" });
-        }, 1500);
+        // setTimeout(() => {
+        //   dispatch({ type: "EMPTY_CART_CONTENT" });
+        // }, 1500);
 
-        setTimeout(() => {
-          navigate(`/order/${order_id}`);
-        }, 2000);
+        // setTimeout(() => {
+        //   navigate(`/order/${order_id}`);
+        // }, 2000);
       }
     } catch (error) {
       toast.error("failed to checkout users!");
-      console.log(error)
+      console.log(error);
     }
   };
 

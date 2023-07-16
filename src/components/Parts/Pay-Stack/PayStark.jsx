@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,usestate } from "react";
 import { toast } from 'react-toastify';
 import { PaystackConsumer } from "react-paystack";
 import { getAuth, updateProfile } from "firebase/auth";
@@ -8,6 +8,8 @@ import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
 function PayStark({ formData, amount,selectedOption }) {
+  const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
+
   const auth = getAuth();
 
   const { email } = auth.currentUser;
@@ -24,13 +26,15 @@ function PayStark({ formData, amount,selectedOption }) {
   } = formData;
 
   const [cardOption, setCardOption] = useState("");
-  const [paystack, setPaystack] = useState(true);
+
  
 
   // you can call this function anything
-  const handleSuccess = (reference) => {
-    // Implementation for whatever you want to do with reference and after success call.
-    console.log(reference);
+  const handleSuccess = (response) => {
+    if (response.status === "success") {
+      // Set transaction as successful
+      setTransactionSuccessful(true);
+    }
   };
 
   // you can call this function anything
@@ -80,6 +84,7 @@ function PayStark({ formData, amount,selectedOption }) {
             value="Delivery"
             checked={cardOption === "Delivery"}
             onChange={handleRadioChange}
+            disabled={isTransactionSuccessful}
           />
           <span className="radio-button"></span>
         </label>
@@ -104,6 +109,7 @@ function PayStark({ formData, amount,selectedOption }) {
                   }
                 }}
                 onChange={handleRadioChange}
+                disabled={isTransactionSuccessful}
               />
               <span className="radio-button"></span>
             </label>

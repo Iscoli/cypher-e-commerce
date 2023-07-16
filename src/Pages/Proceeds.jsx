@@ -22,7 +22,7 @@ function Proceeds() {
   const Number = parseFloat(shippingDetails, 10);
 
   let amount = TotalPrice + Number;
-  amount = amount + ".00";
+   let TotalAmount = amount + ".00";
 
   return (
     <div>
@@ -53,7 +53,7 @@ function Proceeds() {
 
               <h2>
                 <span>Total Cost</span>
-                <span>${amount}</span>
+                <span>${TotalAmount}</span>
               </h2>
             </div>
           </div>
@@ -64,6 +64,8 @@ function Proceeds() {
             <ProceedForm
               onRadioChange={handleRadioChange}
               TotalPrice={TotalPrice}
+              TotalAmount={TotalAmount}
+              shippingDetails={shippingDetails}
             />
           </div>
         </div>
