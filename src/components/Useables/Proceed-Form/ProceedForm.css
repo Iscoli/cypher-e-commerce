@@ -99,3 +99,42 @@
 
   }
   }
+
+
+  .submitBtn{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .submitBtn .btn{
+   
+
+    background: #10b981;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    text-transform: capitalize;
+    margin: 30px;
+  }
+
+  .submitBtn .shoppiin{
+   
+    text-decoration: none;
+    align-items: center;
+    background: #eef2ff;
+    border: 1px solid #e0e7ff;
+    border-radius: 5px;
+    color: #374151!important;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    text-transform: capitalize;
+    margin: 10px 30px;
+  }
+
+
+
+

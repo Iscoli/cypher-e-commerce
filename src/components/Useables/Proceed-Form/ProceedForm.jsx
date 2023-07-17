@@ -10,8 +10,7 @@ import React from "react";
 import "./ProceedForm.css";
 import { ReactComponent as ArrowLeft } from "../../assets/left-arrow.svg";
 import { ReactComponent as ArrowRight } from "../../assets/arrow-right.svg";
-// import { ReactComponent as ArrowLeft } from "../../assets/arrow-left.svg";
-// import { ReactComponent as ArrowRight } from "../../assets/arrow-right.svg";
+
 import { useSelector, useDispatch } from "react-redux";
 import { ReactComponent as Car } from "../../assets/car.svg";
 import PayStark from "../../Parts/Pay-Stack/PayStark";
@@ -31,6 +30,14 @@ function ProceedForm({
   const user = auth.currentUser;
 
   const [selectedOption, setSelectedOption] = useState("");
+  const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
+  const [cardOption, setCardOption] = useState("");
+  const handleStateTransfer = (value1, value2) => {
+    // Update the states in the parent component
+    setTransactionSuccessful(value1);
+    setCardOption(value2);
+  };
+  console.log();
 
   const discountPrice = "00.00";
 
@@ -70,14 +77,21 @@ function ProceedForm({
     }));
   };
 
-  console.log(auth.currentUser.displayName, "uuid");
-
   const onOrderSubmit = async (e) => {
     e.preventDefault();
+
+    // else {
+
+    //
+    //   }
 
     try {
       if (cart[0].length < 1) {
         toast.error("cart is empty");
+      }
+      if (isTransactionSuccessful === false && cardOption === "") {
+        toast.error("please select a payment method");
+        return;
       } else {
         const invoice = Math.floor(Math.random() * (99999 - 10000 + 1) + 10000);
         const order_id = uuidv4();
@@ -246,6 +260,7 @@ function ProceedForm({
                   value="30.00"
                   checked={selectedOption === "30.00"}
                   onChange={handleRadioChange}
+                  disabled={isTransactionSuccessful}
                 />
                 <span className="radio-button"></span>
               </label>
@@ -266,7 +281,9 @@ function ProceedForm({
                   value="15.00"
                   checked={selectedOption === "15.00"}
                   onChange={handleRadioChange}
+                  disabled={isTransactionSuccessful}
                 />
+
                 <span className="radio-button"></span>
               </label>
             </div>
@@ -276,16 +293,17 @@ function ProceedForm({
               formData={formData}
               amount={amount}
               selectedOption={selectedOption}
+              onStateTransfer={handleStateTransfer}
             />
           </div>
           <div className="submitBtn">
-            <Link to="/">
+            <Link to="/" className="shoppiin">
               <span>
-                <ArrowLeft />
+               
               </span>
               continue shopping
             </Link>
-            <button type="submit">
+            <button type="submit" className="btn">
               confirm order
               <span>
                 <ArrowRight />

@@ -7,8 +7,15 @@ import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
-function PayStark({ formData, amount,selectedOption }) {
+function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
+  const [cardOption, setCardOption] = useState("");
+
+
+  useEffect(() => {
+    // Call the function passed from the parent component whenever the states update
+    onStateTransfer(isTransactionSuccessful, cardOption);
+  }, [isTransactionSuccessful, cardOption, onStateTransfer]);
 
   const auth = getAuth();
 
@@ -25,7 +32,7 @@ function PayStark({ formData, amount,selectedOption }) {
     usercity,
   } = formData;
 
-  const [cardOption, setCardOption] = useState("");
+ 
 
  
 
@@ -45,8 +52,8 @@ function PayStark({ formData, amount,selectedOption }) {
 
   
   
-  const handleCardRadioChange = () => {
-    setCardOption("card");
+  const handleCardRadioChange = (e) => {
+    setCardOption(e.target.value);
   };
 
 
@@ -83,7 +90,13 @@ function PayStark({ formData, amount,selectedOption }) {
             type="radio"
             value="Delivery"
             checked={cardOption === "Delivery"}
-            onChange={handleRadioChange}
+            onChange={handleRadioChange} onClick={() => {
+              if (!selectedOption) {
+                toast.error("please select a delivery method");
+              } else {
+                
+              }
+            }}
             disabled={isTransactionSuccessful}
           />
           <span className="radio-button"></span>
@@ -102,9 +115,9 @@ function PayStark({ formData, amount,selectedOption }) {
                 checked={selectedOption === "card"}
                 onClick={() => {
                   if (!selectedOption) {
-                    toast.error("please select a method");
+                    toast.error("please select a delivery method");
                   } else {
-                    handleCardRadioChange();
+                    
                     initializePayment(handleSuccess, handleClose);
                   }
                 }}
