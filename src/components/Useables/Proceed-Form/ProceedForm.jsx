@@ -92,6 +92,10 @@ function ProceedForm({
       if (isTransactionSuccessful === false && cardOption === "") {
         toast.error("please select a payment method");
         return;
+      }
+      if (selectedOption === "") {
+        toast.error("please select a Delivery method");
+        return;
       } else {
         const invoice = Math.floor(Math.random() * (99999 - 10000 + 1) + 10000);
         const order_id = uuidv4();
@@ -135,9 +139,9 @@ function ProceedForm({
         //   dispatch({ type: "EMPTY_CART_CONTENT" });
         // }, 1500);
 
-        // setTimeout(() => {
-        //   navigate(`/order/${order_id}`);
-        // }, 2000);
+        setTimeout(() => {
+          navigate(`/order/${order_id}`);
+        }, 2000);
       }
     } catch (error) {
       toast.error("failed to checkout users!");
@@ -298,9 +302,7 @@ function ProceedForm({
           </div>
           <div className="submitBtn">
             <Link to="/" className="shoppiin">
-              <span>
-               
-              </span>
+              <span></span>
               continue shopping
             </Link>
             <button type="submit" className="btn">

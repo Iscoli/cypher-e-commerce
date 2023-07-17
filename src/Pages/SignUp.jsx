@@ -1,8 +1,9 @@
-import {useState} from 'react'
+import {useState} from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { setDoc, doc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase.config'
-import Navbar from "../Header/Navbar"
 import '../Pages/PagesStyle/SignUp.css'
 import visibilityIcon from '../components/assets/visibilityIcon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -59,7 +60,7 @@ function SignUp(){
 
         navigate('/')
       }catch (error){
-          console.log(error)
+        toast.error("Registration failed, please retry");
       }
    
   }

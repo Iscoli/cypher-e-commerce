@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { userDetails } from "../Redux";
 import { fetchAllUserOrders } from "../Redux";
@@ -34,7 +36,8 @@ function DashBoard() {
   const navigate = useNavigate();
   const onLogout = () => {
     auth.signOut();
-    navigate("/");
+    navigate("/sign-in");
+    toast.success("you have logged out, from your account");
   };
 
   const ResetPwd = async () => {
