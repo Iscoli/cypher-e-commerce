@@ -2,3 +2,7 @@
   margin-top: 90px;
   margin-bottom: 95px;
 }
+
+.order-scroll{
+  overflow: scroll;
+}
