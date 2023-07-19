@@ -75,7 +75,9 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
   const handleRadioChange = (event) => {
     setCardOption(event.target.value);
   };
-  return (
+
+ 
+  return ( 
     <div className="payment-type">
       <div className="payment-content">
         <CashDelivery />
@@ -83,12 +85,13 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
         <label className="radio-label">
           <input
             type="radio"
-            value="Delivery"
-            checked={cardOption === "Delivery"}
+            value="Payment On Delivery"
+            checked={cardOption === "Payment On Delivery"}
             onChange={handleRadioChange}
             onClick={() => {
               if (!selectedOption) {
                 toast.error("please select a delivery method");
+
               } else {
               }
             }}

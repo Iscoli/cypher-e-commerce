@@ -100,6 +100,7 @@ function ProceedForm({
         const order_id = uuidv4();
         const userUid = auth.currentUser.uid;
         const senderName = auth.currentUser.displayName || firstname;
+        const payment_method= cardOption || 'via pay-stark'
         const items = cart[0];
 
         const invoice_form = {
@@ -120,7 +121,7 @@ function ProceedForm({
           order_id,
           invoice,
           discountPrice,
-          payment_option: selectedOption,
+          payment_option:payment_method,
           status: "pending",
           userRef: userUid,
           created_at: new Date().getTime(),
