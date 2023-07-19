@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import { fetchOrderDetails } from "../Redux";
-import OrderDetailsBox from "../components/Useables/OrderDetailsBox/OrderDetailsBox";
+import OrderDetailsBox from '../components/Useables/OrderDetails/OrderDetailsBox'
+
 
 function OrderDetail() {
   const { orderDetails } = useParams();
@@ -15,17 +16,18 @@ function OrderDetail() {
         dispatch(fetchOrderDetails( orderDetails))
       },[orderDetails])
        
-      console.log(invoices,'iniin')
+      console.log(invoices.error,'iniin')
   return<> 
-  {
-    invoices.loading ? <div>loading.....</div> : 
-    invoices.error ? <div>
-      {invoices.error.message}
-    </div> :
-    <div>
-      
-      <OrderDetailsBox invoice={invoices.invoice}  />
-    </div>
+  { 
+     (
+      invoices.loading ? 
+      <div>loading....</div>:
+      invoices.error ? 
+      <div>error</div>   :
+      <div>
+        <OrderDetailsBox invoices={invoices.invoice} />
+      </div>
+    ) 
     
   }
    

@@ -16,15 +16,15 @@
       case FETCH_ORDERDETAILS_REQUEST:
         return {
           loading: true,
-          invoice: [],
-          error: [],
+          invoice:null,
+          error: null,
         };
 
       case FETCH_ORDERDETAILS_SUCCESS:
         return {
           loading: false,
           invoice: action.payload,
-          error: [],
+          error:null,
         };
 
       case FETCH_ORDERDETAILS_FAILURE:
@@ -32,7 +32,7 @@
           ...state,
           error: 'failed to fetch',
           loading: false,
-          invoice: [],
+          invoice:null,
         };
 
       default:
