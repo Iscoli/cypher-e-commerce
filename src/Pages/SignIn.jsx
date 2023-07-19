@@ -36,7 +36,7 @@ function SignIn() {
         email,
         password
       );
-      console.log(userCredential.user);
+      toast.success('')
       if (userCredential.user) {
         navigate("/");
       }

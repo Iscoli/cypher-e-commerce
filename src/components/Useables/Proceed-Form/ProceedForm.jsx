@@ -10,7 +10,6 @@ import React from "react";
 import "./ProceedForm.css";
 import { ReactComponent as ArrowLeft } from "../../assets/left-arrow.svg";
 import { ReactComponent as ArrowRight } from "../../assets/arrow-right.svg";
-
 import { useSelector, useDispatch } from "react-redux";
 import { ReactComponent as Car } from "../../assets/car.svg";
 import PayStark from "../../Parts/Pay-Stack/PayStark";
@@ -135,9 +134,9 @@ function ProceedForm({
 
         toast.success("Your order has been confirmed!");
 
-        // setTimeout(() => {
-        //   dispatch({ type: "EMPTY_CART_CONTENT" });
-        // }, 1500);
+        setTimeout(() => {
+          dispatch({ type: "EMPTY_CART_CONTENT" });
+        }, 1500);
 
         setTimeout(() => {
           navigate(`/order/${order_id}`);

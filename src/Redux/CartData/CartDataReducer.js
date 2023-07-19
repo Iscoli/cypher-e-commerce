@@ -1,4 +1,4 @@
-import { ADD_CART_DATA,REMOVE_PRODUCT,DECREASE_QUANTITY } from "./CartDataTypes";
+import { ADD_CART_DATA,REMOVE_PRODUCT,DECREASE_QUANTITY,EMPTY_CART_CONTENT } from "./CartDataTypes";
 
 const initialState = {
   
@@ -79,6 +79,10 @@ const CartDataReducer = (state = initialState, action) => {
             product: state.product?.filter((item) => item.id !== action.payload.id),
           };
     
+          case EMPTY_CART_CONTENT:
+            return {
+              product: [],
+            };
 
 
     default:

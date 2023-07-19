@@ -15,7 +15,6 @@ import 'react-toastify/dist/ReactToastify.css'
  import PrivateRoute from './components/Parts/PrivateRoute';
  import DashBoard from './Pages/DashBoard';
  import Orders from './Pages/Orders';
- import LogOut from './Pages/LogOut';
  import Offer from './Pages/Offer' ;
  import CheckOut from  './Pages/CheckOut';
  import About from './Pages/About';
@@ -29,6 +28,7 @@ import MainCategory from './Pages/MainCategory';
 import Navbar from './Header/Navbar';
 import IndexRoute from './Pages/IndexRoute';
 import Proceeds from './Pages/Proceeds';
+import OrderDetail from './Pages/OrderDetail';
 
 function App() {
   let persistor = persistStore(store)
@@ -74,8 +74,13 @@ function App() {
 
       <Route path='/check' element={<PrivateRoute />}>
             <Route path='/check' element={<Proceeds/>} />
-          </Route>
-     
+      </Route>
+
+      <Route path='/order' element={<PrivateRoute />}>
+      <Route path='/order/:orderDetails' element={<OrderDetail/>} />
+      </Route>
+
+
 
       <Route path='/sub-category/:product' element={<SubCategory/>} />
       <Route path='/main-category/:category' element={<MainCategory/>} />
