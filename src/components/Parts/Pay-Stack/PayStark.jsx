@@ -1,5 +1,5 @@
-import React, { useEffect,usestate } from "react";
-import { toast } from 'react-toastify';
+import React, { useEffect, usestate } from "react";
+import { toast } from "react-toastify";
 import { PaystackConsumer } from "react-paystack";
 import { getAuth, updateProfile } from "firebase/auth";
 import "./PayStack.css";
@@ -7,10 +7,9 @@ import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
-function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
+function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
   const [cardOption, setCardOption] = useState("");
-
 
   useEffect(() => {
     // Call the function passed from the parent component whenever the states update
@@ -32,11 +31,6 @@ function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
     usercity,
   } = formData;
 
- 
-
- 
-
-  // you can call this function anything
   const handleSuccess = (response) => {
     if (response.status === "success") {
       // Set transaction as successful
@@ -44,21 +38,16 @@ function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
     }
   };
 
-  // you can call this function anything
   const handleClose = () => {
     // implementation for  whatever you want to do when the Paystack dialog closed.
     console.log("closed");
   };
 
-  
-  
   const handleCardRadioChange = (e) => {
     setCardOption(e.target.value);
   };
 
-
-     const totalamount = parseFloat(amount + "00");
-  
+  const totalamount = parseFloat(amount + "00");
 
   const config = {
     reference: new Date().getTime().toString(),
@@ -68,6 +57,12 @@ function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
     phone: usernumber,
     metadata: {
       name: firstname,
+      lastname,
+      usercode,
+      useraddress,
+      usercountry,
+      usercity,
+      useremail,
     },
   };
 
@@ -90,11 +85,11 @@ function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
             type="radio"
             value="Delivery"
             checked={cardOption === "Delivery"}
-            onChange={handleRadioChange} onClick={() => {
+            onChange={handleRadioChange}
+            onClick={() => {
               if (!selectedOption) {
                 toast.error("please select a delivery method");
               } else {
-                
               }
             }}
             disabled={isTransactionSuccessful}
@@ -117,7 +112,6 @@ function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
                   if (!selectedOption) {
                     toast.error("please select a delivery method");
                   } else {
-                    
                     initializePayment(handleSuccess, handleClose);
                   }
                 }}
@@ -128,7 +122,6 @@ function PayStark({ formData, amount,selectedOption,onStateTransfer}) {
             </label>
           )}
         </PaystackConsumer>
-
       </div>
     </div>
   );

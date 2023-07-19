@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "../Pages/PagesStyle/Order.css";
+import { Link } from "react-router-dom";
 import DisplaySpinner from "../components/Atom/DisplaySpinner";
 
 function Orders() {
@@ -18,20 +19,45 @@ function Orders() {
           <table className="userOrdersPage">
             <thead>
               <tr>
-                <th>status</th>
-                <th>name</th>
-                <th>method</th>
-                <th>total</th>
-                <th>action</th>
+                   <th>id</th>
+                  <th>order time</th>
+                  <th>method</th>
+                  <th>status</th>
+                  <th>total</th>
+                  <th>action</th>
               </tr>
             </thead>
             {allUserOrders.map((order, index) => {
-              const { status, name } = order;
+               const {
+                status,
+                totalPriceToPay,
+                invoice,
+                order_id,
+                created_at,
+                payment_option,
+              } = order;
+
+                  
+              const dateOne = new Date(created_at);
+              const newCreatedAt = String(dateOne).slice(0, 16);
+                
               return (
                 <tbody key={index}>
                   <tr>
-                    <td>{status}</td>
-                    <td>{name}</td>
+                  <td>{invoice}</td>
+                      <td>{newCreatedAt}</td>
+                      <td>{payment_option}</td>
+                      <td
+                        className={`${status !== 'pending' && 'otherStatus'}`}
+                      >
+                        {status}
+                      </td>
+                      <td>${totalPriceToPay}</td>
+                      <td>
+                        <Link 
+                        style={{textDecoration:'none'}}
+                        to={`/order/${order_id}`}>Details</Link>
+                      </td>
                   </tr>
                 </tbody>
               );

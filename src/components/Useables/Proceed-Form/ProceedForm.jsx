@@ -120,11 +120,13 @@ function ProceedForm({
           order_id,
           invoice,
           discountPrice,
+          payment_option: selectedOption,
           status: "pending",
           userRef: userUid,
           created_at: new Date().getTime(),
         };
 
+        console.log(selectedOption, "rororoSP");
         //
         //
         // payment_option,

@@ -102,7 +102,7 @@ function OrderDetail({ invoices }) {
         <h5>Total Item Price</h5>
         <p>${totalPriceInCart}</p>
       </div>
-
+       {console.log( order_id,'pooo')}
       <div>
         <h5>Total Amount</h5>
         <p>${totalPriceToPay}</p>
