@@ -115,14 +115,7 @@ function DashBoard() {
           </div>
         </div>
       </div>
-      <div className="ttt">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias qui,
-        eveniet illo expedita, asperiores suscipit exercitationem ratione illum
-        veritatis doloribus explicabo dolor beatae incidunt, quibusdam debitis
-        nam ducimus optio tempore quasi quisquam. Velit, voluptate nisi quam
-        incidunt ab harum a, delectus accusantium corrupti modi eos! Similique
-        voluptatibus amet nesciunt delectus.
-      </div>
+      <div className=""></div>
     </div>
   );
 }

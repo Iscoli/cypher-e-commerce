@@ -40,7 +40,9 @@ function PhCategoryModal(props) {
           props.open ? "main-phmodal  moveaway " : "main-phmodal movehere"
         }
       >
-        <div className="phmodal-flex2">
+        <div className="phmodal-flex2"
+         style={{padding:'0.6rem 1.8rem', marginBottom:'10px'
+      }}>
           <h3>All Categories</h3>
           <hr></hr>
           {data.loading ? (

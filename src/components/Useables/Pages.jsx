@@ -1,5 +1,6 @@
  import React from 'react'
  import { Link } from 'react-router-dom';
+ import pages from '../UsablesCss/pages.css'
  function Pages(props) {
   const PagesItem = [
     {
@@ -41,7 +42,7 @@
        
        {PagesItem.map((item, index) => (
             <div key={index}>
-              <Link to={`/${item.name}`} onClick={props.closeModalHandler}>
+              <Link className='linke' to={`/${item.name}`} onClick={props.closeModalHandler}>
                 {" "}
                 <p>{item.name}</p>
               </Link>

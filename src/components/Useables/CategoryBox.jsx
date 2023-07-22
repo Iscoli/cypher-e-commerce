@@ -14,7 +14,7 @@ function CategoryBox(props) {
           </div>
           <div className="category-text">
             <Link
-              className="link-tag link"
+              className="link-tag link custom-link"
               to={`/main-category/${category.Name}`}
             >
               <p className="categoty-name">{category.Name}</p>
