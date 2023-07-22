@@ -50,3 +50,8 @@ html::-webkit-scrollbar {
     transform: rotate(360deg);
   }
 }
+
+
+img, svg {
+  vertical-align: middle;
+}

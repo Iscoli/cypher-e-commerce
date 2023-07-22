@@ -41,14 +41,14 @@
              </div>
               <div className='cart-details'>
                 <div>
-               <p>{name}</p>
+               <p className='cart-detailsName'>{name}</p>
                <h6>item price ${price}</h6>
                </div>
                <div className='bottom-cart'>
-                <span>${price *count}</span>
+                <span style={{fontWeight:'bold'}}>${price *count}</span>
                <div >
                   <button onClick={()=>handleAdd({imgUrl,id,name,price,count})}>+</button>
-                  <span>{count}</span>
+                  <span style={{fontWeight:'bold'}}>{count}</span>
                   <button onClick={()=>handleDecrease({id})}>-</button>
                    </div>
                   
