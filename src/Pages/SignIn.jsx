@@ -96,7 +96,7 @@ function SignIn() {
                 </div>
               </div>
               <div className="forgot-pwd">
-                <Link to="/forgot-password">
+                <Link className="link-tag" style={{ textDecoration: 'none'}} to="/forgot-password">
                   <p>Forgot Password?</p>
                 </Link>
               </div>

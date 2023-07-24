@@ -10,6 +10,7 @@
   align-items: center;
   flex-direction:row;
   padding-bottom:30px;
+  margin-left: 0.6rem;
 }
 .cart-imagediv{
   width: 60px;

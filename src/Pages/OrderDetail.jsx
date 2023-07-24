@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import { fetchOrderDetails } from "../Redux";
-import OrderDetailsBox from '../components/Useables/OrderDetails/OrderDetailsBox'
+import OrderDetailsBox from '../components/Useables/OrderDetails/OrderDetailsBox';
+
 
 
 function OrderDetail() {

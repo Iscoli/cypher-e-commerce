@@ -1,8 +1,19 @@
-.main-orderdetail{
+.main-orderdetail {
   margin-top: 90px;
   margin-bottom: 95px;
 }
 
-.order-scroll{
+.order-scroll {
   overflow: scroll;
+}
+
+.print-button {
+  display: block;
+}
+
+/* Hide the Print button when the page is being printed */
+@media print {
+  .print-button {
+    display: none;
+  }
 }

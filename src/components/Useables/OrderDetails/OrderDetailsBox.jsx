@@ -42,7 +42,7 @@ function OrderDetail({ invoices }) {
   console.log(status, "sattta");
   return (
     <div className="main-orderdetail">
-      <button onClick={handlePrint}>Print Receipt</button>
+      <button className="print-button" onClick={handlePrint}>Print Receipt</button>
       <div>
         <h2>Date</h2>
         <p>{formattedDate}</p>
