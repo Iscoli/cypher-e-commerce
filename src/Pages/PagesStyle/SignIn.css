@@ -10,6 +10,12 @@
   justify-content: center;
   width: 100%;
 }
+.linkey{
+  color: #10b981;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-weight: 500;
+}
 
 .formSignIn {
   width: 52%;
@@ -68,6 +74,14 @@
   padding-right: 5px;
 }
 
+.sharedPages-div{
+  background: #eef2ff;
+    background: url('https://cypher-grocery-store.vercel.app/static/media/fruit-vegetables-rotate.a1907fe499f06a16a827.png') -30px -5px/70px 100px no-repeat,url('https://cypher-grocery-store.vercel.app/static/media/fruit-vegetables-rotate%20-copy.294896631413c108d63b.png') 112% -5px/70px 100px no-repeat;
+    height: 90px;
+}
+.signip{
+  
+}
 .forgot-pwd {
   display: flex;
   align-items: flex-end;

@@ -36,12 +36,12 @@ function SignIn() {
         email,
         password
       );
-      toast.success('')
+      toast.success("");
       if (userCredential.user) {
         navigate("/");
       }
     } catch (error) {
-      toast.error('invalid user details');
+      toast.error("invalid user details");
     }
   };
 
@@ -50,8 +50,10 @@ function SignIn() {
       <div className="main-navbar"></div>
       <div className="main-signin">
         <div className="sec-1">
-          <div className="sigin-bg">
+          <div className="signip">
+          <div className="sigin-bg sharedPages-div">
             <h2> Sign In </h2>
+          </div>
           </div>
           <div className="formSignIn">
             <form onSubmit={onSubmit}>
@@ -72,7 +74,7 @@ function SignIn() {
               </div>
               <div className="passwordInputDiv">
                 <div>
-                  {" "}
+                 
                   <label className="label-password"> Password</label>{" "}
                 </div>
 
@@ -96,7 +98,11 @@ function SignIn() {
                 </div>
               </div>
               <div className="forgot-pwd">
-                <Link className="link-tag" style={{ textDecoration: 'none'}} to="/forgot-password">
+                <Link
+                  className="linkey"
+                  style={{ textDecoration: "none" }}
+                  to="/forgot-password"
+                >
                   <p>Forgot Password?</p>
                 </Link>
               </div>
@@ -112,12 +118,10 @@ function SignIn() {
               <p> Sign In With Google</p>
             </button>
             <Link to="/sign-up">
-              {" "}
-              <p>
-                {" "}
-                Not a registered user?{" "}
-                <span className="span-signUp">Sign Up </span>{" "}
-              </p>{" "}
+             
+            <span style={{textDecoration:'none'}}> Not a registered user? </span>
+                <span style={{textDecoration:'none'}} className=" linkey span-signUp">Sign Up </span>
+              
             </Link>
           </div>
         </div>
