@@ -1,4 +1,4 @@
-.main-signin {
+.main-signup {
   position: block;
   margin-top: 90px;
   margin-bottom: 60px;
@@ -110,6 +110,6 @@
     position: block;
     margin-top: 90px;
     margin-bottom: 60px;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
   }
 }
