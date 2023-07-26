@@ -8,6 +8,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import Oauth from "../components/Parts/GoogleOauth/Oauth";
+import AppSection from "../components/Parts/AppSection/AppSection";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -51,9 +52,12 @@ function SignIn() {
       <div className="main-navbar"></div>
       <div className="main-signin">
         <div className="sec-1">
-        <div style={{fontSize:'1.8rem'}} className="sigin-bg sharedPages-div">
-          Sign In
-        </div>
+          <div
+            style={{ fontSize: "1.8rem" }}
+            className="sigin-bg sharedPages-div"
+          >
+            Sign In
+          </div>
           <div className="formSignIn">
             <form onSubmit={onSubmit}>
               <div className="emailInputDiv">
@@ -73,7 +77,6 @@ function SignIn() {
               </div>
               <div className="passwordInputDiv">
                 <div>
-                 
                   <label className="label-password"> Password</label>{" "}
                 </div>
 
@@ -113,16 +116,19 @@ function SignIn() {
           <div className="google-auth">
             <p>OR</p>
 
-           <Oauth/>
-
-            <Link to="/sign-up">
-             
-            <span style={{textDecoration:'none'}}> Not a registered user? </span>
-                <span style={{textDecoration:'none'}} className=" linkey span-signUp">Sign Up </span>
-              
-            </Link>
+            <Oauth />
+          <div className="registerLink" > 
+            <span> Not a registered user?</span>
+            <Link to="/sign-up"  className="linkey"
+             style={{ textDecoration: "none", paddingLeft:'10px'}}>
+            Sign up 
+           </Link>
+        </div> 
           </div>
         </div>
+         <section className="sec111">
+              <AppSection/>
+         </section>
       </div>
     </div>
   );

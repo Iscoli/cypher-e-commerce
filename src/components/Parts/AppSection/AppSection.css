@@ -1,0 +1,28 @@
+
+.AppSection{
+  background-color: #eef2ff;
+}
+.Py5{
+  padding-top: 3rem!important;
+  padding-bottom: 3rem!important;
+}
+.appstore-img{
+  width:80%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust the container width as needed */
+  height: 200px; /* Adjust the container height as needed */
+  background-color: #f0f0f0; /* Optional: Add a background color to the container */
+}
+.app-text h1{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.app-text p{
+  text-align: center;
+  padding: 10px 20px;
+}

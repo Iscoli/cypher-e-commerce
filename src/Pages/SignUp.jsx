@@ -4,7 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { setDoc, doc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase.config'
-import '../Pages/PagesStyle/SignUp.css'
+import '../Pages/PagesStyle/SignUp.css';
+import Oauth from '../components/Parts/GoogleOauth/Oauth';
 import visibilityIcon from '../components/assets/visibilityIcon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope, faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -74,9 +75,12 @@ function SignUp(){
          </div>
          <div className="main-signin">
           <div className='sec-1'>
-          <div className='sigin-bg'>
-           <h2> Sign Up  </h2>
-        </div>
+          <div
+            style={{ fontSize: "1.8rem" }}
+            className="sigin-bg sharedPages-div"
+          >
+            Sign Up
+          </div>
         <div className='formSignIn'>
           <form onSubmit={onSubmit}>
 
@@ -176,7 +180,10 @@ function SignUp(){
          </div>
         </div>
         <div className='forgot-pwd'>
-           <Link to='/forgot-password'> <p>Forgot Password?</p> </Link>
+           <Link to='/forgot-password'className="linkey"
+             style={{ textDecoration: "none"}}>
+               <p>Forgot Password?</p> 
+               </Link>
         </div>
         <div className='signInBtnDiv'>
          <button className='sign-in-btn'>
@@ -188,10 +195,15 @@ function SignUp(){
         <div  className='google-auth'>
             <p>OR</p>
 
-            <button className='google-auth-btn'>
-             <p> Sign Up With Google</p>
-          </button>
-          <Link to='/sign-in'><p>Are you a user? <span className='span-signUp'>Sign In  </span> </p> </Link>
+            <Oauth/>
+         
+          <div className="registerLink" > 
+            <span>Already a user?</span>
+            <Link to="/sign-in"  className="linkey"
+             style={{ textDecoration: "none", paddingLeft:'10px'}}>
+            Sign in
+           </Link>
+        </div> 
 
       
           
