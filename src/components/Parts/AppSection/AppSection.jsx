@@ -10,7 +10,7 @@ function AppSection() {
   return (
       <div className='AppSection Py5'>
         <div>
-        <img className='appstore-img' src={ Wtrolley}  alt='pictu'  />
+        <img className='appstore-img' src={ Wtrolley}  alt='picture'  />
         </div>
         <div>
           <div className='app-text'>
