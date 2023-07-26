@@ -10,20 +10,20 @@ function AppSection() {
   return (
       <div className='AppSection Py5'>
         <div>
-        <img className='appstore-img' src={ Wtrolley}  alt='picture'  />
+        <img className='appstore-img fir-img' src={ Wtrolley}  alt='picture'  />
         </div>
-        <div>
+        <div className='app-content'>
           <div className='app-text'>
           <h1>Get Your Daily Needs From Your Reliable Cypher Store</h1>
           <p>There are many products you will find our shop, Choose your daily necessary product from our KachaBazar shop and get some special offer.</p>
           </div>
           <div className='image-container'>
-          <Goggle/>
-          <PlayStore/>
+          <Goggle className='svg-item'/>
+          <PlayStore className='svg-item'/>
           </div>
         </div>
         <div>
-        <img className='appstore-img' src={womanapp}  alt=''  />
+        <img className='appstore-img sec-img' src={womanapp}  alt=''  />
         </div>
       </div>
   )
