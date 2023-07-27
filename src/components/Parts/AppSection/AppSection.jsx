@@ -90,13 +90,13 @@ function AppSection() {
         </section>
         <section className='socials-bg'>
           <div>
-            Follow Us
-            <div>
-              <Link><FaceBook/></Link>
-              <Link><Linkedel/></Link>
-              <Link><Whatsapp/></Link>
-              <Link><Twitter/></Link>
-              <Link><Pik/></Link>
+            <p>Follow Us</p>
+            <div className='socials-container'>
+              <Link className='socials-link'><FaceBook/></Link>
+              <Link className='socials-link'><Linkedel/></Link>
+              <Link className='socials-link'><Whatsapp/></Link>
+              <Link className='socials-link'><Twitter/></Link>
+              <Link className='socials-link'><Pik/></Link>
             </div>
           </div>
           <div className='social-lp'>
@@ -107,7 +107,7 @@ function AppSection() {
              <img src={paypal} alt='' />
           </div>
         </section>
-        Copyright 2022 @ Cypher, All rights reserved.
+      <footer> Copyright 2022 @ <span className='footer-span'>Iscoli</span>, All rights reserved.</footer>  
       </>
   )
 }
