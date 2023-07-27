@@ -7,37 +7,37 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
 function Oauth() {
-  const navigate = useNavigate();
   const location = useLocation();
+  const navigate = useNavigate();
 
-  const onGoogleClick = async () => {
+  const onClick = async () => {
     try {
       const auth = getAuth();
       const provider = new GoogleAuthProvider();
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
-
-      // Check for user
-      const docRef = doc(db, "users", user.uid);
+      console.log(user);
+      const docRef = doc(db, 'users', user.uid);
       const docSnap = await getDoc(docRef);
-
-      // If user, doesn't exist, create user
       if (!docSnap.exists()) {
-        await setDoc(doc(db, "users", user.uid), {
+        await setDoc(doc(db, 'users', user.uid), {
           name: user.displayName,
           email: user.email,
           timestamp: serverTimestamp(),
+          photoURL: user.photoURL,
         });
+        toast.success('Authorization success!');
       }
-      toast.success("Authentication successful");
-      navigate("/");
+      navigate('/');
     } catch (error) {
-      toast.error("Could not authorize with Google");
+      console.log(error);
+      toast.error('Failed to authorize user!');
     }
   };
+
   return (
     <>
-      <button className="google-auth-btn"  onClick={onGoogleClick}>
+      <button className="google-auth-btn"  onClick={onClick}>
       <p>Sign {location.pathname === '/sign-up' ? 'up' : 'in'} with Google</p>
       </button>
       
