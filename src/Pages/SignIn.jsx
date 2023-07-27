@@ -126,9 +126,7 @@ function SignIn() {
         </div> 
           </div>
         </div>
-         <section className="sec111">
-              <AppSection/>
-         </section>
+        
       </div>
     </div>
   );

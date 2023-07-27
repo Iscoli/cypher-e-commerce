@@ -46,7 +46,7 @@
     gap: 1.5rem;
     grid-template-columns: repeat(2,1fr);
     overflow-y: hidden;
-    padding:0.3rem;
+    padding:0.3rem  0.6rem;
     cursor: pointer;
 }
 .company-container h1:hover,
@@ -84,7 +84,7 @@ footer{
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 4.5rem;
+  margin-bottom:3rem;
 }
 
 
@@ -118,7 +118,7 @@ footer{
 }
 
 
-@media(min-width:768px){
+@media(min-width:790px){
   .fir-img{
     display:block;
     flex-basis:55%;
@@ -194,5 +194,9 @@ footer{
   }
   .my-hr{
     display:block;
+  }
+  .social-lp img{
+    max-width:350px;
+   
   }
 }

@@ -30,6 +30,7 @@ import Navbar from "./Header/Navbar";
 import IndexRoute from "./Pages/IndexRoute";
 import Proceeds from "./Pages/Proceeds";
 import OrderDetail from "./Pages/OrderDetail";
+import AppSection from "./components/Parts/AppSection/AppSection";
 
 function App() {
   let persistor = persistStore(store);
@@ -85,6 +86,10 @@ function App() {
             <Route path="/main-category/:category" element={<MainCategory />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
+
+          
+          <Bottom/>
+         
         </Router>
 
         <ToastContainer />
@@ -101,6 +106,18 @@ function LocationBasedNavbar() {
 
   // Conditionally render the Navbar based on the route
   return !isReceiptRoute ? <Navbar /> : null;
+}
+
+function Bottom(){
+
+  const location = useLocation(); // Get the current location
+
+  // Check if the current location matches the /order/:orderDetails route
+  const isReceiptRoute = location.pathname.startsWith("/order/");
+
+  // Conditionally render the Navbar based on the route
+  return !isReceiptRoute ? <AppSection/> : null;
+
 }
 
 export default App;
