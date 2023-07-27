@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Provider } from "react-redux";
@@ -34,11 +35,12 @@ import AppSection from "./components/Parts/AppSection/AppSection";
 
 function App() {
   let persistor = persistStore(store);
-
+  
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <Router>
+         < ScrollToTopOnRouteChange/>
           <LocationBasedNavbar />
 
           <Routes>
@@ -118,6 +120,15 @@ function Bottom(){
   // Conditionally render the Navbar based on the route
   return !isReceiptRoute ? <AppSection/> : null;
 
+}
+// Scroll to top on route change
+function ScrollToTopOnRouteChange() {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 export default App;
