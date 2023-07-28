@@ -200,7 +200,8 @@ function SignUp(){
           </div>
           </form>
         </div>
-        <div  className='google-auth'>
+        <div  className='google-auth'
+        style={{  cursor:'pointer'}}>
             <p>OR</p>
 
             <Oauth/>
