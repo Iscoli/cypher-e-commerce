@@ -8,7 +8,7 @@ import '../Pages/PagesStyle/SignUp.css';
 import Oauth from '../components/Parts/GoogleOauth/Oauth';
 import visibilityIcon from '../components/assets/visibilityIcon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faEnvelope, faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope, faHeartPulse, faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate} from 'react-router';
 import {Link} from 'react-router-dom';
 import ForgotPwd from './ForgotPwd';
@@ -34,7 +34,7 @@ function SignUp(){
     }))      
     }
 
-    const [modalVisible, setModalVisible] = useState(true);
+    const [modalVisible, setModalVisible] = useState(false);
 
     // Function to toggle the modal visibility
     const toggleModal = () => {

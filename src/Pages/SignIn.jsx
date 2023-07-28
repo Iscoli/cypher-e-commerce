@@ -17,7 +17,7 @@ function SignIn() {
     email: "",
     password: "",
   });
-  const [modalVisible, setModalVisible] = useState(true);
+  const [modalVisible, setModalVisible] = useState(false);
 
   // Function to toggle the modal visibility
   const toggleModal = () => {
