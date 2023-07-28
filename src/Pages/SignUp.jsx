@@ -10,7 +10,8 @@ import visibilityIcon from '../components/assets/visibilityIcon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope, faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate} from 'react-router';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import ForgotPwd from './ForgotPwd';
 
 function SignUp(){
    
@@ -30,14 +31,20 @@ function SignUp(){
       setFormData((prevState)=>({
         ...prevState,
        [e.target.id]: e.target.value,
-    }))
-
-
-      
-     
+    }))      
     }
 
+    const [modalVisible, setModalVisible] = useState(true);
 
+    // Function to toggle the modal visibility
+    const toggleModal = () => {
+      setModalVisible((prevState) => !prevState);
+    };
+  
+    // Function to close the modal
+    const closeModal = () => {
+      setModalVisible(false);
+    };
 
     const onSubmit= async(e)=>{
       e.preventDefault()
@@ -180,10 +187,11 @@ function SignUp(){
          </div>
         </div>
         <div className='forgot-pwd'>
-           <Link to='/forgot-password'className="linkey"
-             style={{ textDecoration: "none"}}>
-               <p>Forgot Password?</p> 
-               </Link>
+        {modalVisible && <ForgotPwd closeModal={closeModal} />}
+          
+            
+               <p  style={{  cursor:'pointer'}}>Forgot Password?</p> 
+            
         </div>
         <div className='signInBtnDiv'>
          <button className='sign-in-btn'>

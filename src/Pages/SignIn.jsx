@@ -9,6 +9,7 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import Oauth from "../components/Parts/GoogleOauth/Oauth";
 import AppSection from "../components/Parts/AppSection/AppSection";
+import ForgotPwd from "./ForgotPwd";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,6 +17,17 @@ function SignIn() {
     email: "",
     password: "",
   });
+  const [modalVisible, setModalVisible] = useState(true);
+
+  // Function to toggle the modal visibility
+  const toggleModal = () => {
+    setModalVisible((prevState) => !prevState);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setModalVisible(false);
+  };
 
   const { email, password } = formData;
   const navigate = useNavigate();
@@ -48,6 +60,7 @@ function SignIn() {
   };
 
   return (
+    <>
     <div>
       <div className="main-navbar"></div>
       <div className="main-signin">
@@ -100,14 +113,12 @@ function SignIn() {
                 </div>
               </div>
               <div className="forgot-pwd">
-                <Link
-                  className="linkey"
-                  style={{ textDecoration: "none" }}
-                  to="/forgot-password"
-                >
-                  <p>Forgot Password?</p>
-                </Link>
+              <p onClick={toggleModal}
+                style={{  cursor:'pointer'}}
+              >Forgot Password?</p>
+                
               </div>
+              {modalVisible && <ForgotPwd closeModal={closeModal} />}
               <div className="signInBtnDiv">
                 <button className="sign-in-btn">Sign In</button>
               </div>
@@ -128,7 +139,10 @@ function SignIn() {
         </div>
         
       </div>
+      
     </div>
+    
+    </>
   );
 }
 
