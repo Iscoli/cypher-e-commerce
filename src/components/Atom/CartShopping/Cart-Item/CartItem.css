@@ -9,10 +9,10 @@
   display:flex;
   align-items: center;
   flex-direction:row;
- 
+  padding-left: 0.4rem;
 }
 .cart-imagediv{
-  width: 60px;
+  width: 40px;
     height: 60px;
     overflow: hidden;
     background: #fff;
@@ -22,10 +22,11 @@
  
 }
 .cart-img{
-  width: 56px;
+  width:30px;
   position: absolute;
-  height:55px;
-  
+  height:35px;
+  margin-top: 10px;
+  margin-left: 4;
 }
 
 
