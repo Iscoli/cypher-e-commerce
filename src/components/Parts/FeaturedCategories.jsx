@@ -4,8 +4,8 @@
    return (
      <div className='main-FeaturedCategories'>
        <div  >
-          <h1>Featured Categories</h1>
-          <p>Choose your necessary products from this feature categories.</p>
+          <h1 style={{textAlign:'center'}}>Featured Categories</h1>
+          <p style={{textAlign:'center'}}>Choose your necessary products from this feature categories.</p>
        </div>
        <div>
          

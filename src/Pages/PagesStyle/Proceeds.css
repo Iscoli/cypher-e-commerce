@@ -35,6 +35,13 @@
   flex-wrap: wrap;
 
 }
+.order-tag{
+  font-family: Inter,sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
 
 @media(min-width:768px){
   .overall-summary{

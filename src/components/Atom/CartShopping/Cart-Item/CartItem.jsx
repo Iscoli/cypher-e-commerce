@@ -2,6 +2,8 @@
  import '../Cart-Item/CartItem.css';
  import Delete from '../assets/delete.svg';
  import { fetchCartData,decreaseProductQuantity,removeProductFromCart} from '../../../../Redux';
+ import  {ReactComponent as Plus} from '../../../assets/plus.svg';
+ import  {ReactComponent as Minus} from '../../../assets/minus.svg';
  import { useSelector,useDispatch } from 'react-redux';
  
  
@@ -26,6 +28,9 @@
         
       } 
 
+      function capitalizeWords(str) {
+        return str.replace(/\b\w/g, (char) => char.toUpperCase());
+      }
 
  
    return (
@@ -41,15 +46,21 @@
              </div>
               <div className='cart-details'>
                 <div>
-               <p className='cart-detailsName'>{name}</p>
-               <h6>item price ${price}</h6>
+               <p className='cart-detailsName'>{capitalizeWords(name)}</p>
+               <p className='item-price'>item price ${price}</p>
                </div>
                <div className='bottom-cart'>
-                <span style={{fontWeight:'bold'}}>${price *count}</span>
-               <div >
-                  <button onClick={()=>handleAdd({imgUrl,id,name,price,count})}>+</button>
-                  <span style={{fontWeight:'bold'}}>{count}</span>
-                  <button onClick={()=>handleDecrease({id})}>-</button>
+                <span style={{fontSize:'.95rem',
+    fontWeight: '500', marginTop:'6px'}}>${price *count}.00</span>
+               <div className='cal-button'>
+              <button onClick={()=>handleAdd({imgUrl,id,name,price,count})} >
+                <Plus style={{marginTop:'-6px'}}/>
+                </button>
+                  <span>{count}</span>
+                  
+              <button onClick={()=>handleDecrease({id})}>
+                <Minus style={{marginTop:'-6px'}}/>
+                </button>
                    </div>
                   
                 <img className='del-btn' style={{fill:'red'}}onClick={()=>handleDelete({id})} src={Delete}  alt='delete-btn'/>

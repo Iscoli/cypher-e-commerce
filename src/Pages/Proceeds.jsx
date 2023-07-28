@@ -29,7 +29,7 @@ function Proceeds() {
       <div className="overall-summary">
         <div className="order-summarry">
           <div className="mainorder">
-            <p>Order Summary</p>
+            <p className="order-tag">Order Summary</p>
             <div className="proceed-item">
               <CartItem />
             </div>

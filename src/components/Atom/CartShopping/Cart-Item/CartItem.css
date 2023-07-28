@@ -9,8 +9,7 @@
   display:flex;
   align-items: center;
   flex-direction:row;
-  padding-bottom:30px;
-  margin-left: 0.6rem;
+ 
 }
 .cart-imagediv{
   width: 60px;
@@ -31,8 +30,10 @@
 
 
 .cart-detailsName{
-  font-weight:bold;
   white-space: nowrap;
+  font-size: .875rem;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
 }
 
 
@@ -41,11 +42,17 @@
   flex-basis: 70%;
   padding-left: 30px;
 }
+.item-price{
+  font-size:0.8rem;
+   margin-top: -10px;
+}
 
 .bottom-cart{
   display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: -10px;
+    margin-bottom: 6px;
    
 }
 
@@ -53,4 +60,18 @@
 
 .del-btn{
   width: 20px;
+}
+
+
+.cal-button{
+  border: 1px solid #f3f4f6;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.3rem 0.4rem;
+}
+
+
+.cal-button button{
+  border: none;
+  background: transparent;
 }

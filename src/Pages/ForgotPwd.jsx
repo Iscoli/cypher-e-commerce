@@ -29,9 +29,10 @@ function ForgotPwd({ closeModal }) {
             className="modal-close"
           >
             <h2>Forgot Password?</h2>
-            <Close onClick={closeModal}
-             style={{ marginTop: "2.4rem", 
-             cursor:'pointer'}} />
+            <Close
+              onClick={closeModal}
+              style={{ marginTop: "2.4rem", cursor: "pointer" }}
+            />
           </div>
 
           <div
@@ -51,9 +52,12 @@ function ForgotPwd({ closeModal }) {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <button  className="btn-forgot" type="submit"
-            style={{  cursor:'pointer'}}
-          onClick={onSubmit}>
+          <button
+            className="btn-forgot"
+            type="submit"
+            style={{ cursor: "pointer" }}
+            onClick={onSubmit}
+          >
             Send Reset Link
           </button>
         </div>

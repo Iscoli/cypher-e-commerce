@@ -20,7 +20,7 @@ function CartModal(props) {
               <p>Shopping Cart</p>
             </div>
           </div>
-          <div className="cart-closebtn" onClick={props.closeModalHandler}>
+          <div style={{cursor:'pointer'}} className="cart-closebtn" onClick={props.closeModalHandler}>
             <h2>x</h2>
           </div>
         </div>
