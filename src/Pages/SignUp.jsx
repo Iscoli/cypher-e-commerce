@@ -186,15 +186,15 @@ function SignUp(){
          
          </div>
         </div>
-        <div className='forgot-pwd'>
-        {modalVisible && <ForgotPwd closeModal={closeModal} />}
-          
-            
-               <p  style={{  cursor:'pointer'}}>Forgot Password?</p> 
-            
-        </div>
+        <div className="forgot-pwd">
+              <p onClick={toggleModal}
+                style={{  cursor:'pointer'}}
+              >Forgot Password?</p>
+                
+              </div>
+              {modalVisible && <ForgotPwd closeModal={closeModal} />}
         <div className='signInBtnDiv'>
-         <button className='sign-in-btn'>
+         <button className='sign-in-btn' style={{  cursor:'pointer'}}>
            Sign Up
           </button>
           </div>

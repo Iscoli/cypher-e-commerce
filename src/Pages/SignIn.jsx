@@ -120,7 +120,9 @@ function SignIn() {
               </div>
               {modalVisible && <ForgotPwd closeModal={closeModal} />}
               <div className="signInBtnDiv">
-                <button className="sign-in-btn">Sign In</button>
+                <button className="sign-in-btn"
+                  style={{  cursor:'pointer'}}
+                >Sign In</button>
               </div>
             </form>
           </div>
