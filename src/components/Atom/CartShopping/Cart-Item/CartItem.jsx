@@ -50,8 +50,8 @@
                <p className='item-price'>item price ${price}</p>
                </div>
                <div className='bottom-cart'>
-                <span style={{fontSize:'.95rem',
-    fontWeight: '500', marginTop:'6px'}}>${price *count}.00</span>
+                <span style={{fontSize:'.92rem',
+                   fontWeight: '500', marginTop:'6px'}}>${price *count}.00</span>
                <div className='cal-button'>
               <button onClick={()=>handleAdd({imgUrl,id,name,price,count})} >
                 <Plus style={{marginTop:'-6px'}}/>
