@@ -81,7 +81,9 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
     <div className="payment-type">
       <div className="payment-content">
         <CashDelivery />
-        <p>Cash on Delivery</p>
+        <p
+        style={{ color: "#4b5563", fontWeight: "500" }}
+        >Cash on Delivery</p>
         <label className="radio-label">
           <input
             type="radio"
@@ -103,7 +105,9 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
 
       <div className="payment-content">
         <PayStack />
-        <p>Pay Via PayStark</p>
+        <p
+        style={{ color: "#4b5563", fontWeight: "500" }}
+        >Pay Via PayStark</p>
         <PaystackConsumer {...componentProps}>
           {({ initializePayment }) => (
             <label className="radio-label">

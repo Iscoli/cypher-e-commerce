@@ -9,6 +9,8 @@ function Proceeds() {
   const data = useSelector((state) => state.cartdata);
 
   const cart = [data.product];
+    console.log(cart,'carrr')
+
   const totalPrice = cart?.map((product, index) => {
     return product.reduce((a, c) => a + c.price * c.count, 0);
   });
@@ -48,7 +50,7 @@ function Proceeds() {
               </p>
               <p>
                 <span>Discount</span>
-                <span>$00.00</span>
+                <span style={{color:' #fb923c'}}>$00.00</span>
               </p>
 
               <h2>

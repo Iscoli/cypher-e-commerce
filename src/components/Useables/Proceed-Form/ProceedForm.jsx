@@ -155,7 +155,7 @@ function ProceedForm({
     <>
       <div className="form-container">
         <form onSubmit={onOrderSubmit}>
-        <h3 className="personal-details">01 Personal Details</h3>
+          <h3 className="personal-details">01 Personal Details</h3>
           <div className="major-proceed">
             <div>
               <label>FirstName</label>
@@ -194,7 +194,6 @@ function ProceedForm({
               />
             </div>
             <div>
-           
               <label>phoneNumber</label>
               <input
                 type="text"
@@ -207,11 +206,10 @@ function ProceedForm({
               />
             </div>
           </div>
-            
+
           <h3 className="personal-details">02. Shipping Details</h3>
           <div className="major-proceed">
             <div>
-          
               <label>Street Address</label>
               <input
                 type="text"
@@ -253,14 +251,14 @@ function ProceedForm({
                 type="text"
                 id="usercode"
                 className="proceedActive"
-                placeholder="014101"
+                placeholder="01410"
                 value={usercode}
                 onChange={onChange}
                 required
               />
             </div>
           </div>
-          
+
           <h3 className="personal-details"> Shipping Cost</h3>
           <div className="shippin">
             <div className="payment-content">
@@ -268,9 +266,13 @@ function ProceedForm({
               <div className="shippin-type1">
                 <span>FedEx</span>
                 <br></br>
-                <span>Delivary:3 Days </span>
+                <span style={{ color: "#6b7280", fontSize: ".905rem" }}>
+                  Delivary:3 Days{" "}
+                </span>
                 <br></br>
-                <span>Cost:$30.00</span>
+                <span style={{ color: "#6b7280", fontSize: ".905rem" }}>
+                  Cost:$30.00
+                </span>
               </div>
               <label className="radio-label">
                 <input
@@ -287,11 +289,18 @@ function ProceedForm({
             <div className="payment-content">
               <Car />
               <div className="shippin-type2">
-                <span>FedEx</span>
+                <span style={{ color: "#4b5563", fontWeight: "500" }}>
+                  FedEx
+                </span>
                 <br></br>
-                <span>Delivary:7 Days</span>
+                <span style={{ color: "#6b7280", fontSize: ".905rem" }}>
+                  Delivary:7 Days
+                </span>
                 <br></br>
-                <span> Cost:$15.00</span>
+                <span style={{ color: "#6b7280", fontSize: ".905rem" }}>
+                  {" "}
+                  Cost:$15.00
+                </span>
               </div>
               <label className="radio-label">
                 <input

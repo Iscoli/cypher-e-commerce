@@ -38,7 +38,7 @@ export const fetchMainCategory = (param) => {
      dispatch(fetchMainCategoryRequest())
     axios.get('/MainCategoryBackupPretty.json').then(response => {
       const {data}= response
-    //  console.log(data[0][`${param}`],'dat')
+    
       dispatch(fetchCategorySuccess(Object.entries(data[0][`${param}`])))
      
     })
