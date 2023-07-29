@@ -1,6 +1,6 @@
 .proceeds-container {
 
-  margin-top: 68px;
+  
   margin-bottom: 50px;
   width: 100%;
 }
@@ -53,6 +53,9 @@
     flex-direction: row-reverse;
     margin-top: 0px;
    
+  }
+  .proceeds-container{
+    margin-top: 68px;
   }
   .proceed-item {
     margin-top: 30px;
@@ -116,7 +119,6 @@
 
 .radio-button {
   position: absolute;
-  top: 2px;
   left: 0;
   height: 18px;
   width: 18px;

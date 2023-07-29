@@ -1,5 +1,8 @@
 .personal-details {
   padding-left: 20px;
+  color: #374151;
+  font-size: 1.275rem;
+  margin-bottom: 1rem;
 }
 .proceeds-label {
   padding-left: 20px;
@@ -27,6 +30,11 @@
     margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.shippin span{
+  color: #6b7280;
+  font-size: .905rem;
 }
 
 .shippin-cost1 {
@@ -84,18 +92,23 @@
   }
   .major-proceed input{
       padding: 10px;
+      border: 1px solid #e6dfdf;
+    border-radius: 5px;
+    font-size: .95rem;
+    outline: none;
       width:100%;
+      margin-top: 6px;
   }
   .major-proceed label{
-    margin-top: 20px;
-    margin-bottom: 5px;
+    color: #6b7280;
+    text-transform: capitalize;
   }
   @media(min-width:768px){
     .major-proceed {
      
       display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    gap: 20px;
 
   }
   }
@@ -109,8 +122,6 @@
   }
 
   .submitBtn .btn{
-   
-
     background: #10b981;
     border: 1px solid transparent;
     border-radius: 5px;

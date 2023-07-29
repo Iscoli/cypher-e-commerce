@@ -155,7 +155,7 @@ function ProceedForm({
     <>
       <div className="form-container">
         <form onSubmit={onOrderSubmit}>
-          <span>shiping</span>
+        <h3 className="personal-details">01 Personal Details</h3>
           <div className="major-proceed">
             <div>
               <label>FirstName</label>
@@ -163,6 +163,7 @@ function ProceedForm({
                 type="text"
                 id="firstname"
                 className="proceedActive"
+                placeholder="yusuf"
                 value={firstname}
                 onChange={onChange}
                 required
@@ -174,6 +175,7 @@ function ProceedForm({
                 type="text"
                 id="lastname"
                 className="proceedActive"
+                placeholder="ismail"
                 value={lastname}
                 onChange={onChange}
                 required
@@ -185,31 +187,37 @@ function ProceedForm({
                 type="text"
                 id="useremail"
                 className="proceedActive"
+                placeholder="example@gmail.com"
                 value={useremail}
                 onChange={onChange}
                 required
               />
             </div>
             <div>
+           
               <label>phoneNumber</label>
               <input
                 type="text"
                 id="usernumber"
                 className="proceedActive"
+                placeholder="+2347014124559"
                 value={usernumber}
                 onChange={onChange}
                 required
               />
             </div>
           </div>
-
+            
+          <h3 className="personal-details">02. Shipping Details</h3>
           <div className="major-proceed">
             <div>
+          
               <label>Street Address</label>
               <input
                 type="text"
                 id="useraddress"
                 className="proceedActive"
+                placeholder="341 otefun, Oshogbo"
                 value={useraddress}
                 onChange={onChange}
                 required
@@ -221,6 +229,7 @@ function ProceedForm({
                 type="text"
                 id="usercity"
                 className="proceedActive"
+                placeholder="Oshogbo"
                 value={usercity}
                 onChange={onChange}
                 required
@@ -232,6 +241,7 @@ function ProceedForm({
                 type="text"
                 id="usercountry"
                 className="proceedActive"
+                placeholder="Nigeria"
                 value={usercountry}
                 onChange={onChange}
                 required
@@ -243,13 +253,15 @@ function ProceedForm({
                 type="text"
                 id="usercode"
                 className="proceedActive"
+                placeholder="014101"
                 value={usercode}
                 onChange={onChange}
                 required
               />
             </div>
           </div>
-
+          
+          <h3 className="personal-details"> Shipping Cost</h3>
           <div className="shippin">
             <div className="payment-content">
               <Car />
@@ -294,6 +306,7 @@ function ProceedForm({
               </label>
             </div>
           </div>
+          <h3 className="personal-details">03. Delivery Details</h3>
           <div>
             <PayStark
               formData={formData}
