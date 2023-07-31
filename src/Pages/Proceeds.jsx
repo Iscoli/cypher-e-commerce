@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { useSelector } from "react-redux";
 import "../Pages/PagesStyle/Proceeds.css";
 import ProceedForm from "../components/Useables/Proceed-Form/ProceedForm";
@@ -11,17 +11,19 @@ function Proceeds() {
   const cart = [data.product];
     
      const  discountedProducts = [] 
+
+     useEffect(()=>{
+      cart[0].forEach((product) => {
+        if (product.hasOwnProperty('discount')) {
+          const discountedPrice =  (product.price * product.discount) / 100;
+          const totalDiscountedPrice = discountedPrice  * product.count;
+          discountedProducts.push({ ...product, totalDiscountedPrice })
+         
+          
+        }})
+     },[cart])
       
-       cart[0].forEach((product) => {
-      if (product.hasOwnProperty('discount')) {
-        const discountedPrice =  (product.price * product.discount) / 100;
-        const totalDiscountedPrice = discountedPrice  * product.count;
-        discountedProducts.push({ ...product, totalDiscountedPrice })
-       
-        
-      } else {
-        
-      }})
+     
 
 
       const totalDiscountedPriceSum = discountedProducts.reduce((sum, product) => sum + product.totalDiscountedPrice, 0);
@@ -61,12 +63,15 @@ function Proceeds() {
             <div className="sum-total">
               <p>
                 <span>Subtotal</span>
-                {TotalPrice && <span>${TotalPrice}.00</span>}
+                {TotalPrice == 0 ? <span>$00.00</span>:
+                <span>${TotalPrice}.00</span>
+                }
+                
               </p>
               <p>
                 <span>Shipping Cost</span>
                 {shippingDetails ? 
-                  <span>${shippingDetails}</span>:
+                  <span>${shippingDetails}.00</span>:
                   <span>$00.00</span>}
               </p>
 
@@ -88,7 +93,11 @@ function Proceeds() {
 
               <h2>
                 <span>Total Cost</span>
-                <span>${TotalAmount}</span>
+                {
+                  TotalAmount == 0 ? 
+                  <span>$00.00</span> :
+                  <span>${TotalAmount}.00</span>
+                }
               </h2>
             </div>
           </div>

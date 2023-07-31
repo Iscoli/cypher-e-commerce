@@ -1,5 +1,6 @@
 import React from "react";
 import "./OrderDetails.css";
+import { ReactComponent as Cypher } from "../../assets/x chypher.svg";
 
 function OrderDetail({ invoices }) {
   const handlePrint = () => {
@@ -42,12 +43,18 @@ function OrderDetail({ invoices }) {
   console.log(status, "sattta");
   return (
     <div className="main-orderdetail">
+      <div className="orderdetail-sec1">
       <button className="print-button" onClick={handlePrint}>
         Print Receipt
       </button>
+        <h2>INVOICE</h2>
+      <div className="cypher-imgdiv">
+        <Cypher className="cypher-img"/>
+        <p>Lafe Akure</p>
+      </div>
       <div>
-        <h2>Date</h2>
-        <p>{formattedDate}</p>
+        <h3>Date</h3>
+        <span>{formattedDate}</span>
       </div>
 
       <div>
@@ -62,6 +69,8 @@ function OrderDetail({ invoices }) {
         <p>{city}</p>
         <p>{email}</p>
         <p>{number}</p>
+      </div>
+
       </div>
 
       <div className="order-scroll userOrdersPage">
@@ -93,7 +102,8 @@ function OrderDetail({ invoices }) {
         </table>
       </div>
 
-      <div>
+      <div className="orderdetail-sec2">
+        <div>
         <h5>Discount</h5>
         <p style={{ color: " #fb923c" }}>${discountPrice}</p>
       </div>
@@ -107,6 +117,7 @@ function OrderDetail({ invoices }) {
         <h5>Total Amount</h5>
         <p>${totalPriceToPay}</p>
       </div>
+    </div>
     </div>
   );
 }

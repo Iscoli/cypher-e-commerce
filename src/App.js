@@ -35,13 +35,13 @@ import AppSection from "./components/Parts/AppSection/AppSection";
 
 function App() {
   let persistor = persistStore(store);
-  
+
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <Router>
-         < ScrollToTopOnRouteChange/>
-         <Navbar />
+          <ScrollToTopOnRouteChange />
+          <Navbar />
 
           <Routes>
             <Route path="/" element={<Home />} />
@@ -89,9 +89,7 @@ function App() {
             <Route path="/*" element={<NotFound />} />
           </Routes>
 
-          
-          <AppSection/> 
-         
+          <AppSection />
         </Router>
 
         <ToastContainer />
@@ -99,9 +97,6 @@ function App() {
     </Provider>
   );
 }
-
-
-
 
 // Scroll to top on route change
 function ScrollToTopOnRouteChange() {
