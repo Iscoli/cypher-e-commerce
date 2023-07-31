@@ -11,9 +11,10 @@ function MainCategoryBox(props) {
   const [isStockOut, setIsStockOut] = useState(false);
 
   const numOfItemsPurchased = 1;
-  const handleAdd = ({ id, count, imgUrl, price, name }) => {
+  const handleAdd = ({ id, count, imgUrl, price, name, discount }) => {
+    
     dispatch(
-      fetchCartData({ id, count, imgUrl, price, name }, numOfItemsPurchased)
+      fetchCartData({ id, count, imgUrl, price, name,discount }, numOfItemsPurchased)
     );
   };
   const handleDecrease = ({ id }) => {
@@ -34,6 +35,7 @@ function MainCategoryBox(props) {
     if (!product) return 0;
     return product?.count;
   };
+  
 
   return (
     <div className="category-box">

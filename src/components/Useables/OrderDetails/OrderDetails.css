@@ -16,4 +16,10 @@
   .print-button {
     display: none;
   }
+  .Header-container{
+    display: none;
+  }
+  .AppSection{
+    display:none;
+  }
 }

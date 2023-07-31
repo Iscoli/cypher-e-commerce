@@ -41,7 +41,7 @@ function App() {
       <PersistGate persistor={persistor}>
         <Router>
          < ScrollToTopOnRouteChange/>
-          <LocationBasedNavbar />
+         <Navbar />
 
           <Routes>
             <Route path="/" element={<Home />} />
@@ -90,7 +90,7 @@ function App() {
           </Routes>
 
           
-          <Bottom/>
+          <AppSection/> 
          
         </Router>
 
@@ -100,27 +100,9 @@ function App() {
   );
 }
 
-function LocationBasedNavbar() {
-  const location = useLocation(); // Get the current location
 
-  // Check if the current location matches the /order/:orderDetails route
-  const isReceiptRoute = location.pathname.startsWith("/order/");
 
-  // Conditionally render the Navbar based on the route
-  return !isReceiptRoute ? <Navbar /> : null;
-}
 
-function Bottom(){
-
-  const location = useLocation(); // Get the current location
-
-  // Check if the current location matches the /order/:orderDetails route
-  const isReceiptRoute = location.pathname.startsWith("/order/");
-
-  // Conditionally render the Navbar based on the route
-  return !isReceiptRoute ? <AppSection/> : null;
-
-}
 // Scroll to top on route change
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();

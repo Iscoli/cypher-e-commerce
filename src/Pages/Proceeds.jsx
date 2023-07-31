@@ -9,7 +9,29 @@ function Proceeds() {
   const data = useSelector((state) => state.cartdata);
 
   const cart = [data.product];
-    console.log(cart,'carrr')
+    
+     const  discountedProducts = [] 
+      
+       cart[0].forEach((product) => {
+      if (product.hasOwnProperty('discount')) {
+        const discountedPrice =  (product.price * product.discount) / 100;
+        const totalDiscountedPrice = discountedPrice  * product.count;
+        discountedProducts.push({ ...product, totalDiscountedPrice })
+       
+        
+      } else {
+        
+      }})
+
+
+      const totalDiscountedPriceSum = discountedProducts.reduce((sum, product) => sum + product.totalDiscountedPrice, 0);
+      const roundedTotalDiscountedPriceSum =  totalDiscountedPriceSum? totalDiscountedPriceSum.toFixed(2) : 0 ;
+
+    
+       
+
+
+
 
   const totalPrice = cart?.map((product, index) => {
     return product.reduce((a, c) => a + c.price * c.count, 0);
@@ -18,13 +40,14 @@ function Proceeds() {
   const [shippingDetails, setShippingDetails] = useState(0);
   const handleRadioChange = (value) => {
     setShippingDetails(value);
-    // Do something with the selected option value in the parent component
+  
   };
+  console.log(shippingDetails,'ooo')
   const TotalPrice = parseFloat(totalPrice, 10);
   const Number = parseFloat(shippingDetails, 10);
 
-  let amount = TotalPrice + Number;
-   let TotalAmount = amount + ".00";
+  let amount = TotalPrice + Number + parseFloat(roundedTotalDiscountedPriceSum,10);
+   let TotalAmount = amount + .00
 
   return (
     <div>
@@ -42,15 +65,25 @@ function Proceeds() {
               </p>
               <p>
                 <span>Shipping Cost</span>
-                {shippingDetails !== "" ? (
-                  <span>${shippingDetails}</span>
-                ) : (
-                  <span>$00.00</span>
-                )}
+                {shippingDetails ? 
+                  <span>${shippingDetails}</span>:
+                  <span>$00.00</span>}
               </p>
+
+
               <p>
                 <span>Discount</span>
-                <span style={{color:' #fb923c'}}>$00.00</span>
+                {
+                  roundedTotalDiscountedPriceSum ?
+                  
+                  <span style={{color:' #fb923c'}}>
+                    ${roundedTotalDiscountedPriceSum}
+                  </span>
+                  : 
+
+                  <span style={{color:' #fb923c'}}>$00.00</span>
+                }
+               
               </p>
 
               <h2>
@@ -68,6 +101,7 @@ function Proceeds() {
               TotalPrice={TotalPrice}
               TotalAmount={TotalAmount}
               shippingDetails={shippingDetails}
+              roundedTotalDiscountedPriceSum={roundedTotalDiscountedPriceSum}
             />
           </div>
         </div>

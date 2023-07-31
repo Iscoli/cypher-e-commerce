@@ -42,7 +42,9 @@ function OrderDetail({ invoices }) {
   console.log(status, "sattta");
   return (
     <div className="main-orderdetail">
-      <button className="print-button" onClick={handlePrint}>Print Receipt</button>
+      <button className="print-button" onClick={handlePrint}>
+        Print Receipt
+      </button>
       <div>
         <h2>Date</h2>
         <p>{formattedDate}</p>
@@ -83,26 +85,24 @@ function OrderDetail({ invoices }) {
                   <td>{name}</td>
                   <td>{count}</td>
                   <td>${price}</td>
-                  <td
-                  style={{color:'red'}}>${count * price}</td>
+                  <td style={{ color: "red" }}>${count * price}</td>
                 </tr>
               </tbody>
             );
           })}
         </table>
-
       </div>
-      
+
       <div>
         <h5>Discount</h5>
-        <p>$0.00</p>
+        <p style={{ color: " #fb923c" }}>${discountPrice}</p>
       </div>
 
       <div>
         <h5>Total Item Price</h5>
         <p>${totalPriceInCart}</p>
       </div>
-       {console.log( order_id,'pooo')}
+
       <div>
         <h5>Total Amount</h5>
         <p>${totalPriceToPay}</p>

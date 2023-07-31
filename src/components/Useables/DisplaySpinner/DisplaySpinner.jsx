@@ -1,17 +1,17 @@
-import {Spinner} from 'react-bootstrap';
-
-import './DisplaySpinner.css'
-
-
-const DisplaySpinner = () => {
-  return (
-    <div className="spinner-container">
-     <Spinner animation="border" size="sm" />
-      <Spinner animation="border" />
+ import React from 'react';
+ import './Spinner.css';
+ 
+ function DisplaySpinner() {
+   return (
+     <div>
+     
+      <div className="spinner-big">
+       
       
-      </div>
-
-      
-  );
-};
-export default DisplaySpinner;
+    </div>
+     </div>
+   )
+ }
+ 
+ export default DisplaySpinner
+ 

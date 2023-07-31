@@ -28,7 +28,7 @@ function Navbar() {
   };
 
   return (
-    <>
+    <div className="Header-container">
       <div className="side-bar">
         <PhCategoryModal open={!open} closeModalHandler={closeModalHandler} />
         <div className={!open ? "backdrop moveaway  " : "movehere "}></div>
@@ -74,7 +74,7 @@ function Navbar() {
           </div>
         </nav>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -95,6 +95,16 @@
   color: #6b7280;
   text-transform: capitalize;
 }
+
+.btn-rightarrow{
+  margin-left:3px;
+  width: 40px;
+}
+.btn-leftarrow{
+  transform: rotate(180deg);
+  margin-left: 3px;
+  width: 40px;
+}
 @media (min-width: 768px) {
   .major-proceed {
     display: grid;

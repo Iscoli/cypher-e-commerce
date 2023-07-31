@@ -19,6 +19,7 @@ function ProceedForm({
   TotalPrice,
   shippingDetails,
   TotalAmount,
+  roundedTotalDiscountedPriceSum,
 }) {
   const [amount, setAmount] = useState(0);
   const data = useSelector((state) => state.cartdata);
@@ -38,7 +39,7 @@ function ProceedForm({
   };
   console.log();
 
-  const discountPrice = "00.00";
+  
 
   useEffect(() => {
     setAmount(TotalPrice + parseFloat(selectedOption, 10));
@@ -86,7 +87,7 @@ function ProceedForm({
 
     try {
       if (cart[0].length < 1) {
-        toast.error("cart is empty");
+       return  toast.error("cart is empty");
       }
       if (isTransactionSuccessful === false && cardOption === "") {
         toast.error("please select a payment method");
@@ -101,6 +102,7 @@ function ProceedForm({
         const userUid = auth.currentUser.uid;
         const senderName = auth.currentUser.displayName || firstname;
         const payment_method = cardOption || "via pay-stark";
+        const discount = roundedTotalDiscountedPriceSum  || '00.00';
         const items = cart[0];
 
         const invoice_form = {
@@ -120,14 +122,14 @@ function ProceedForm({
           shipping_cost: shippingDetails,
           order_id,
           invoice,
-          discountPrice,
           payment_option: payment_method,
+          discountPrice:roundedTotalDiscountedPriceSum  || '00.00',
           status: "pending",
           userRef: userUid,
           created_at: new Date().getTime(),
         };
 
-        console.log(selectedOption, "rororoSP");
+        console.log(invoice_form, "rororoSP");
         //
         //
         // payment_option,
@@ -326,13 +328,16 @@ function ProceedForm({
           </div>
           <div className="submitBtn">
             <Link to="/" className="shoppiin">
-              <span></span>
+            <span>
+              <ArrowRight className="btn-leftarrow"/>
+              </span>
               continue shopping
+              
             </Link>
             <button type="submit" className="btn">
               confirm order
               <span>
-                <ArrowRight />
+                <ArrowRight className="btn-rightarrow"/>
               </span>
             </button>
           </div>

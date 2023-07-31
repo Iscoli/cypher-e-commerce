@@ -1,6 +1,6 @@
 import React from "react";
 import CategoryBox from "./CategoryBox";
-import styles from "../UsablesCss/CategoryItem.css";
+import "../UsablesCss/CategoryItem.css";
 import DisplaySpinner from "./DisplaySpinner/DisplaySpinner";
 
 function CategoryItem(props) {
