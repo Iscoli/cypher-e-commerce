@@ -14,7 +14,7 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
   useEffect(() => {
     // Call the function passed from the parent component whenever the states update
     onStateTransfer(isTransactionSuccessful, cardOption);
-  }, [isTransactionSuccessful, cardOption, onStateTransfer]);
+  }, [isTransactionSuccessful,cardOption, onStateTransfer]);
 
   const auth = getAuth();
 

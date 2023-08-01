@@ -43,7 +43,7 @@ function ProceedForm({
 
   useEffect(() => {
     setAmount(TotalPrice + parseFloat(selectedOption, 10));
-  });
+  },[amount]);
 
   const [formData, setFormData] = useState({
     firstname: "",

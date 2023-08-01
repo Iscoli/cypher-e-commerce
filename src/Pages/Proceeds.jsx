@@ -101,7 +101,7 @@ function Proceeds() {
                   roundedTotalDiscountedPriceSum ?
                   
                   <span style={{color:' #fb923c'}}>
-                    ${roundedTotalDiscountedPriceSum}
+                    ${roundedTotalDiscountedPriceSum} 
                   </span>
                   : 
 
@@ -115,7 +115,8 @@ function Proceeds() {
                 {
                   TotalAmount == 0 ? 
                   <span>$00.00</span> :
-                  <span>${TotalAmount} </span>
+                  <span>${TotalAmount}{roundedTotalDiscountedPriceSum == "0.00" ?
+                '.00' : ''} </span>
                 }
               </h2>
             </div>
