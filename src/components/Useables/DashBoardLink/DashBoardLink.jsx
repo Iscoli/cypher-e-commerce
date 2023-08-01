@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function DashBoardLink({ url, icon, text }) {
   return (
-    <li style={{ listStyleType: "none" , padding:'10px'}}>
+    <li  className="dashboard-list">
       <NavLink
         to={url}
         style={(navData) =>

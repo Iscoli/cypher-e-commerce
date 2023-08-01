@@ -102,10 +102,7 @@ function DashBoard() {
                 />
               </div>
 
-              <li
-                style={{ listStyleType: "none", padding: "10px" }}
-                onClick={onLogout}
-              >
+              <li className="dashboard-list" onClick={onLogout}>
                 <LogOut /> LogOut
               </li>
             </ul>

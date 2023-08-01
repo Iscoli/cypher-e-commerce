@@ -104,18 +104,18 @@ function OrderDetail({ invoices }) {
 
       <div className="orderdetail-sec2">
         <div>
-        <h5>Discount</h5>
+        <h4>Discount</h4>
         <p style={{ color: " #fb923c" }}>${discountPrice}</p>
       </div>
 
       <div>
-        <h5>Total Item Price</h5>
-        <p>${totalPriceInCart}</p>
+        <h4>Total Item Price</h4>
+        <p style={{color:'#20c997'}}>${totalPriceInCart}</p>
       </div>
 
       <div>
-        <h5>Total Amount</h5>
-        <p>${totalPriceToPay}</p>
+        <h4>Total Amount</h4>
+        <p style={{color:'#FF0000'}}>${totalPriceToPay}</p>
       </div>
     </div>
     </div>

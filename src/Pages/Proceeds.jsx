@@ -7,31 +7,49 @@ import CartItem from "../components/Atom/CartShopping/Cart-Item/CartItem";
 
 function Proceeds() {
   const data = useSelector((state) => state.cartdata);
+  const [discountedPrice, setDiscountedPrice] = useState([])
 
   const cart = [data.product];
     
-     const  discountedProducts = [] 
-
-     useEffect(()=>{
-      cart[0].forEach((product) => {
-        if (product.hasOwnProperty('discount')) {
-          const discountedPrice =  (product.price * product.discount) / 100;
-          const totalDiscountedPrice = discountedPrice  * product.count;
-          discountedProducts.push({ ...product, totalDiscountedPrice })
-         
-          
-        }})
-     },[cart])
-      
      
 
+  useEffect(() => {
+    // Function to calculate discounted prices for all products
+    const calculateDiscountedPrices = () => {
+      const updatedDiscountedPrices = cart[0].map((product) => {
+        if (product.hasOwnProperty("discount")) {
+          const discountedPrice = (product.price * product.discount) / 100;
+          const totalDiscountedPrice = discountedPrice * product.count;
+          return totalDiscountedPrice;
+        }
+        return 0; // If the product doesn't have a discount, return 0
+      });
+      
+      return updatedDiscountedPrices;
+      
+    };
 
-      const totalDiscountedPriceSum = discountedProducts.reduce((sum, product) => sum + product.totalDiscountedPrice, 0);
-      const roundedTotalDiscountedPriceSum =  totalDiscountedPriceSum? totalDiscountedPriceSum.toFixed(2) : 0 ;
+    // Call the function to get the updated discounted prices for all products
+    const updatedDiscountedPrices = calculateDiscountedPrices();
+   
+    setDiscountedPrice(updatedDiscountedPrices);
+  },[cart[0]]);
+      
+  
+  
+ 
+
+  
+
+     const totalDiscountedPriceSum = discountedPrice.reduce((sum, price) => sum + price, 0);
+
+     console.log(totalDiscountedPriceSum,'poooo')
+     const roundedTotalDiscountedPriceSum = totalDiscountedPriceSum ? totalDiscountedPriceSum.toFixed(2) : "0.00";
+   
 
     
        
-
+      console.log(totalDiscountedPriceSum,'oooo')
 
 
 
@@ -44,10 +62,11 @@ function Proceeds() {
     setShippingDetails(value);
   
   };
-  console.log(shippingDetails,'ooo')
+
   const TotalPrice = parseFloat(totalPrice, 10);
   const Number = parseFloat(shippingDetails, 10);
 
+    console.log(roundedTotalDiscountedPriceSum)
   let amount = TotalPrice + Number + parseFloat(roundedTotalDiscountedPriceSum,10);
    let TotalAmount = amount + .00
 
@@ -71,7 +90,7 @@ function Proceeds() {
               <p>
                 <span>Shipping Cost</span>
                 {shippingDetails ? 
-                  <span>${shippingDetails}.00</span>:
+                  <span>${shippingDetails}</span>:
                   <span>$00.00</span>}
               </p>
 
@@ -96,7 +115,7 @@ function Proceeds() {
                 {
                   TotalAmount == 0 ? 
                   <span>$00.00</span> :
-                  <span>${TotalAmount}.00</span>
+                  <span>${TotalAmount} </span>
                 }
               </h2>
             </div>

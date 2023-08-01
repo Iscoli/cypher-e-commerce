@@ -1,6 +1,4 @@
-.ttt {
-  background-color: red;
-}
+
 
 .main-dashboard {
   position: relative;
@@ -98,6 +96,16 @@
 .circle-img {
   max-width: 100px;
 }
+
+.dashboard-list{
+  list-style:none; 
+ padding: 10px;
+}
+
+.dashboard-list svg{
+  vertical-align:baseline; 
+}
+
 
 @media (min-width: 995px) {
   .main-dashboard {
