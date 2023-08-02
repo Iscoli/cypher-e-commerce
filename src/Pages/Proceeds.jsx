@@ -37,14 +37,25 @@ function Proceeds() {
       
   
   
- 
+  const [totalDiscountedPriceSum, setTotalDiscountedPriceSum] = useState(0);
+
+  // Function to calculate and set the total discounted price sum
+  const calculateTotalDiscountedPriceSum = () => {
+    const sum = discountedPrice.reduce((acc, price) => acc + (price || 0), 0);
+    setTotalDiscountedPriceSum(sum);
+  };
+
+  // useEffect to watch for changes in the discountedPrice array
+  useEffect(() => {
+    calculateTotalDiscountedPriceSum();
+  }, [discountedPrice]); // This dependency array will trigger the effect whenever discountedPrice changes
+
+  // Rounding the total discounted price sum to two decimal places
+  const roundedTotalDiscountedPriceSum = totalDiscountedPriceSum.toFixed(2);
+
 
   
 
-     const totalDiscountedPriceSum = discountedPrice.reduce((sum, price) => sum + price, 0);
-
-     console.log(totalDiscountedPriceSum,'poooo')
-     const roundedTotalDiscountedPriceSum = totalDiscountedPriceSum ? totalDiscountedPriceSum.toFixed(2) : "0.00";
    
 
     
