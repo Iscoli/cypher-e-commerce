@@ -125,7 +125,7 @@ function ProceedForm({
           order_id,
           invoice,
           payment_option: payment_method,
-          discountPrice: discount,
+            discountPrice:parseFloat(discount),
           status: "pending",
           userRef: userUid,
           created_at: new Date().getTime(),
