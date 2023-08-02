@@ -121,7 +121,7 @@ function AppSection() {
       </section>
       <footer>
         {" "}
-        Copyright 2022 @ <span className="footer-span">Iscoli</span>, All rights
+        Copyright 2023 @ <span className="footer-span">Iscoli</span>, All rights
         reserved.
       </footer>
     </div>

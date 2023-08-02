@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import styles from "../UsablesCss/PopularItem.css";
+import "../UsablesCss/PopularItem.css";
 import axios from "axios";
 import MainCategoryBox from "./MainCategoryBox";
 
@@ -23,7 +23,7 @@ function PopularItem() {
   return (
     <div className="popular-container">
       <div className="popular-tag">
-        <h2>Popular Products for Daily Shopping</h2>
+        <h3>Popular Products for Daily Shopping</h3>
         <p>
           See all our popular products in this week. You can choose your daily
           needs products from this list and get some special offer with free

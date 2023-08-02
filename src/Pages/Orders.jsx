@@ -54,6 +54,7 @@ function Orders() {
                       <Link
                         style={{ textDecoration: "none" }}
                         to={`/order/${order_id}`}
+                        className="Details-btn"
                       >
                         Details
                       </Link>

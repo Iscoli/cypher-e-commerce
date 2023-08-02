@@ -1,10 +1,10 @@
-.popular-tag h2 {
+.popular-tag h3 {
   text-align: center;
 }
 .popular-tag p {
   
   text-align: center;
- 
+  padding: 10px;
 }
 .product{
   display:grid;

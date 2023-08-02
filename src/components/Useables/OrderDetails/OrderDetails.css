@@ -61,18 +61,17 @@
 .main-orderdetail h2 {
   color: #374151;
 }
-.main-orderdetail h4{
+.main-orderdetail h4 {
   margin-bottom: 4px;
   color: #374151;
 }
 
 .orderdetail-sec1 {
- 
   margin: 10px;
   margin-left: 20px;
 }
 .orderdetail-sec2 {
-  margin-left:19px;
+  margin-left: 19px;
 }
 
 @media (min-width: 995px) {
