@@ -11,10 +11,11 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
   const [cardOption, setCardOption] = useState("");
 
+  console.log(amount)
   useEffect(() => {
     // Call the function passed from the parent component whenever the states update
     onStateTransfer(isTransactionSuccessful, cardOption);
-  }, [isTransactionSuccessful,cardOption, onStateTransfer]);
+  }, [isTransactionSuccessful, cardOption, onStateTransfer]);
 
   const auth = getAuth();
 
@@ -76,14 +77,11 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
     setCardOption(event.target.value);
   };
 
- 
-  return ( 
+  return (
     <div className="payment-type">
       <div className="payment-content">
         <CashDelivery />
-        <p
-        style={{ color: "#4b5563", fontWeight: "500" }}
-        >Cash on Delivery</p>
+        <p style={{ color: "#4b5563", fontWeight: "500" }}>Cash on Delivery</p>
         <label className="radio-label">
           <input
             type="radio"
@@ -93,7 +91,6 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
             onClick={() => {
               if (!selectedOption) {
                 toast.error("please select a delivery method");
-
               } else {
               }
             }}
@@ -105,9 +102,7 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
 
       <div className="payment-content">
         <PayStack />
-        <p
-        style={{ color: "#4b5563", fontWeight: "500" }}
-        >Pay Via PayStark</p>
+        <p style={{ color: "#4b5563", fontWeight: "500" }}>Pay Via PayStark</p>
         <PaystackConsumer {...componentProps}>
           {({ initializePayment }) => (
             <label className="radio-label">

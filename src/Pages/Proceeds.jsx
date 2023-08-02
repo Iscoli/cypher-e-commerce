@@ -133,7 +133,7 @@ function Proceeds() {
             </div>
           </div>
         </div>
-
+          
         <div className="proceeds-container">
           <div>
             <ProceedForm

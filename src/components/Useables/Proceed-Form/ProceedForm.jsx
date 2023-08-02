@@ -29,6 +29,8 @@ function ProceedForm({
   const auth = getAuth();
   const user = auth.currentUser;
 
+  console.log(amount,'amount')
+
   const [selectedOption, setSelectedOption] = useState("");
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
   const [cardOption, setCardOption] = useState("");
@@ -37,14 +39,14 @@ function ProceedForm({
     setTransactionSuccessful(value1);
     setCardOption(value2);
   };
-  console.log();
-
   
 
   useEffect(() => {
-    setAmount(TotalPrice + parseFloat(selectedOption, 10));
-  },[amount]);
+    setAmount(TotalPrice);
+  }, [TotalPrice]);
 
+  console.log(amount,'amounte')
+ 
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -87,7 +89,7 @@ function ProceedForm({
 
     try {
       if (cart[0].length < 1) {
-       return  toast.error("cart is empty");
+        return toast.error("cart is empty");
       }
       if (isTransactionSuccessful === false && cardOption === "") {
         toast.error("please select a payment method");
@@ -102,7 +104,7 @@ function ProceedForm({
         const userUid = auth.currentUser.uid;
         const senderName = auth.currentUser.displayName || firstname;
         const payment_method = cardOption || "via pay-stark";
-        const discount = roundedTotalDiscountedPriceSum  || '00.00';
+        const discount = roundedTotalDiscountedPriceSum || "00.00";
         const items = cart[0];
 
         const invoice_form = {
@@ -123,7 +125,7 @@ function ProceedForm({
           order_id,
           invoice,
           payment_option: payment_method,
-          discountPrice:roundedTotalDiscountedPriceSum  || '00.00',
+          discountPrice: discount,
           status: "pending",
           userRef: userUid,
           created_at: new Date().getTime(),
@@ -328,16 +330,15 @@ function ProceedForm({
           </div>
           <div className="submitBtn">
             <Link to="/" className="shoppiin">
-            <span>
-              <ArrowRight className="btn-leftarrow"/>
+              <span>
+                <ArrowRight className="btn-leftarrow" />
               </span>
               continue shopping
-              
             </Link>
             <button type="submit" className="btn">
               confirm order
               <span>
-                <ArrowRight className="btn-rightarrow"/>
+                <ArrowRight className="btn-rightarrow" />
               </span>
             </button>
           </div>
