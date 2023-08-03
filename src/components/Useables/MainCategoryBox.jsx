@@ -12,9 +12,9 @@ function MainCategoryBox(props) {
 
   const numOfItemsPurchased = 1;
   const handleAdd = ({ id, count, imgUrl, price, name, discount }) => {
-    
+    const discountValue = discount || 0;
     dispatch(
-      fetchCartData({ id, count, imgUrl, price, name,discount }, numOfItemsPurchased)
+      fetchCartData({ id, count, imgUrl, price, name,discountValue }, numOfItemsPurchased)
     );
   };
   const handleDecrease = ({ id }) => {
