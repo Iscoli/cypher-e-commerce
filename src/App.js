@@ -41,55 +41,75 @@ function App() {
       <PersistGate persistor={persistor}>
         <Router>
           <ScrollToTopOnRouteChange />
-          <Navbar />
+          <div
+            className="major-container"
+            style={{
+              maxWidth: "1200px",
+              minWidth:'300px',
+              margin: "0 auto",
+              backgroundColor: "#f5f5f5",
+              borderRadius: "8px",
+              boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+              overflow: "auto",
+            }}
+          >
+            <Navbar
+              style={{
+                maxWidth: "1200px",
+              }}
+            />
 
-          <Routes>
-            <Route path="/" element={<Home />} />
+            <Routes>
+              <Route path="/" element={<Home />} />
 
-            <Route path="/DashBoard" element={<PrivateRoute />}>
-              <Route path="/DashBoard" element={<DashBoard />}>
-                <Route index element={<IndexRoute />} />
-                <Route path="my-orders" element={<IndexRoute />} />
-                <Route path="profile" element={<Profile />} />
-                <Route path="changepwd" element={<ChangePwd />} />
-                <Route path="orders" element={<Orders />} />
+              <Route path="/DashBoard" element={<PrivateRoute />}>
+                <Route path="/DashBoard" element={<DashBoard />}>
+                  <Route index element={<IndexRoute />} />
+                  <Route path="my-orders" element={<IndexRoute />} />
+                  <Route path="profile" element={<Profile />} />
+                  <Route path="changepwd" element={<ChangePwd />} />
+                  <Route path="orders" element={<Orders />} />
+                </Route>
               </Route>
-            </Route>
 
-            <Route path="/sign-in" element={<SignIn />} />
+              <Route path="/sign-in" element={<SignIn />} />
 
-            <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/sign-up" element={<SignUp />} />
 
-            <Route path="/forgot-password" element={<ForgotPwd />} />
+              <Route path="/forgot-password" element={<ForgotPwd />} />
 
-            <Route path="/offer" element={<Offer />} />
+              <Route path="/offer" element={<Offer />} />
 
-            <Route path="/checkout" element={<CheckOut />} />
+              <Route path="/checkout" element={<CheckOut />} />
 
-            <Route path="/faq" element={<FAQ />} />
+              <Route path="/faq" element={<FAQ />} />
 
-            <Route path="/about" element={<About />} />
+              <Route path="/about" element={<About />} />
 
-            <Route path="/contact" element={<Contact />} />
+              <Route path="/contact" element={<Contact />} />
 
-            <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
 
-            <Route path="/terms" element={<Terms />} />
+              <Route path="/terms" element={<Terms />} />
 
-            <Route path="/check" element={<PrivateRoute />}>
-              <Route path="/check" element={<Proceeds />} />
-            </Route>
+              <Route path="/check" element={<PrivateRoute />}>
+                <Route path="/check" element={<Proceeds />} />
+              </Route>
 
-            <Route path="/order" element={<PrivateRoute />}>
-              <Route path="/order/:orderDetails" element={<OrderDetail />} />
-            </Route>
+              <Route path="/order" element={<PrivateRoute />}>
+                <Route path="/order/:orderDetails" element={<OrderDetail />} />
+              </Route>
 
-            <Route path="/sub-category/:product" element={<SubCategory />} />
-            <Route path="/main-category/:category" element={<MainCategory />} />
-            <Route path="/*" element={<NotFound />} />
-          </Routes>
+              <Route path="/sub-category/:product" element={<SubCategory />} />
+              <Route
+                path="/main-category/:category"
+                element={<MainCategory />}
+              />
+              <Route path="/*" element={<NotFound />} />
+            </Routes>
 
-          <AppSection />
+            <AppSection />
+          </div>
         </Router>
 
         <ToastContainer />
