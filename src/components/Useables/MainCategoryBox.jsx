@@ -14,7 +14,10 @@ function MainCategoryBox(props) {
   const handleAdd = ({ id, count, imgUrl, price, name, discount }) => {
     const discountValue = discount || 0;
     dispatch(
-      fetchCartData({ id, count, imgUrl, price, name,discountValue }, numOfItemsPurchased)
+      fetchCartData(
+        { id, count, imgUrl, price, name, discountValue },
+        numOfItemsPurchased
+      )
     );
   };
   const handleDecrease = ({ id }) => {
@@ -35,7 +38,6 @@ function MainCategoryBox(props) {
     if (!product) return 0;
     return product?.count;
   };
-  
 
   return (
     <div className="category-box">
@@ -65,7 +67,7 @@ function MainCategoryBox(props) {
           <div>
             <p
               className={
-                props.product.discount ? "discount-stroke" : ".discount-price"
+                props.product.discount ? "discount-stroke" : "discount-price"
               }
             >
               ${props.product.price}
@@ -97,7 +99,7 @@ function MainCategoryBox(props) {
         )}
       </div>
 
-      <p>
+      <p className="discount-ptag">
         {props.product.discount ? (
           <span className="discount">{`${props.product.discount}% off`} </span>
         ) : (

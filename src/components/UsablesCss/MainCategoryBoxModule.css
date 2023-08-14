@@ -1,5 +1,6 @@
 .category-box {
   background-color: #fff;
+  position: relative;
 }
 .products-img {
   max-width: 116px;
@@ -17,15 +18,16 @@
   font-size: 0.8rem;
   text-transform: none;
 }
+
+.discount-ptag {
+  display: flex;
+  justify-content: right;
+}
 .discount {
   background-color: #f97316;
   color: #ffffff;
-  float: right;
-  position: relative;
-  float: right;
-  position: relative;
-  /* top: 0; */
-  margin-top: -230px;
+  position: absolute;
+  top: 10px;
   width: 100px;
   border-radius: 9px;
   padding: 1px;
@@ -35,9 +37,8 @@
   background: #fee2e2;
   color: #dc2626;
   float: left;
-  position: relative;
-  /* top: 0; */
-  margin-top: -230px;
+  position: absolute;
+  top: 10px;
   width: 100px;
   border-radius: 9px;
   padding: 1px;

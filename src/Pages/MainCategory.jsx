@@ -22,50 +22,7 @@ function MainCategory() {
     
   },[])
  
-  // const data = useSelector(state => state.maincategories)
-  //  console.log(data,'data')
-   
-  
-  //   const categora = ((data.categories))
-  //   console.log(categora[0]['babycare'],'pppppp')
-  // // 
 
-  // const data = useSelector(state => state.maincategories)
-  // console.log(data.loading)
-  // const dispatch = useDispatch()
-  
-  // useEffect(()=>{
- 
-
-
-  // //   const getCountries = async()=>{
-
-     
-  // //     try {
-  // //       const {data} = await axios.get('/MainCategoryBackupPretty.json')
-        
-        
-       
-       
-       
-  // //      const products=(Object.entries(data[0]["fish-meat"]))
-  // //      setCategories([...products])
-       
- 
-        
-      
-
-       
-       
-  // //  }
-  // //  catch (error){
-  // //    console.log('an eroo occured')
-  // //  }
-  // // }
-  
-  // //     getCountries()
-  //   // eslint-disable-next-line
-  //  },[])
      
   return (
     <div className={styles["main-container"]}>

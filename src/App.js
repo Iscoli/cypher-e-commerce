@@ -44,8 +44,8 @@ function App() {
           <div
             className="major-container"
             style={{
-              maxWidth: "1200px",
-              minWidth:'300px',
+              maxWidth: "1400px",
+              minWidth: "300px",
               margin: "0 auto",
               backgroundColor: "#f5f5f5",
               borderRadius: "8px",
