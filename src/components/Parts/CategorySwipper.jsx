@@ -1,109 +1,58 @@
-import React from 'react'
-import './PartsStyle/CategorySwipper.css'
+import React, { useState, useEffect } from 'react';
+import './PartsStyle/CategorySwipper.css'; // Import your custom styles
 
-function CategorySwipper() {
+const CategorySwipper = () => {
+  const slides = [
+    'Slide 1',
+    'Slide 2',
+    'Slide 3',
+    'Slide 4',
+    'Slide 5',
+    'Slide 6',
+    'Slide 7',
+    // Add more slides as needed
+  ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  var swiper = new Swiper(".swiper-container", {
-    loopedSlides: 8,
-    loop: true,
-    slidesPerView: "auto",
-    freeMode: true,
-    mousewheel: {
-      releaseOnEdges: true,
-    },
-  });
-  
-  var thumb = document.querySelectorAll(".thumbContainer");
-  
-  thumb.forEach(function(image, index) {
-    var delay = index * 90;
-    image.classList.add("fadeInSlide");
-    image.style.animationDelay = delay + "ms";
-  });
-  
+  const goToPrevSlide = () => {
+    setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
+  };
+
+  const goToNextSlide = () => {
+    setCurrentIndex((currentIndex + 1) % slides.length);
+  };
+
   return (
-    <>
-     <div class="swiper-container">
-
-<div class="swiper-wrapper">
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 1</h2>
+    <div className="slider-container">
+      <div
+        className="slider"
+        style={{
+          transform: `translateX(-${currentIndex * (100 / slides.length)}%)`
+        }}
+      >
+        {/* Duplicate slides for infinite looping */}
+        {slides.map((slide, index) => (
+          <div className="slide" key={index}>
+            {slide}
+          </div>
+        ))}
+        {/* Repeat the slides to create an illusion of infinite loop */}
+        {slides.map((slide, index) => (
+          <div className="slide" key={index + slides.length}>
+            {slide}
+          </div>
+        ))}
       </div>
+      <button className="prev-button" onClick={goToPrevSlide}>
+        Prev
+      </button>
+      <button className="next-button" onClick={goToNextSlide}>
+        Next
+      </button>
     </div>
-  </div>
+  );
 
+};
 
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 2</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 3</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 4</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 5</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 6</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 7</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div class="thumbContainer">
-      <img src="https://picsum.photos/600/400"/>
-      <div class="projectInfo">
-        <h2 class="serif">Project 8</h2>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div> 
-    </>
-  )
-}
-
-export default CategorySwipper
+export default CategorySwipper;
