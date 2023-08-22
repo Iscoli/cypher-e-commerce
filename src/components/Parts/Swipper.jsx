@@ -6,11 +6,11 @@ import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import Basket1 from "../assets/bg-image/Basket1.jpg";
-import Basket2 from "../assets/bg-image/Basket2.jpg";
-import Basket3 from "../assets/bg-image/Basket3.jpg";
-import Basket4 from "../assets/bg-image/Basket4.jpg";
-import Basket5 from "../assets/bg-image/Basket5.jpg";
+import Basket1 from "../assets/E8.jpg";
+import Basket2 from "../assets/E7.jpg";
+import Basket3 from "../assets/E6.webp";
+import Basket4 from "../assets/E9.jpg";
+import Basket5 from "../assets/E10.png";
 import "./PartsStyle/Swipper.css";
 import { Link } from "react-router-dom";
 
