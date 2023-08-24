@@ -33,29 +33,31 @@ const CategorySwipper = () => {
       ];
 
     
-      useEffect(()=>{
-        
-        const getSubCategories = async()=>{
-           
-         
-          try {
-            const {data} = await axios.get('/SubCategory.json')
-            const category=Object.entries(data[0][`${props.param}`])
-            
-           
-            setSubCategories(category)
-            
-            // [`${props.param}`]
-       }
-       catch (error){
-         console.log('an eroo occured')
-       }
-        }
-        getSubCategories()
-    
-    },[props.param])
       
+  
+ 
+  useEffect(()=>{
+    
+    const getSubCategories = async()=>{
+       
+     
+      try {
+        const {data} = await axios.get('/SubCategory.json')
+        const category=Object.entries(data[0])
+        
+       
+        setSubCategories(category)
+        
+        // [`${props.param}`]
+   }
+   catch (error){
+     console.log('an eroo occured')
+   }
+    }
+    getSubCategories()
 
+},[])
+console.log(subcategories)
   return (
     <div className=""
     style={{margin:'25px'}}>
@@ -105,7 +107,8 @@ const CategorySwipper = () => {
             )
           })
         }
-       
+      
+        
       </Swiper>
     </div>
   );
@@ -113,22 +116,3 @@ const CategorySwipper = () => {
 
 export default CategorySwipper;
 
-
- {/* {categoryFeatures.map((feature) => {
-          const titleUrl = feature.title.split(' ');
-          const newTitleUrl = titleUrl.join('-');
-
-          return (
-            <SwiperSlide key={feature.id}>
-              <div
-                className="featuresShared"
-                onClick={() => navigate(`/main-category/${newTitleUrl}`)}
-              >
-                <div>
-                  <img src={feature.imgUrl} alt="catgImg" />
-                </div>
-                <p>{feature.title}</p>
-              </div>
-            </SwiperSlide>
-          );
-        })} */}
