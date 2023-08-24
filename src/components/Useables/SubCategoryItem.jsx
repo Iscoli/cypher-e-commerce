@@ -35,7 +35,9 @@ function SubCategoryItem(props) {
     {
       
       subcategories.map(([name,product],index)=>(
+         
         < MainCategoryBox name={name} product={product} key={index}/>
+        
       ))
      
     }

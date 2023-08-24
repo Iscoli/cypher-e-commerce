@@ -1,58 +1,134 @@
-import React, { useState, useEffect } from 'react';
-import './PartsStyle/CategorySwipper.css'; // Import your custom styles
+import { useEffect,useState } from 'react';
+import axios from 'axios';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, A11y } from 'swiper';
+import { useNavigate } from 'react-router-dom';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const CategorySwipper = () => {
+  const [subcategories, setSubCategories] = useState([]) 
+  const navigate = useNavigate();
   const slides = [
-    'Slide 1',
-    'Slide 2',
-    'Slide 3',
-    'Slide 4',
-    'Slide 5',
-    'Slide 6',
-    'Slide 7',
-    // Add more slides as needed
-  ];
+        'Slide 1',
+        'Slide 2',
+        'Slide 3',
+        'Slide 4',
+        'Slide 5',
+        'Slide 6',
+        'Slide 7',
+        'Slide 8',
+        'Slide 9',
+        'Slide 10',
+        'Slide 11',
+        'Slide 12',
+        'Slide 13',
+        'Slide 14',
+        'Slide 15',
+        'Slide 16',
+        'Slide 17',
+        'Slide 18',
+        'Slide 19',
+        // Add more slides as needed
+      ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToPrevSlide = () => {
-    setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
-  };
-
-  const goToNextSlide = () => {
-    setCurrentIndex((currentIndex + 1) % slides.length);
-  };
+    
+      useEffect(()=>{
+        
+        const getSubCategories = async()=>{
+           
+         
+          try {
+            const {data} = await axios.get('/SubCategory.json')
+            const category=Object.entries(data[0][`${props.param}`])
+            
+           
+            setSubCategories(category)
+            
+            // [`${props.param}`]
+       }
+       catch (error){
+         console.log('an eroo occured')
+       }
+        }
+        getSubCategories()
+    
+    },[props.param])
+      
 
   return (
-    <div className="slider-container">
-      <div
-        className="slider"
-        style={{
-          transform: `translateX(-${currentIndex * (100 / slides.length)}%)`
+    <div className=""
+    style={{margin:'25px'}}>
+      <Swiper
+        modules={[Navigation, A11y]}
+        spaceBetween={12}
+        slidesPerView={1}
+        navigation
+        loop={true}
+        breakpoints={{
+          374: {
+            slidesPerView: 2,
+          },
+          460: {
+            slidesPerView: 3.25,
+          },
+          576: {
+            slidesPerView: 3.75,
+          },
+          668: {
+            slidesPerView: 4.5,
+          },
+          768: {
+            slidesPerView: 5.25,
+          },
+          880: {
+            slidesPerView: 5.8,
+          },
+          992: {
+            slidesPerView: 6.5,
+          },
+          1096: {
+            slidesPerView: 7.35,
+          },
+          1200: {
+            slidesPerView: 8.25,
+          },
         }}
       >
-        {/* Duplicate slides for infinite looping */}
-        {slides.map((slide, index) => (
-          <div className="slide" key={index}>
-            {slide}
-          </div>
-        ))}
-        {/* Repeat the slides to create an illusion of infinite loop */}
-        {slides.map((slide, index) => (
-          <div className="slide" key={index + slides.length}>
-            {slide}
-          </div>
-        ))}
-      </div>
-      <button className="prev-button" onClick={goToPrevSlide}>
-        Prev
-      </button>
-      <button className="next-button" onClick={goToNextSlide}>
-        Next
-      </button>
+        {
+          slides.map((slide,index)=>{
+            return (
+              <SwiperSlide key={index}>
+                <div>{slide}</div>
+                 
+              </SwiperSlide>
+            )
+          })
+        }
+       
+      </Swiper>
     </div>
   );
-
 };
 
 export default CategorySwipper;
+
+
+ {/* {categoryFeatures.map((feature) => {
+          const titleUrl = feature.title.split(' ');
+          const newTitleUrl = titleUrl.join('-');
+
+          return (
+            <SwiperSlide key={feature.id}>
+              <div
+                className="featuresShared"
+                onClick={() => navigate(`/main-category/${newTitleUrl}`)}
+              >
+                <div>
+                  <img src={feature.imgUrl} alt="catgImg" />
+                </div>
+                <p>{feature.title}</p>
+              </div>
+            </SwiperSlide>
+          );
+        })} */}
