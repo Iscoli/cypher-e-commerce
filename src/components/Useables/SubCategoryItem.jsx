@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import MainCategoryBox from './MainCategoryBox';
 
 
-function SubCategoryItem(props) {
+function  SubCategoryItem(props) {
   const [subcategories, setSubCategories] = useState([])  
   
  

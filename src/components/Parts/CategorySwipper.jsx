@@ -43,7 +43,7 @@ const CategorySwipper = () => {
      
       try {
         const {data} = await axios.get('/SubCategory.json')
-        const category=Object.entries(data[0])
+        const category=Object.entries(data)
         
        
         setSubCategories(category)

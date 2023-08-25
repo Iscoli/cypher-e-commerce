@@ -1,0 +1,1689 @@
+     
+[
+  
+  {
+
+   "Name":"baby-care",
+   "subCategory":["baby-food", "baby-accessories"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fo.png?alt=media&token=f8cd5cca-44a4-476f-8936-5b1a25ed258a",
+   "datas":{
+       "biomil": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FYddcNxc%2FBiomil-1-MINI-Tin-200-Gm.jpg&w=256&q=75",
+         "maincategory": "baby care",
+         "price": 16,
+         "name": "biomil-1 food",
+         "discount": 13,
+         "weight": "200g",
+         "details": [
+           "biomil",
+           "baby-food"
+         ],
+         "id": 172,
+         "stock": 82,
+         "subcategory": "baby food",
+         "__collections__": {}
+       },
+       "cerelac-cherry": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FR9Pn8XN%2FCerelac-Wheat-Apple-Cherry-400-Gm-BIB.jpg&w=256&q=75",
+         "maincategory": "baby care",
+         "price": 17,
+         "name": "cerelac cherry",
+         "weight": "400g",
+         "details": [
+           "foods",
+           "cerelac"
+         ],
+         "id": 174,
+         "stock": 0,
+         "subcategory": "baby food",
+         "__collections__": {}
+       },
+       "cerelac-food": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FyYsskBN%2FCerelac-Wheat-Apple-Cornflakes-400-Gm-BIB.jpg&w=256&q=75",
+         "maincategory": "baby care",
+         "price": 15,
+         "name": "cerelac cornflakes",
+         "weight": "400g",
+         "details": [
+           "baby",
+           "foods"
+         ],
+         "id": 171,
+         "stock": 215,
+         "subcategory": "baby food",
+         "__collections__": {}
+       },
+       "glory-diaper": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FfrhMsN7%2FGlory-Adult-Diaper-Large-8-Packet.jpg&w=256&q=75",
+         "maincategory": "baby care",
+         "price": 16,
+         "name": "glory diaper",
+         "weight": "8pcs",
+         "details": [
+           "accessory",
+           "baby"
+         ],
+         "id": 170,
+         "stock": 59,
+         "subcategory": "baby accessories",
+         "__collections__": {}
+       },
+       "huggies-diaper": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F4Pfnj7x%2FHuggies-Diaper-Dry-S-Up-To-7-Kg-36-Pcs.jpg&w=256&q=75",
+         "maincategory": "baby care",
+         "price": 9,
+         "name": "huggies diaper",
+         "weight": "36pcs",
+         "details": [
+           "care",
+           "diaper"
+         ],
+         "id": 173,
+         "stock": 73,
+         " subcategory": "baby accessories",
+         "__collections__": {}
+       }
+   }
+   
+  },
+  {
+  
+   "Name":"beauty-health",
+   "subCategory":["body-care","cosmetics","oral-care"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fq.png?alt=media&token=3ff611af-e7fb-40a9-b272-6423bf06972b",
+   "datas":{
+     "after-shave": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fky4ngpd%2FDenim-Black-After-Shave-100-Ml.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 8,
+       "name": "denim after shave",
+       "weight": "100ml",
+       "details": [
+         "shave",
+         "after-shave"
+       ],
+       "id": 187,
+       "stock": 75,
+       "subcategory": "shaving needs",
+       "__collections__": {}
+     },
+     "rev-lip": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FK0SBD3v%2FRevlon-Lipstick-Creme-Temptress-680-0-15oz.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 6,
+       "name": "revlon lipstick",
+       "weight": "6",
+       "details": [
+         "cosmetics",
+         "lipstick"
+       ],
+       "id": 192,
+       "stock": 78,
+       "subcategory": "cosmetics",
+       "__collections__": {}
+     },
+     "gillette-vector": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FWknpN14%2FGillette-Vector-1-Refillable.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 6,
+       "name": "gillette vector refillable",
+       "weight": "100ml",
+       "details": [
+         "after-shave",
+         "shave"
+       ],
+       "id": 186,
+       "stock": 200,
+       "subcategory": "shaving needs",
+       "__collections__": {}
+     },
+     "nail-polish": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fj4B82qJ%2FZoya-N-E-Amanda-Nail-Polish-0-5fl-oz.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 8,
+       "name": "nail polish",
+       "weight": "5fl-oz",
+       "details": [
+         "paint",
+         "nail-paint"
+       ],
+       "id": 193,
+       "stock": 129,
+       "subcategory": "cosmetics",
+       "__collections__": {}
+     },
+        
+     "hair-shampoo": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F7Ky2DVF%2FHerbal-Essences-Bio-Renew-Dry-Shampoo-4-9-fl-oz.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 8,
+       "name": "herbal hair shampoo",
+       "weight": "8fl-oz",
+       "details": [
+         "herbal-care",
+         "hair-shampoo"
+       ],
+       "id": 191,
+       "stock": 129,
+       "subcategory": "hair care",
+       "__collections__": {}
+     },
+     
+     "col-wash": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F0ngPGNp%2FColgate-Plax-Complete-Care-Mouthwash-250ml.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 12,
+       "name": "colgate mouthwash",
+       "weight": "250ml",
+       "details": [
+         "colgate",
+         "mouth-wash"
+       ],
+       "id": 189,
+       "stock": 78,
+       "subcategory": "oral care",
+       "__collections__": {}
+     },"sunscreen lotion": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9YBpvCj%2Fultra-protect-sunscreen-lotion.jpg&w=256&q=75",
+       "maincategory": "beauty & health",
+       "price": 7,
+       "name": "sunscreen lotion",
+       "weight": "each",
+       "details": [
+         "body-care",
+         "lotion"
+       ],
+       "id": 182,
+       "stock": 189,
+       "subcategory": "body care",
+       "__collections__": {}
+     },
+       "face-wash": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FFWP2RdG%2FEarthly-Remedies-by-Erin-Face-Wash-each.jpg&w=256&q=75",
+         "maincategory": "beauty & health",
+         "price": 8,
+         "name": "erin face wash",
+         "discount": 8,
+         "weight": "each",
+         "details": [
+           "face wash",
+           "skin"
+         ],
+         "id": 184,
+         "stock": 154,
+         "subcategory": "body care",
+         "__collections__": {}
+       },  "neem-soap": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FYfJTLV4%2FNeem-Original-Honey-Turmeric-Soap-75g.jpg&w=256&q=75",
+         "maincategory": "beauty & health",
+         "price": 12,
+         "name": "neew original soap",
+         "weight": "75g",
+         "details": [
+           "skin-soap",
+           "bath"
+         ],
+         "id": 183,
+         "stock": 123,
+         "subcategory": "body care",
+         "__collections__": {}
+       },
+       "nivea-soap": {
+         "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FLt144XM%2FNivea-Cr-me-Care-Soap-75g.jpg&w=256&q=75",
+         "maincategory": "beauty & health",
+         "price": 11,
+         "name": "nivea soap",
+         "weight": "75g",
+         "details": [
+           "soap",
+           "nivea"
+         ],
+         "id": 185,
+         "stock": 14,
+         "subcategory": "body care",
+         "__collections__": {}
+       },
+       "organic-gel": {
+         "imgUrl": "",
+         "maincategory": "beauty & health",
+         "price": 0,
+         "name": "avalon organic gel",
+         "weight": "",
+         "details": [
+           "care",
+           "body"
+         ],
+         "id": 194,
+         "stock": 0,
+         "subcategory": "body care",
+         "__collections__": {}
+       }
+   }
+      
+   
+
+   },
+ {
+   "Name":"biscuits-cakes",
+   "subCategory":["biscuits","cakes"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fm.png?alt=media&token=57c5711e-db8f-4281-9cbe-641f4c23cf9e",
+   "datas":{
+     "bisk-club-food": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FSKmXDYZ%2FBisk-Club-Shero-Cream-Biscuit-85g.jpg&w=256&q=75",
+       "maincategory": "biscuits & cakes",
+       "price": 11,
+       "name": "bisk club cream biscuit",
+       "weight": "1pac",
+       "details": [
+         "biscuits",
+         "bisk-food"
+       ],
+       "id": 153,
+       "stock": 0,
+       "subcategory": "biscuits",
+       "__collections__": {}
+     }, "dekko-cookie": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FLkncfJj%2FDekko-Ovaltine-Cookies-Biscuits-330g.jpg&w=256&q=75",
+       "maincategory": "biscuits & cakes",
+       "price": 9,
+       "name": "dekko ovaltine-cookie biscuit",
+       "weight": "1box",
+       "details": [
+         "ovaltine",
+         "dekko-foods"
+       ],
+       "id": 154,
+       "stock": 76,
+       "subcategory": "biscuits",
+       "__collections__": {}
+     },
+     "milk-biscuit": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FHqVG7HV%2F2-Fun-Milk-Wafer-Biscuit-17gx12pack.jpg&w=256&q=75",
+       "maincategory": "biscuits & cakes",
+       "price": 11,
+       "name": "fun milk water biscuit",
+       "discount": 15,
+       "weight": "1pac",
+       "details": [
+         "fun-foods",
+         "milk-biscuits"
+       ],
+       "id": 152,
+       "stock": 74,
+       "subcategory": "biscuits",
+       "__collections__": {}
+     }
+   }
+ },
+
+{
+   "Name":"breakfast",
+   "subCategory":["bread","cereal"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fe.png?alt=media&token=e77b1a49-8efe-4a09-8307-979c4b47bc85",
+   "datas":{
+     "pita-bread": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FHxc5YkC7%2FPita-Bread-4-csc7se.jpg&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 10,
+       "name": "pita-bread",
+       "weight": "1pc",
+       "details": [
+         "breakfast",
+         "pita-bread"
+       ],
+       "id": 92,
+       "stock": 199,
+       "subcategory": "bread",
+       "__collections__": {}
+     },
+     
+     "bread": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F8CnMgrxS%2FBread-7-mv0yhz.jpg&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 9,
+       "name": "bread",
+       "weight": "1pc",
+       "details": [
+         "breakfast",
+         "bread"
+       ],
+       "id": 93,
+       "stock": 78,
+       "subcategory": "bread",
+       "__collections__": {}
+     },
+     "whole-bread": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F02dS24hZ%2FEveryday-Essentials-Wholemeal-Bread.jpg&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 11,
+       "name": "wholemeal bread",
+       "weight": "1pc",
+       "details": [
+         "breakfast",
+         "wholemeal-bread"
+       ],
+       "id": 94,
+       "stock": 71,
+       "subcategory": "bread",
+       "__collections__": {}
+     },
+     "quaker-oats": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fyx57V7sW%2Fquaker-oats-jar-500-gm.webp&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 11,
+       "name": "quaker oats jar",
+       "weight": "500gm",
+       "details": [
+         "breakfast",
+         "quaker-oats"
+       ],
+       "id": 95,
+       "stock": 15,
+       "subcategory": "cereal",
+       "__collections__": {}
+     },
+     "cereal-pouch": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fd0KtkQdy%2Fnestle-koko-krunch-breakfast-cereal-pouch-80-gm.webp&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 6,
+       "name": "breakfast cereal pouch",
+       "weight": "80gm",
+       "details": [
+         "breakfast",
+         "cereal-pouch"
+       ],
+       "id": 98,
+       "stock": 0,
+       "subcategory": "cereal",
+       "__collections__": {}
+     },
+     "chocolate-cereal": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FZnqqbfNs%2Fkelloggs-chocos-fills-chocolate-breakfast-cereal-17gm.webp&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 5,
+       "name": "chocolate breakfast cereal",
+       "weight": "17gm",
+       "details": [
+         "breakfast",
+         "chocolate-cereal"
+       ],
+       "id": 97,
+       "stock": 74,
+       "subcategory": "cereal",
+       "__collections__": {}
+     },
+     "flakes-cereal": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FpTWWC0sV%2Fnestle-gold-corn-flakes-breakfast-cereal-box-275-gm.webp&w=256&q=75",
+       "maincategory": "breakfast",
+       "price": 7,
+       "name": "flakes breakfast cereal",
+       "weight": "275gm",
+       "details": [
+         "breakfast",
+         "flakes-breakfast-cereal"
+       ],
+       "id": 99,
+       "stock": 145,
+       "subcategory": "cereal",
+       "__collections__": {}
+
+   }
+   }
+ },
+{
+ "Name": "cooking-essentials",
+ "subCategory":["rice","oil", "flour"],
+ "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fd.png?alt=media&token=76197f12-bb01-443b-8057-c67df4846f64",
+ "datas": {
+   "kalijira-rice": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Fj4DjzJb%2FKalijira-Premium-Rice-Loose-Kg-1-Kg.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 12,
+     "name": "kalijira premium rice",
+     "weight": "5kg",
+     "details": [
+       "kalijira rice",
+       "rice"
+     ],
+     "id": 84,
+     "stock": 45,
+     "subcategory": "rice",
+     "__collections__": {}
+   },
+   "kataribhog-rice": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2Frs9sz34%2FAarong-Kataribhog-Rice-5-Kg.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 10,
+     "name": "aarong kataribhog",
+     "weight": "5kg",
+     "details": [
+       "kataribhog rice",
+       "rice"
+     ],
+     "id": 87,
+     "stock": 14,
+     "subcategory": "rice",
+     "__collections__": {}
+   },
+   "chinigura-rice": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FWzWdTsx%2FFresh-Chinigura-Rice-1kg.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 14,
+     "name": "fresh chinigura rice",
+     "weight": "5kg",
+     "details": [
+       "chinigura",
+       "rice"
+     ],
+     "id": 85,
+     "stock": 24,
+     "subcategory": "rice",
+     "__collections__": {}
+   },
+   "aarong-rice": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FG5S8wCk%2FAarong-Nazirshail-Rice-5-Kg.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 13,
+     "name": "aarong nazirshail rice",
+     "weight": "5kg",
+     "details": [
+       "aarong rice",
+       "rice"
+     ],
+     "id": 86,
+     "stock": 81,
+     "subcategory": "rice",
+     "__collections__": {}
+   },
+   "soya-oil": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F0nzYNB8%2FFresh-Soyabean-Oil-5-Ltr.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 10,
+     "name": "fresh soyabean oil",
+     "weight": "5ltr",
+     "details": [
+       "fresh oil",
+       "oil"
+     ],
+     "id": 79,
+     "stock": 55,
+     "subcategory": "oil",
+     "__collections__": {}
+   },
+   "mustard-oil": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FbWJ9d0b%2FFresh-Mustard-Oil-500ml.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 11,
+     "name": "fresh mustard oil",
+     "weight": "500ml",
+     "details": [
+       "fresh oil",
+       "oil"
+     ],
+     "id": 80,
+     "stock": 74,
+     "subcategory": "oil",
+     "__collections__": {}
+   },
+   "aci-aroma-oil": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FmSyh6LB%2FACI-Aroma-Mustard-Oil-1-Ltr.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 10,
+     "name": "ACI aroma mustard oil",
+     "weight": "1ltr",
+     "details": [
+       "aci oil",
+       "oil"
+     ],
+     "id": 83,
+     "stock": 23,
+     "subcategory": "oil",
+     "__collections__": {}
+   }, "aci-flour": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FthC1gzg%2FACI-Pure-Maida-1-Kg.jpg&w=640&q=75",
+     "maincategory": "cooking essentials",
+     "price": 9,
+     "name": "ACI pure flour",
+     "weight": "1kg",
+     "details": [
+       "aci flour",
+       "flour"
+     ],
+     "id": 75,
+     "stock": 97,
+     "subcategory": "flour",
+     "__collections__": {}
+   },
+   "aci-nutrilife-flour": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F7yJhZq5%2FACI-Nutrilife-Multi-Grain-Atta-1-Kg.jpg&w=256&q=75",
+     "maincategory": "cooking essentials",
+     "price": 12,
+     "name": "ACI nutrilife flour",
+     "weight": "1kg",
+     "details": [
+       "aci flour",
+       "flour"
+     ],
+     "id": 78,
+     "stock": 0,
+     "subcategory": "flour",
+     "__collections__": {}
+   }
+ }
+ 
+ },
+
+{
+
+   "Name":"drinks",
+   "subCategory":["juice", "water","coffee"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Ff.png?alt=media&token=9d4fc2d7-fde6-483c-a4d7-f0758fac0069",
+   "datas":{
+     "monster-drink": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FRCRXRvnC%2FMonster-Energy-Rehab-Orangeade-15-5-fl-oz.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 8,
+       "name": "monster energy drink",
+       "discount": 13,
+       "weight": "15oz",
+       "details": [
+         "monster",
+         "energy"
+       ],
+       "id": 105,
+       "stock": 78,
+       "subcategory": "energy drinks",
+       "__collections__": {}
+     },
+    
+     "positive-drink": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F7YZXtjg3%2FPositive-Energy-Energy-Drink-Organic-Coconut-Water-12-oz.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 9,
+       "name": "positive energy drink",
+       "weight": "12oz",
+       "details": [
+         "energy",
+         "positive-drinks"
+       ],
+       "id": 103,
+       "stock": 0,
+       "subcategory": "energy drinks",
+       "__collections__": {}
+     },
+     "bing-drink": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FrprfCW57%2FBING-Beverage-Made-with-Blackberry-Juice-12-fl-oz.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 13,
+       "name": "BING energy drink",
+       "weight": "12oz",
+       "details": [
+         "bing",
+         "drinks"
+       ],
+       "id": 104,
+       "stock": 121,
+       "subcategory": "energy drinks",
+       "__collections__": {}
+     },
+     "organic-tea": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FkXPt066F%2FMaharishi-Ayurveda-Organic-Pitta-Tea-16-ct.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 8,
+       "name": "organic pitta tea",
+       "discount": 25,
+       "weight": "16ct",
+       "details": [
+         "organic",
+         "organic-tea"
+       ],
+       "id": 111,
+       "stock": 121,
+       "subcategory": "tea",
+       "__collections__": {}
+     },
+
+     
+     "slimming-tea": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FbwzSv7RZ%2FNow-Slimming-Slender-Chai-Tea-24-ct.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 7,
+       "name": "slimming slender tea",
+       "weight": "24ct",
+       "details": [
+         "slimming-tea",
+         "tea"
+       ],
+       "id": 110,
+       "stock": 78,
+       "subcategory": "tea",
+       "__collections__": {}
+     },
+    
+     "calming-teat": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F13JnVvWJ%2FUrban-Frgr-Organic-Calming-Herbal-Tea-15-ct.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 5,
+       "name": "calming herbal tea",
+       "weight": "15ct",
+       "details": [
+         "calming-tea",
+         "herbal"
+       ],
+       "id": 109,
+       "stock": 0,
+       "subcategory": "tea",
+       "__collections__": {}
+     },
+     "club-water": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FnrmZphW6%2FFood-Club-Original-Seltzer-Water-33.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 8,
+       "name": "food club water",
+       "weight": "1ltr",
+       "details": [
+         "water",
+         "club-water"
+       ],
+       "id": 112,
+       "stock": 92,
+       "subcategory": "water",
+       "__collections__": {}
+     },
+     "pure-water": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FP5QXCNqH%2FAlhambra-Purified-Water-1-Lt.jpg&w=256&q=75",
+       "maincategory": "drinks",
+       "price": 7,
+       "name": "alhm=ambra purified water",
+       "discount": 7,
+       "weight": "1ltr",
+       "details": [
+         "alhambra-water",
+         "water"
+       ],
+       "id": 113,
+       "stock": 124,
+       "subcategory": "water",
+       "__collections__": {}
+     }
+   }
+ },
+{
+   "Name":"fish-meat",
+   "subCategory":["fish","meat"],
+   "img":"https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fa.png?alt=media&token=d6f3db13-947d-4a2e-a62b-f2b49b1dc310",
+   "datas":{
+     "beef-stew": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FNiman-Ranch-Angus-Beef-Stew-Meat-per-lb.jpg?alt=media&token=c78f13b7-33e4-4251-8f34-4601d82b469f",
+       "maincategory": "fish & meat",
+       "price": 18,
+       "name": "beef stew",
+       "weight": "1Ib",
+       "details": [
+         "beef",
+         "meat"
+       ],
+       "id": 8,
+       "stock": 65,
+       "subcategory": "meat",
+       "__collections__": {}
+     },
+     "bone-chuck": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FBone-In-Chuck-Roast-each.jpg?alt=media&token=3f01fc7f-b7ac-4582-b5b0-bf8d19fc18ea",
+       "maincategory": "fish & meat",
+       "price": 18,
+       "name": "bone in chuck",
+       "weight": "1Ib",
+       "details": [
+         "beef",
+         "meat"
+       ],
+       "id": 12,
+       "stock": 82,
+       "subcategory": "meat",
+       "__collections__": {}
+     },
+     "boneless-beef": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FBoneless-Beef-Chuck-Roast-per-lb.jpg?alt=media&token=3e42136d-a88f-4ca0-85cb-5b192562a4a3",
+       "maincategory": "fish & meat",
+       "price": 19,
+       "name": "boneless beef",
+       "weight": "1Ib",
+       "details": [
+         "beef",
+         "meat"
+       ],
+       "id": 11,
+       "stock": 70,
+       "subcategory": "meat",
+       "__collections__": {}
+     },
+
+     "duck-meat": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FDuck-Hash-Meat-Regular-Kg.jpg?alt=media&token=f5e41442-eee9-4782-9dc3-0e6473da0e48",
+       "maincategory": "fish & meat",
+       "price": 15,
+       "name": "duck meat",
+       "weight": "1Ib",
+       "details": [
+         "duck",
+         "meat"
+       ],
+       "id": 10,
+       "stock": 20,
+       "subcategory": "meat",
+       "__collections__": {}
+     },
+     "ground-turkey": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FGround-Turkey-per-lb.jpg?alt=media&token=6b85096b-7352-46f5-8e6a-90f803d12526",
+       "maincategory": "fish & meat",
+       "price": 19,
+       "name": "ground turkey",
+       "weight": "1Ib",
+       "details": [
+         "beef",
+         "meat"
+       ],
+       "id": 9,
+       "stock": 80,
+       "subcategory": "meat",
+       "__collections__": {}
+     }
+   }
+ },
+ {
+   "Name":"fresh-seafood",
+   "subCategory":[ "sea-food"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fc.png?alt=media&token=9cba9c4a-4571-4002-9e56-680f6726d17b",
+   "datas":{
+     "cockles": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/cockles.jpg?alt=media&token=f821ba90-1924-408d-ac8d-62639aab0ef4",
+       "maincategory": "fresh seafood",
+       "price": 14,
+       "name": "carribbean cooked cockles",
+       "weight": "120g",
+       "details": [
+         "cockles",
+         "seafood"
+       ],
+       "id": 70,
+       "stock": 17,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     },
+     "crab-seafood": {
+       "imgUrl": "https://media.istockphoto.com/id/482141392/photo/chilli-crab-asia-cuisine.jpg?s=612x612&w=0&k=20&c=uyNyuvKw1rxqjkw21hDtnJXt9TXdbkvQZF-XomcM4VI=",
+       "maincategory": "fresh seafood",
+       "price": 9,
+       "name": "chicago sweet crab",
+       "weight": "200g",
+       "details": [
+         "crab",
+         "seafood"
+       ],
+       "id": 64,
+       "stock": 32,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     },
+     "lobster": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/grilled-lobster.jpg?alt=media&token=7af94fe4-698e-4348-8f8d-9beb44c565ba",
+       "maincategory": "fresh seafood",
+       "price": 8,
+       "name": "grilled lobster",
+       "weight": "each",
+       "details": [
+         "grilled",
+         "lobster"
+       ],
+       "id": 65,
+       "stock": 74,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     },
+     "oyster": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/Parmesan_Crusted_Charbroiled_Oysters-scaled.jpg?alt=media&token=8d8594b4-4807-48cb-847d-9ed51d57fced",
+       "maincategory": "fresh seafood",
+       "price": 18,
+       "name": "char-grilled oyster",
+       "weight": "50g",
+       "details": [
+         "oyster",
+         "parmesan romano"
+       ],
+       "id": 69,
+       "stock": 25,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     },
+     "periwinkle": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/periwinkle.jpg?alt=media&token=16d38535-46f3-4c93-a040-5101f8cacf11",
+       "maincategory": "fresh seafood",
+       "price": 8,
+       "name": "fresh edible periwinkle",
+       "weight": "7ct",
+       "details": [
+         "periwinkle",
+         "fresh"
+       ],
+       "id": 71,
+       "stock": 150,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     },
+     "prawn": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/prawn.jpg?alt=media&token=889acd44-9e9e-4d32-b2c5-85c711df3c02",
+       "maincategory": "fresh seafood",
+       "price": 13,
+       "name": "haitian prawn",
+       "weight": "25g",
+       "details": [
+         "prawn",
+         "seafood"
+       ],
+       "id": 67,
+       "stock": 0,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     },
+     "shrimp": {
+       "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/shrimp.jpg?alt=media&token=1ccafd26-263e-4f72-b5cb-72dc29d7fd84",
+       "maincategory": "fresh seafood",
+       "price": 12,
+       "name": "sweet cooked shrimp",
+       "discount": 5,
+       "weight": "5oz",
+       "details": [
+         "shrimp",
+         "cooked"
+       ],
+       "id": 66,
+       "stock": 41,
+       "subcategory": "fresh seafood",
+       "__collections__": {}
+     }
+   }
+ },
+ {
+   "Name":"fruits-vegetable",
+   "subCategory":["fresh-vegetables", "fresh-fruits","dry-vegetables"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fb.png?alt=media&token=59849163-7dbc-4998-80fd-33e69c2697e8",
+   "datas":{
+     "onion-loose": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FbQ70J0P%2FOnion-Local-Loose-Kg-1-Kg.jpg&w=256&q=75",
+       "maincategory": "cooking essentials",
+       "price": 9,
+       "name": "onion loose",
+       "weight": "1kg",
+       "details": [
+         "onion",
+         "dry vegetable"
+       ],
+       "id": 88,
+       "stock": 25,
+       "subcategory": "dry vegetable",
+       "__collections__": {}
+     },
+     "garlic": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FD5tBhsz%2FGarlic-Roshun-Deshi-Loose-P-1-Kg.jpg&w=256&q=75",
+       "maincategory": "cooking essentials",
+       "price": 12,
+       "name": "garlic loose",
+       "discount": 12,
+       "weight": "1kg",
+       "details": [
+         "",
+         "dry vegetable"
+       ],
+       "id": 90,
+       "stock": 24,
+       "subcategory": "dry vegetable",
+       "__collections__": {}
+     },
+     "ginger": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FYL6gbnL%2FGinger-Ada-Local-Hybrid-1-Kg.jpg&w=256&q=75",
+       "maincategory": "cooking essentials",
+       "price": 15,
+       "name": "ginger hybrid",
+       "weight": "1kg",
+       "details": [
+         "",
+         "dry vegetable"
+       ],
+       "id": 89,
+       "stock": 0,
+       "subcategory": "dry vegetable",
+       "__collections__": {}
+     },
+     "ginger-loose": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FjWm6FLB%2FAda-Imported-Loose-1-Kg.jpg&w=256&q=75",
+       "maincategory": "cooking essentials",
+       "price": 13,
+       "name": "ginger imported loose",
+       "weight": "1kg",
+       "details": [
+         "garlic",
+         "dry vegetable"
+       ],
+       "id": 91,
+       "stock": 39,
+       "subcategory": "dry vegetable",
+       "__collections__": {}
+     }  
+   }
+ },
+
+ {
+   "Name":"honey",
+   "subCategory":["honey"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fi.png?alt=media&token=d0748ea1-614c-41a2-a5f9-47f6790c62fc",
+   "datas":{
+     "alshifa-honey": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FBQKGXXww%2FAlshifa-Natural-Honey-250-Gm.jpg&w=256&q=75",
+       "maincategory": "honey",
+       "price": 17,
+       "name": "alshifa natural honey",
+       "discount": 6,
+       "weight": "250g",
+       "details": [
+         "natural",
+         "alshifa"
+       ],
+       "id": 127,
+       "stock": 107,
+       "subcategory": "honey",
+       "__collections__": {}
+     },
+     "aussie-honey": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FmrbxXVZ0%2FAussiebee-Honey-400g-Bottle.jpg&w=256&q=75",
+       "maincategory": "honey",
+       "price": 19,
+       "name": "aussiebee honey",
+       "weight": "400g",
+       "details": [
+         "aussie",
+         "bee"
+       ],
+       "id": 128,
+       "stock": 25,
+       "subcategory": "honey",
+       "__collections__": {}
+     },
+     "darbur-honey": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FMGtChRvX%2FDabur-Honey-1-Kg-Vatika-Tin-Can-Oil-Free.jpg&w=256&q=75",
+       "maincategory": "honey",
+       "price": 20,
+       "name": "dabur honey oil free",
+       "discount": 10,
+       "weight": "400g",
+       "details": [
+         "dabur",
+         "oil free"
+       ],
+       "id": 129,
+       "stock": 25,
+       "subcategory": "honey",
+       "__collections__": {}
+     }
+   }
+ },
+ { 
+   "Name": "household-tools",
+   "subCategory":["air-freshener", "cleaner", "laundry"],
+    "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fn.png?alt=media&token=80e8db22-47a8-48f6-ab59-eb29e7efee2c",
+    "datas":{
+     "alchemy-spray": {
+       "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpJubNqw7uefhcy5PcfkWSwdEixT8L0TBR0SaCYxMNw&s",
+       "maincategory": "household tools",
+       "price": 7,
+       "name": "natures alchemy rosewood",
+       "weight": "5oz",
+       "details": [
+         "air freshener",
+         "natures"
+       ],
+       "id": 156,
+       "stock": 126,
+       "subcategory": "air freshener",
+       "__collections__": {}
+     },
+     
+   
+     "glade-scents": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FZqnw1ZJr%2FGlade-Oil-Refills-Scented-White-Tea-Lily-0-71oz.jpg&w=640&q=75",
+       "maincategory": "household tools",
+       "price": 9,
+       "name": "glade refills scented",
+       "weight": "",
+       "details": [
+         "air freshener",
+         "scents"
+       ],
+       "id": 157,
+       "stock": 143,
+       "subcategory": "air freshener",
+       "__collections__": {}
+     },
+     
+     "glade-spray": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FdV4WHDcs%2FGlade-Clear-Springs-Sense-Spray-Motion-Sensor-Automatic-Spray-1ct.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 6,
+       "name": "glade automatic spray",
+       "weight": "4oz",
+       "details": [
+         "air freshener",
+         "spray"
+       ],
+       "id": 155,
+       "stock": 78,
+       "subcategory": "air freshener",
+       "__collections__": {}
+     }, "pad-brush": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FXvpNzZm4%2FChar-Bron-Dual-SS-Scubbing-Pad-Brush-1ct.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 12,
+       "name": "scrubbing pad brush",
+       "weight": "1ct",
+       "details": [
+         "scrubbing",
+         "brush"
+       ],
+       "id": 165,
+       "stock": 200,
+       "subcategory": "cleaning tools",
+       "__collections__": {}
+     },
+     "ant-killer": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FfRLkGWrW%2FHot-Shot-Ant-Roach-Plus-Germ-Killer-2-Fresh-Floral-Scent-Value-Pack-17-oz.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 11,
+       "name": "hot shot ant killer",
+       "discount": 15,
+       "weight": "17oz",
+       "details": [
+         "hot-shot",
+         "ant-kill"
+       ],
+       "id": 162,
+       "stock": 77,
+       "subcategory": "pest-control",
+       "__collections__": {}
+     },
+     "bayer-killed": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FPrdCMQbw%2FBayer-Insect-Killer-All-Purpose-Continuous-Spray-15-75oz.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 12,
+       "name": "bayer insect control",
+       "weight": "75oz",
+       "details": [
+         "bayer-kill",
+         "insect"
+       ],
+       "id": 160,
+       "stock": 62,
+       "subcategory": "pest control",
+       "__collections__": {}
+     },
+     "brita-dispenser": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fx1nTQfpN%2FBRITA-Water-Filter-Dispenser-1-each.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 11,
+       "name": "BRITA water filter dispenser",
+       "weight": "each",
+       "details": [
+         "dispenser",
+         "water"
+       ],
+       "id": 159,
+       "stock": 52,
+       "subcategory": "water filter",
+       "__collections__": {}
+     },
+     "brita-filter": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F28pSHF4w%2FBRITA-Replacement-Water-Filters-3each.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 14,
+       "name": "BRITA replacement water filter",
+       "weight": "3each",
+       "details": [
+         "brita",
+         "water-filter"
+       ],
+       "id": 158,
+       "stock": 85,
+       "subcategory": "water filter",
+       "__collections__": {}
+     },
+     "casabella-brush": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fmgd2j3dm%2FCasabella-Sponge-Brush-Loop-1-each.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 7,
+       "name": "casabella sponge brush",
+       "weight": "each",
+       "details": [
+         "scrubbing",
+         "brush"
+       ],
+       "id": 166,
+       "stock": 150,
+       "subcategory": "cleaning tools",
+       "__collections__": {}
+     },
+     "chinese-clean": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FkGxsqhCb%2FArtik-Mandarine-Obsession-All-Purpose-Cleaner-8fl-oz.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 7,
+       "name": "artik mandarine cleaner",
+       "weight": "8oz",
+       "details": [
+         "mandarine-clean",
+         "cleaner"
+       ],
+       "id": 169,
+       "stock": 0,
+       "subcategory": "cleaner",
+       "__collections__": {}
+     },
+     "clean-it": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FcJ2BYN43%2FEveryday-Living-All-Purpose-Cleaner-with-Bleach-32-oz.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 8,
+       "name": "clean it cleaner",
+       "weight": "32oz",
+       "details": [
+         "clean-it",
+         "clean"
+       ],
+       "id": 167,
+       "stock": 74,
+       "subcategory": "cleaner",
+       "__collections__": {}
+     },
+     "clean-wipes": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FncG2W508%2FGood-Clean-Fresh-Scented-Disinfectant-Wipes-24ct.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 9,
+       "name": "good clean wipes",
+       "weight": "24ct",
+       "details": [
+         "wiper",
+         "clean"
+       ],
+       "id": 168,
+       "stock": 136,
+       "subcategory": "cleaner",
+       "__collections__": {}
+     },
+     "rat-trap": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FHndkBTMg%2Fd-Con-Trap-Rat-and-Mouse-Glue-Professional-Strength-2ct.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 12,
+       "name": "d con trap rat",
+       "weight": "2ct",
+       "details": [
+         "trapper",
+         "rat-trap"
+       ],
+       "id": 161,
+       "stock": 751,
+       "subcategory": "pest control",
+       "__collections__": {}
+     },
+     "hammer-detergent": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F3wB6m9nw%2FArm-Hammer-Tropical-Paradise-Arm-Hammer-Clean-Scentsations-Tropical-Paradise-Laundry-Detergent.jpg&w=256&q=75",
+       "maincategory": "household tools",
+       "price": 12,
+       "name": "arm hammer detergent",
+       "weight": "9oz",
+       "details": [
+         "detergent",
+         "hammer-arm"
+       ],
+       "id": 163,
+       "stock": 125,
+       "subcategory": "laundry",
+       "__collections__": {}
+     },
+     "fabreze-dirt": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FgJtTBj9F%2FFebreze-Bedding-Refresher-Moonlit-Lavender-16-9oz.jpg&w=640&q=75",
+       "maincategory": "household tools",
+       "price": 13,
+       "name": "fabreze moonlit lavender",
+       "weight": "9oz",
+       "details": [
+         "detergent",
+         "fabreze"
+       ],
+       "id": 164,
+       "stock": 26,
+       "subcategory": "laundry",
+       "__collections__": {}
+     }
+
+
+     
+    }
+ },
+ 
+ {
+   "Name":"jam-jelly",
+   "subCategory":["jam & jelly"],
+    "img" : "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fk.png?alt=media&token=aadac652-fe7a-4ebf-becb-4c964c26cc0a",
+    "datas":{
+     "ahmed-jelly": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F4x8d1Ksb%2FAhmed-Mixed-Fruit-Jelly-500g.jpg&w=256&q=75",
+       "maincategory": "jam & jelly",
+       "price": 13,
+       "name": "ahmed fruit jelly",
+       "weight": "500g",
+       "details": [
+         "ahmed-jelly",
+         "fruit-jelly"
+       ],
+       "id": 138,
+       "stock": 41,
+       "subcategory": "jam & jelly",
+       "__collections__": {}
+     },
+     "foster-clark": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FHLRkffJr%2FFoster-Clark-Jam-Raspberry-450gm.jpg&w=256&q=75",
+       "maincategory": "jam & jelly",
+       "price": 12,
+       "name": "foster clark jelly",
+       "weight": "450g",
+       "details": [
+         "clark jam",
+         "jam"
+       ],
+       "id": 137,
+       "stock": 25,
+       "subcategory": "jam & jelly",
+       "__collections__": {}
+     },
+     "pran-jelly": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fg0n0tY09%2FPran-Mango-Jam-375-Gm.jpg&w=640&q=75",
+       "maincategory": "jam & jelly",
+       "price": 13,
+       "name": "pran mango jelly",
+       "weight": "375g",
+       "details": [
+         "pran-jam",
+         "j&j"
+       ],
+       "id": 136,
+       "stock": 215,
+       "subcategory": "jam & jelly",
+       "__collections__": {}
+     }
+    }
+ }, 
+
+{
+ "Name":"milk-diary ",
+ "subCategory":["butter & ghee", "ice-cream","diary"],
+ "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fg.png?alt=media&token=5bbac5be-2a97-45ee-9d48-f15e181c1065",
+ "datas":{
+   
+   "mexico-yoghurt": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FJ4Bg6gwd%2FEl-Mexicano-Em-Youstir-Peach-each.jpg&w=256&q=75",
+     "maincategory": "milk & dairy",
+     "price": 9,
+     "name": "el mexicano yoghurt",
+     "weight": "each",
+     "details": [
+       "el-mexicano",
+       "yoghurt"
+     ],
+     "id": 119,
+     "stock": 0,
+     "subcategory": "dairy",
+     "__collections__": {}
+   },
+   "shurfine-yoghurt": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FXJJ1w1cL%2FShurfine-Vanilla-Nonfat-Yogurt-6oz.jpg&w=256&q=75",
+     "maincategory": "milk & dairy",
+     "price": 11,
+     "name": "shurfine vanilla yoghurt",
+     "weight": "60oz",
+     "details": [
+       "yoghurt",
+       "dairy"
+     ],
+     "id": 118,
+     "stock": 122,
+     "subcategory": "dairy",
+     "__collections__": {}
+   }
+ }
+ }, 
+{
+ "Name": "organic-food " ,
+   "subCategory":["organic-food"],
+  "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fh.png?alt=media&token=c93bb7ad-1760-416f-9d96-513f753c7e43",
+  "datas":{
+   "gerber-organic": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fj5W2HnDM%2FGerber-Organic.jpg&w=256&q=75",
+     "maincategory": "organic food",
+     "price": 12,
+     "name": "gerber organic",
+     "weight": "220ml",
+     "details": [
+       "gerber",
+       "organic"
+     ],
+     "id": 125,
+     "stock": 100,
+     "subcategory": "organic food",
+     "__collections__": {}
+   },
+   "guava-jelly": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FhhRB7fmQ%2Fahmed-sugar-free-guava-jelly-375-gm.webp&w=256&q=75",
+     "maincategory": "organic food",
+     "price": 11,
+     "name": "sugar free guava jelly",
+     "weight": "375g",
+     "details": [
+       "organic",
+       "guava-jelly"
+     ],
+     "id": 123,
+     "stock": 184,
+     "subcategory": "organic food",
+     "__collections__": {}
+   },
+   "orange-jelly": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F2jbLvMvC%2Fahmed-sugar-free-orange-jelly-375-gm.webp&w=256&q=75",
+     "maincategory": "organic food",
+     "price": 12,
+     "name": "sugar free orange jelly",
+     "discount": 17,
+     "weight": "375g",
+     "details": [
+       "organic",
+       "orange-jelly"
+     ],
+     "id": 124,
+     "stock": 122,
+     "subcategory": "organic food",
+     "__collections__": {}
+   },
+   "pawapaw": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FV636DsMm%2Fpaka-pape-50-gm-1-kg.webp&w=256&q=75",
+     "maincategory": "organic food",
+     "price": 12,
+     "name": "paka-pape pawpaw",
+     "weight": "1kg",
+     "details": [
+       "pawpaw",
+       "paka"
+     ],
+     "id": 126,
+     "stock": 100,
+     "subcategory": "organic food",
+     "__collections__": {}
+   }
+  }
+ },
+{
+ "Name":"pet-care" ,
+ "subCategory":["bird-care", "cat-care", "dog-care"],
+ "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fp.png?alt=media&token=41d707d6-3444-4ba4-96fc-297ef31e9dd7",
+ "datas":{
+   "bird-food": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Frp5Bwxd8%2FKaytee-Forti-Diet-Pro-Health-Bird-Food-For-Parrots-8lb.jpg&w=256&q=75",
+     "maincategory": "pet care",
+     "price": 7,
+     "name": "kaytee bird food",
+     "weight": "8Ib",
+     "details": [
+       "bird-food",
+       "food"
+     ],
+     "id": 177,
+     "stock": 100,
+     "subcategory": "bird care",
+     "__collections__": {}
+   },
+   "foraging-pouch": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F0jyFn4VQ%2FSuper-Bird-Creations-Foraging-Pouch-Bird-Toy-each.jpg&w=256&q=75",
+     "maincategory": "pet care",
+     "price": 13,
+     "name": "foraging pouch bird toy",
+     "weight": "each",
+     "details": [
+       "bird-toy",
+       "forage"
+     ],
+     "id": 175,
+     "stock": 154,
+     "subcategory": "bird care",
+     "__collections__": {}
+   },
+   "bird-toy": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FQMLLD0d4%2FSuper-Bird-Creations-Making-Tracks-Bird-Toy-3-Length-each.jpg&w=256&q=75",
+     "maincategory": "pet care",
+     "price": 12,
+     "name": "bird toy",
+     "weight": "each",
+     "details": [
+       "care",
+       "bird"
+     ],
+     "id": 176,
+     "stock": 148,
+     "subcategory": "bird care",
+     "__collections__": {}
+   },   
+   "cat-food": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FYCCVwT7z%2FIAMS-Proactive-Health-Oral-Care-Complete-Premium-Cat-Food-16-lb.jpg&w=256&q=75",
+     "maincategory": "pet care",
+     "price": 12,
+     "name": "premium cat food",
+     "weight": "16Ib",
+     "details": [
+       "cat-food",
+       "care"
+     ],
+     "id": 179,
+     "stock": 78,
+     "subcategory": "cat care",
+     "__collections__": {}
+   },
+   "leaps-cat": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FzG2QDpXZ%2FLeaps-Bounds-Electronic-Shelf-Teaser-each.jpg&w=256&q=75",
+     "maincategory": "pet care",
+     "price": 14,
+     "name": "leaps bounds cat toy",
+     "discount": 12,
+     "weight": "each",
+     "details": [
+       "cat",
+       "cat care"
+     ],
+     "id": 178,
+     "stock": 14,
+     "subcategory": "cat care",
+     "__collections__": {}
+   },
+     
+   "dog-collar": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FZ50WyKZB%2FBuckle-Down-Pbkl-Large-Colorado-Dog-Collar-each.jpg&w=256&q=75",
+     "maincategory": "pet care",
+     "price": 13,
+     "name": "colorado dog collar",
+     "weight": "each",
+     "details": [
+       "dog-collar",
+       "collar"
+     ],
+     "id": 181,
+     "stock": 48,
+     "subcategory": "dog care",
+     "__collections__": {}
+   }
+ }
+ }, 
+
+{
+ "Name":"sauces-pickles" ,
+ "subCategory":["pickles", "sauces"],
+ "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fj.png?alt=media&token=fcb8d8ff-aed8-487a-a20e-a6c8dc14f0b5",
+ "datas":{
+   "calypso-sauce": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F5y3X0qhR%2FCalypso-Pure-Salad-Style-Mustard-200ml-Jar.jpg&w=256&q=75",
+     "maincategory": "sauces & pickles",
+     "price": 12,
+     "name": "calypso sauce",
+     "weight": "200ml",
+     "details": [
+       "calypso",
+       "sauce"
+     ],
+     "id": 132,
+     "stock": 84,
+     "subcategory": "sauces",
+     "__collections__": {}
+   },
+
+   "life-ketchup": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FDfdJBnSP%2FLife-Tomato-Ketchup-330-Gm.jpg&w=256&q=75",
+     "maincategory": "sauces & pickles",
+     "price": 10,
+     "name": "life tomato ketchup",
+     "weight": "330gm",
+     "details": [
+       "ketchup",
+       "tomato-sauce"
+     ],
+     "id": 130,
+     "stock": 251,
+     "subcategory": "sauces",
+     "__collections__": {}
+   },
+   "soya-sauce": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2Fdts7fpdP%2FKikkoman-Soya-Sauce-150ml.jpg&w=256&q=75",
+     "maincategory": "sauces & pickles",
+     "price": 10,
+     "name": "kikkoman soya sauce",
+     "weight": "150ml",
+     "details": [
+       "kikkoman",
+       "soya-sauce"
+     ],
+     "id": 131,
+     "stock": 12,
+     "subcategory": "sauces",
+     "__collections__": {}
+   }
+ },
+ "sauces":{
+   "apple-cider": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FSxV41Q8C%2FAmerican-Garden-Apple-Cider-Vinegar-473g.jpg&w=256&q=75",
+     "maincategory": "sauces & pickles",
+     "price": 12,
+     "name": "american apple cider vinegar",
+     "weight": "473g",
+     "details": [
+       "american-cider",
+       "vinegar"
+     ],
+     "id": 134,
+     "stock": 75,
+     "subcategory": "pickles",
+     "__collections__": {}
+   },
+
+   "heinz-cider": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FFFc45V39%2FHeinz-Apple-Cider-Vinegar-473ml-US.jpg&w=256&q=75",
+     "maincategory": "sauces & pickles",
+     "price": 14,
+     "name": "heinz apple cider vinegar",
+     "weight": "473",
+     "details": [
+       "heinz-cider",
+       "apple"
+     ],
+     "id": 135,
+     "stock": 0,
+     "subcategory": "pickles",
+     "__collections__": {}
+   },
+   
+   "mango-pickle": {
+     "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2F4yzk6XsK%2FAhmed-Mango-Pickle-400g.jpg&w=256&q=75",
+     "maincategory": "sauces & pickles",
+     "price": 13,
+     "name": "ahmed mango pickle",
+     "weight": "400g",
+     "details": [
+       "ahmed-pickle",
+       "mango"
+     ],
+     "id": 133,
+     "stock": 62,
+     "subcategory": "pickles",
+     "__collections__": {}
+   }
+ }
+ }, 
+
+{
+   
+   "Name":"snacks-instant" ,
+   "subCategory": ["canned-food", "chips & nuts", "chocolate","noodles"],
+   "img": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/featureImgs%2Fl.png?alt=media&token=4564eaf7-ea5c-4eb5-ba21-4394da772613",
+   "datas":{
+     "maggi-noodles": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FRVfjv2Nk%2FMaggi-Bangkok-Sweet-Chilli-Noodles-260g.jpg&w=256&q=75",
+       "maincategory": "snacks & instant",
+       "price": 15,
+       "name": "maggi noodles",
+       "weight": "260g",
+       "details": [
+         "maggi",
+         "noodles"
+       ],
+       "id": 139,
+       "stock": 205,
+       "subcategory": "noodles",
+       "__collections__": {}
+     },
+     "mama-noodles": {
+       "imgUrl": "",
+       "maincategory": "snacks & instant",
+       "price": 17,
+       "name": "mama hot spicy noodles",
+       "weight": "496g",
+       "details": [
+         "mama-foods",
+         "hot"
+       ],
+       "id": 140,
+       "stock": 51,
+       "subcategory": "noodles",
+       "__collections__": {}
+     },
+     "mr-magic": {
+       "imgUrl": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FfRN1y5dJ%2FMr-Noodles-Cup-Noodles-Magic-Masala-40g.jpg&w=256&q=75",
+       "maincategory": "snacks & instant",
+       "price": 10,
+       "name": "mr noodles magic masala",
+       "weight": "40g",
+       "details": [
+         "masala",
+         "mr-magic"
+       ],
+       "id": 141,
+       "stock": 252,
+       "subcategory": "noodles",
+       "__collections__": {}
+     }
+   }
+
+ }
+
+
+
+
+]
