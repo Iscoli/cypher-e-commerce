@@ -70,8 +70,10 @@ const CategorySwipper = () => {
               className="link-tag link custom-link"
               to={`/main-category/${Name}`}
             >
+                  <div className="swip-img">
                 <img src={img} />
-                <p>{Name}</p>
+                 </div>
+                <p style={{fontSize:'0.84rem'}}>{Name}</p>
                 </Link>
               </SwiperSlide>
              
