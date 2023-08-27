@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 function CategoryBox(props) {
   return (
     <div className="box-container">
-      {props.category.map((category, index) => (
+    
+      {props.category?.map((category, index) => (
+       
         <div className="box-contain" key={index}>
           <div>
             <img className="category-img" src={category.img} alt="store" />

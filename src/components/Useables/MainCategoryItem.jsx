@@ -53,7 +53,7 @@ const cartCount = (id) => {
   return product?.count;
   
 };
-console.log(cartCount,'name')
+
   return (
     <div  className='product'>
       {

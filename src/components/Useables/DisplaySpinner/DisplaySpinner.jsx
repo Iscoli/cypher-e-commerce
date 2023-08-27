@@ -1,17 +1,12 @@
- import React from 'react';
- import './Spinner.css';
- 
- function DisplaySpinner() {
-   return (
-     <div>
-     
-      <div className="spinner-big">
-       
-      
+import React from "react";
+import "./Spinner.css";
+
+function DisplaySpinner() {
+  return (
+    <div>
+      <div className="spinner-big"></div>
     </div>
-     </div>
-   )
- }
- 
- export default DisplaySpinner
- 
+  );
+}
+
+export default DisplaySpinner;

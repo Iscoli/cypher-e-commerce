@@ -1,66 +1,28 @@
-import { useEffect,useState } from 'react';
-import axios from 'axios';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, A11y } from 'swiper';
-import { useNavigate } from 'react-router-dom';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import { useEffect, useState } from "react";
+import { fetchCategory } from "../../Redux";
+import { Swiper, SwiperSlide } from "swiper/react";
+import DisplaySpinner from "../Atom/DisplaySpinner";
+import { Navigation, A11y } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import CategorySwipBox from "../Useables/CategorySwipper/CategorySwipBox";
+import { useSelector, useDispatch } from "react-redux";
 
 const CategorySwipper = () => {
-  const [subcategories, setSubCategories] = useState([]) 
-  const navigate = useNavigate();
-  const slides = [
-        'Slide 1',
-        'Slide 2',
-        'Slide 3',
-        'Slide 4',
-        'Slide 5',
-        'Slide 6',
-        'Slide 7',
-        'Slide 8',
-        'Slide 9',
-        'Slide 10',
-        'Slide 11',
-        'Slide 12',
-        'Slide 13',
-        'Slide 14',
-        'Slide 15',
-        'Slide 16',
-        'Slide 17',
-        'Slide 18',
-        'Slide 19',
-        // Add more slides as needed
-      ];
-
-    
-      
-  
  
-  useEffect(()=>{
-    
-    const getSubCategories = async()=>{
-       
-     
-      try {
-        const {data} = await axios.get('/SubCategory.json')
-        const category=Object.entries(data)
-        
-       
-        setSubCategories(category)
-        
-        // [`${props.param}`]
-   }
-   catch (error){
-     console.log('an eroo occured')
-   }
-    }
-    getSubCategories()
 
-},[])
-console.log(subcategories)
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCategory());
+  }, []);
+  console.log("hello wolr");
+  const data = useSelector((state) => state.categories);
+
+  const categories = Object.values(data.categories);
+
   return (
-    <div className=""
-    style={{margin:'25px'}}>
+    <div className="" style={{ margin: "25px" }}>
+       {
       <Swiper
         modules={[Navigation, A11y]}
         spaceBetween={12}
@@ -97,22 +59,34 @@ console.log(subcategories)
           },
         }}
       >
-        {
-          slides.map((slide,index)=>{
-            return (
-              <SwiperSlide key={index}>
-                <div>{slide}</div>
-                 
-              </SwiperSlide>
-            )
-          })
-        }
+      {
+        categories.map(({Name,img},index)=>{
+         return(
+          <SwiperSlide key={index}>
+            <img src={img} />
+            <p>{Name}</p>
+          </SwiperSlide>
+         )
+        })
+      }
+    
       
-        
       </Swiper>
+        }
     </div>
+      
   );
 };
 
 export default CategorySwipper;
 
+
+
+// {slides.map((slide, index) => {
+//   return (
+//     <SwiperSlide key={index}>
+//       <div>{slide}</div>
+//       <CategorySwipBox categories={categories} data={data} />
+//     </SwiperSlide>
+//   );
+// })}
