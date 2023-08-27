@@ -20,7 +20,7 @@ function MainCategory() {
    dispatch(fetchMainCategory(param))
     
     
-  },[param])
+  },[])
  
 
      

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./CategorySwipper.css";
+import './CategorySwipper.css';
 import { Link } from "react-router-dom";
 import CategorySwipBox from "../../Useables/CategorySwipper/CategorySwipBox";
 import { useSelector, useDispatch } from "react-redux";
@@ -27,8 +27,8 @@ const CategorySwipper = () => {
           spaceBetween={12}
           slidesPerView={1}
           navigation={{
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
           }}
           loop={true}
           breakpoints={{
@@ -63,19 +63,22 @@ const CategorySwipper = () => {
         >
           {categories.map(({ Name, img }, index) => {
             return (
+             
               <SwiperSlide key={index}>
-                <Link
-                  className="link-tag link custom-link"
-                  to={`/main-category/${Name}`}
-                >
-                  <img src={img} />
-                  <p>{Name}</p>
+                 <Link
+              className="link-tag link custom-link"
+              to={`/main-category/${Name}`}
+            >
+                <img src={img} />
+                <p>{Name}</p>
                 </Link>
               </SwiperSlide>
+             
             );
           })}
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
+            <div className="swiper-button-prev"></div>
+           <div className="swiper-button-next"></div>
+           
         </Swiper>
       }
     </div>
