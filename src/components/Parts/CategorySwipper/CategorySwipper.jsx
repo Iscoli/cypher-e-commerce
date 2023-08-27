@@ -34,6 +34,7 @@ const CategorySwipper = () => {
           breakpoints={{
             374: {
               slidesPerView: 2,
+              
             },
             460: {
               slidesPerView: 3.25,
@@ -64,7 +65,7 @@ const CategorySwipper = () => {
           {categories.map(({ Name, img }, index) => {
             return (
              
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className="swiper-slide-centered">
                  <Link
               className="link-tag link custom-link"
               to={`/main-category/${Name}`}

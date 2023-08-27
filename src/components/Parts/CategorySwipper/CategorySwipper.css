@@ -12,19 +12,29 @@
 /* Adjust arrow position */
 .swiper-button-prev {
   left: 10px;
-  
 }
 
 .swiper-button-next {
   right: 10px;
-} 
-
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: 'next';
-  font-size: 20px; 
 }
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: 'prev';
-  font-size: 20px; 
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  font-size: 20px;
 }
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  font-size: 20px;
+}
+
+@media (max-width: 374px) {
+  .swiper-slide-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:20px;
+  }
+}
+  
