@@ -6,7 +6,7 @@ import CategoryPart from "../components/Parts/CategoryPart";
 import SubCategoryItem from "../components/Useables/SubCategoryItem";
 import { fetchSubCategory } from "../Redux";
 import { useDispatch } from "react-redux";
-import CategorySwipper from "../components/Parts/CategorySwipper";
+import CategorySwipper from "../components/Parts/CategorySwipper/CategorySwipper";
 
 function SubCategory() {
   const dispatch = useDispatch();

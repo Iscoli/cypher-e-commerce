@@ -44,7 +44,7 @@ function MainCategoryItem(props) {
     }
     getMainCategories()
 
-},[])
+},[props.param])
 
 const cartCount = (id) => {
   const product = categories?.find((item) => item.id === id);

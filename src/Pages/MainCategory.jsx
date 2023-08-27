@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { useParams,Link  } from 'react-router-dom';
 import Navbar from '../Header/Navbar';
-
+import CategorySwipper from '../components/Parts/CategorySwipper/CategorySwipper';
 import styles from '../Pages/PagesStyle/MainCategory.module.css';
 import { fetchMainCategory} from '../Redux';
 import { useSelector,useDispatch } from 'react-redux';
@@ -20,7 +20,7 @@ function MainCategory() {
    dispatch(fetchMainCategory(param))
     
     
-  },[])
+  },[param])
  
 
      
@@ -32,7 +32,7 @@ function MainCategory() {
          <div className={styles['category-part']}>
         <CategoryPart/>
         </div>
-
+         <CategorySwipper/>
         <div className={styles['main-item']}>
         <MainCategoryItem param={param} />
         </div>

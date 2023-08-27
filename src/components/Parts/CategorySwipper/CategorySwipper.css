@@ -1,0 +1,30 @@
+/* CategorySwipper.css
+
+/* Style the Swiper navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(255, 255, 255);
+  background: rgb(52, 211, 153);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+}
+
+/* Adjust arrow position */
+.swiper-button-prev {
+  left: 10px;
+  
+}
+
+.swiper-button-next {
+  right: 10px;
+} 
+
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+  font-size: 20px; 
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+  font-size: 20px; 
+}
