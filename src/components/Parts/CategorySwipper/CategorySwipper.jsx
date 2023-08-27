@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import './CategorySwipper.css';
+import "./CategorySwipper.css";
 import { Link } from "react-router-dom";
 import CategorySwipBox from "../../Useables/CategorySwipper/CategorySwipBox";
 import { useSelector, useDispatch } from "react-redux";
@@ -27,14 +27,13 @@ const CategorySwipper = () => {
           spaceBetween={12}
           slidesPerView={1}
           navigation={{
-            prevEl: '.swiper-button-prev',
-            nextEl: '.swiper-button-next',
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
           }}
           loop={true}
           breakpoints={{
             374: {
               slidesPerView: 2,
-              
             },
             460: {
               slidesPerView: 3.25,
@@ -64,24 +63,21 @@ const CategorySwipper = () => {
         >
           {categories.map(({ Name, img }, index) => {
             return (
-             
               <SwiperSlide key={index} className="swiper-slide-centered">
-                 <Link
-              className="link-tag link custom-link"
-              to={`/main-category/${Name}`}
-            >
+                <Link
+                  className="link-tag link custom-link"
+                  to={`/main-category/${Name}`}
+                >
                   <div className="swip-img">
-                <img src={img} />
-                 </div>
-                <p style={{fontSize:'0.84rem'}}>{Name}</p>
+                    <img src={img} />
+                  </div>
+                  <p style={{ fontSize: "0.84rem" }}>{Name}</p>
                 </Link>
               </SwiperSlide>
-             
             );
           })}
-            <div className="swiper-button-prev"></div>
-           <div className="swiper-button-next"></div>
-           
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
         </Swiper>
       }
     </div>

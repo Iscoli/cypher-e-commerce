@@ -56,12 +56,9 @@ function MainCategoryBox(props) {
         <div className="price-container">
           <div>
             <p>
-              {props.product.discount
-                ? `$${
-                    props.product.price -
-                    (props.product.price * props.product.discount) / 100
-                  }`
-                : ""}
+            {props.product.discount
+              ? `$${(props.product.price - (props.product.price * props.product.discount) / 100).toFixed(2)}`
+              : ""}
             </p>
           </div>
           <div>
