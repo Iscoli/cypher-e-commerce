@@ -28,20 +28,20 @@
   content: "prev";
   font-size: 20px;
 }
-.swip-img{
+.swip-img {
   align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 7px;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    width: 40px;
-    text-align: center !important;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    margin-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 7px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  text-align: center !important;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-left: 9px;
 }
-.swip-img img{
-  width:23px;
+.swip-img img {
+  width: 23px;
 }
 
 @media (max-width: 374px) {
@@ -49,7 +49,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 }
-  

@@ -35,19 +35,19 @@ function Swipper() {
       >
         <div className="mySwipper-container">
           <SwiperSlide>
-            <img className="swipper-img" src={Basket1} alt="Basket one" />
+            <img className="swipper-imgs" src={Basket1} alt="Basket one" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="swipper-img" src={Basket2} alt="Basket two" />
+            <img className="swipper-imgs" src={Basket2} alt="Basket two" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="swipper-img" src={Basket3} alt="Basket three" />
+            <img className="swipper-imgs" src={Basket3} alt="Basket three" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="swipper-img" src={Basket4} alt="Basket four" />
+            <img className="swipper-imgs" src={Basket4} alt="Basket four" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="swipper-img" src={Basket5} alt="Basket five" />
+            <img className="swipper-imgs" src={Basket5} alt="Basket five" />
           </SwiperSlide>
         </div>
       </Swiper>
