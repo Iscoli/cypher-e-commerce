@@ -5,19 +5,11 @@ import Pages from "../../Useables/Pages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../../Logo/Logo";
-import ItemModal from "./ItemModal/ItemModal";
-import { fetchCategory } from "../../../Redux";
-import { useSelector, useDispatch } from "react-redux";
+import MainItemModal from "./ItemModal/MainItemModal";
 
 
 function PhCategoryModal(props) {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchCategory());
-  }, []);
-  const data = useSelector((state) => state.categories);
-  const categories = Object.values(data.categories);
-  const menuItem = [];
+  
  
   return (
     <>
@@ -43,22 +35,8 @@ function PhCategoryModal(props) {
         <div className="phmodal-flex2"
          style={{padding:'0.6rem 1.8rem', marginBottom:'10px'
       }}>
-          <h3>All Categories</h3>
-          <hr></hr>
-          {data.loading ? (
-            <div>
-              <h3>loading....</h3>
-            </div>
-          ) : data.error ? (
-            <div>
-              <h3>{data.error}</h3>{" "}
-            </div>
-          ) : (
-            categories.map((item,index)=>{
-              return  <ItemModal key={index} item={item}  closeModalHandler={props.closeModalHandler} />
-            })
-            
-          )}
+        <MainItemModal closeModalHandler={props.closeModalHandler}/>
+         
 
           <h3>Pages</h3>
           <hr></hr>

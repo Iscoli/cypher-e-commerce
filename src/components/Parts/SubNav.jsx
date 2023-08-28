@@ -3,7 +3,7 @@
     import '../Parts/PartsStyle/SubNav.css';
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
     import {faAngleDown } from '@fortawesome/free-solid-svg-icons';
-   
+    import MainItemModal from './ProductModal/ItemModal/MainItemModal';
     import FCategoryModal from './FCategoryModal';
     import PagesModals from './PagesModal';
 
@@ -11,23 +11,25 @@
       const [open, setOpen] = useState(false);
       const [bude, setBude] = useState(false);
 
+      const closeModalHandler = ()=>{
+        setBude(false);
+        setOpen(!open);
+      }
         
       return <div className='main-subNav'>
              <div className='subNav-container'>
             <div className='subNav1'>
                <div className='flex-11'>
-               <div className='menu-trigger' onClick={()=>(setBude(false),setOpen(!open))}>
+               <div className='menu-trigger' onClick={closeModalHandler}>
                    Category     <FontAwesomeIcon  icon={faAngleDown}/> 
                </div>
-               <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>
-                <ul>
-                    <FCategoryModal text={'texta'}/> 
-                    <FCategoryModal text={'randa'}/> 
-                    <FCategoryModal text={'panda'}/> 
-                    <FCategoryModal text={'texta'}/> 
-                </ul>  
-                  </div> 
-
+              
+               <div className={` dropdown-menuu iscoli ${open? 'active' : 'inactive'}`}>
+                
+                <MainItemModal closeModalHandler={closeModalHandler} /> 
+                
+                </div> 
+                
                </div>
                <div className='flex-12'>
                  About Us

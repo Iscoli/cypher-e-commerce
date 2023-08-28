@@ -2,19 +2,24 @@
   width: 13px;
   height: 19px;
 }
-.arrow-left {
-  margin-top: 20px;
-}
+/* .arrow-left {
+  
+} */
 .arrow-down {
   transform: rotate(90deg);
-  margin-top: 19px;
 }
 .product-modal {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
-
+.categor-name{
+  font-size: 0.93rem;
+  white-space: nowrap;
+  margin-left:10px;
+  color: #4e4e4e;
+}
 .product-modal :hover {
   color: #20c997;
 }
