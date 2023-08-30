@@ -13,7 +13,7 @@ code {
 }
 * {
   box-sizing: border-box;
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 html::-webkit-scrollbar {
@@ -56,6 +56,9 @@ svg {
 }
 
 svg.svg-inline--fa.fa-angle-down {
+  vertical-align: middle;
+}
+svg.svg-inline--fa.fa-angle-up {
   vertical-align: middle;
 }
 

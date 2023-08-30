@@ -5,5 +5,23 @@
 
 .linke :hover{
   color:#20c997;
+  background-color:#20c997;
 }
 
+.pages-moda{
+  padding-top: 10px;
+  padding-bottom: 7px;
+  display: flex;
+  
+  align-items:center;
+
+}
+.moda-sptag{
+  margin-left:7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pages-moda svg{
+  vertical-align: initial;
+}

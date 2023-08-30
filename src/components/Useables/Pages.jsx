@@ -1,52 +1,70 @@
  import React from 'react'
  import { Link } from 'react-router-dom';
- import pages from '../UsablesCss/pages.css'
- function Pages(props) {
+ import  '../UsablesCss/Pages.css';
+ import { ReactComponent as Offer } from '../assets/offer.svg';
+ import { ReactComponent as FAQ } from '../assets/faqe.svg';
+ import { ReactComponent as NotFound } from '../assets/404e.svg';
+ import { ReactComponent as Privacy} from '../assets/privacy.svg';
+ import { ReactComponent as Contact } from '../assets/contact.svg';
+ import { ReactComponent as Check } from '../assets/check.svg';
+ import { ReactComponent as About } from '../assets/about.svg';
+ import { ReactComponent as Terms } from '../assets/tems.svg';
+ function Pages({closeModalHandler}) {
   const PagesItem = [
     {
-      path: "/",
+      path: "/offer",
       name: "Offer",
+      icon: <Offer/>
     },
     {
-      path: "/about",
+      path: "/check",
       name: "Checkout",
+      icon: <Check/>
     },
 
     {
       path: "/comment",
       name: "FAQ",
+      icon: <FAQ/>
     },
     {
-      path: "/product",
+      path: "/about",
       name: "About US",
+      icon: <About/>
     },
     {
       path: "/product",
       name: "Contact US",
+      icon: <Contact/>
     },
     {
       path: "/product",
       name: "Privacy Policy",
+      icon: <Privacy/>
     },
     {
       path: "/product",
       name: "Terms & Condition",
+      icon: <Terms/>
     },
     {
       path: "/product",
       name: "404",
+      icon: <NotFound/>
     },
   ];
    return (
      <div>
        
        {PagesItem.map((item, index) => (
-            <div key={index}>
-              <Link className='linke' to={`/${item.name}`} onClick={props.closeModalHandler}>
-                {" "}
-                <p>{item.name}</p>
+            
+              <Link className='linke' to={`${item.path}`} onClick={closeModalHandler}>
+                  <div key={index} className='pages-moda'>
+                    <span>{item.icon}</span>
+                    <span className='moda-sptag'>{item.name}</span>
+                 </div>
               </Link>
-            </div>
+           
           ))}
      </div>
    )

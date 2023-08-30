@@ -41,7 +41,7 @@ function ItemModal({ item, closeModalHandler }) {
                   key={index}
                   onClick={closeModalHandler}
                 >
-                  <p key={index}>
+                  <p style={{marginTop:'-8px'}} key={index}>
                     <span>- {subCategory}</span>
                   </p>
                 </Link>

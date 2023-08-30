@@ -5,6 +5,7 @@
 /* .arrow-left {
   
 } */
+
 .arrow-down {
   transform: rotate(90deg);
 }
@@ -19,6 +20,7 @@
   white-space: nowrap;
   margin-left:10px;
   color: #4e4e4e;
+  text-transform: capitalize;
 }
 .product-modal :hover {
   color: #20c997;
