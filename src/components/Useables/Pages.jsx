@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../UsablesCss/Pages.css";
+import "../UsablesCss/pages.css";
 import { ReactComponent as Offer } from "../assets/offer.svg";
 import { ReactComponent as FAQ } from "../assets/faqe.svg";
 import { ReactComponent as NotFound } from "../assets/404e.svg";
