@@ -58,8 +58,8 @@
        
        {PagesItem.map((item, index) => (
             
-              <Link className='linke' to={`${item.path}`} onClick={closeModalHandler}>
-                  <div key={index} className='pages-moda'>
+              <Link className='linke' key={index} to={`${item.path}`} onClick={closeModalHandler}>
+                  <div  className='pages-moda'>
                     <span>{item.icon}</span>
                     <span className='moda-sptag'>{item.name}</span>
                  </div>
