@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styles from "../UsablesCss/MainCategoryBoxModule.css";
+import { ReactComponent as AddCart } from "../assets/button.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcaseMedical } from "@fortawesome/free-solid-svg-icons";
 import { fetchCartData, decreaseProductQuantity } from "../../Redux";
@@ -41,7 +42,7 @@ function MainCategoryBox(props) {
 
   return (
     <div className="category-box">
-      <div>
+      <div className="product-img-container">
         <img
           className="products-img"
           src={props.product.imgUrl}
@@ -76,14 +77,18 @@ function MainCategoryBox(props) {
         </div>
 
         {cartCount(props.product.id) >= 1 ? (
-          <div className="cart-countnub">
-            <button onClick={() => handleAdd(props.product)}>+</button>
+          <div  className="cart-countnub">
+            <button
+             style={{cursor:'pointer'}} 
+             onClick={() => handleAdd(props.product)}>+</button>
             <span>{cartCount(props.product.id)}</span>
-            <button onClick={() => handleDecrease(props.product)}>-</button>
+            <button
+             style={{cursor:'pointer'}}
+             onClick={() => handleDecrease(props.product)}>-</button>
           </div>
         ) : (
-          <span>
-            <FontAwesomeIcon
+          <span style={{cursor:'pointer'}}>
+            <AddCart
               className="briefcase-icon"
               onClick={() => {
                 if (props.product.stock === 0) {
@@ -92,7 +97,7 @@ function MainCategoryBox(props) {
                   handleAdd(props.product);
                 }
               }}
-              icon={faBriefcaseMedical}
+           
               disabled={isStockOut}
             />
           </span>

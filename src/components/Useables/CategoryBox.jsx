@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../UsablesCss/CategoryBox.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 

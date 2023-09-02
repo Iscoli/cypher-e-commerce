@@ -2,12 +2,19 @@
   background-color: #fff;
   position: relative;
 }
+.product-img-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
 .products-img {
-  max-width: 116px;
-  width: 116px;
+  max-width: 96px;
+  width: 96px;
+  margin-top: 10px;
 }
 .weight-name {
   margin-top: -3px;
+  margin-left: 19px;
 }
 .weight-ptag {
   margin-top: -13px;
