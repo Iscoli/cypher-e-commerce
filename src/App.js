@@ -35,6 +35,7 @@ import AppSection from "./components/Parts/AppSection/AppSection";
 
 function App() {
   let persistor = persistStore(store);
+ 
 
   return (
     <Provider store={store}>
