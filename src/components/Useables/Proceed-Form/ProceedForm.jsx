@@ -20,6 +20,7 @@ function ProceedForm({
   shippingDetails,
   TotalAmount,
   roundedTotalDiscountedPriceSum,
+  finalAmount
 }) {
   const [amount, setAmount] = useState(0);
   const items = useSelector((state) => state?.cartdata?.product);
@@ -149,6 +150,7 @@ function ProceedForm({
       console.log(error);
     }
   };
+  
 
   return (
     <>
@@ -321,7 +323,10 @@ function ProceedForm({
               amount={amount}
               selectedOption={selectedOption}
               onStateTransfer={handleStateTransfer}
+              TotalPrice={TotalPrice}
+              finalAmount= {finalAmount}
             />
+            
           </div>
           <div className="submitBtn">
             <Link to="/" className="shoppiin">

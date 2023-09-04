@@ -7,15 +7,21 @@ import { useState } from "react";
 import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
 import { ReactComponent as PayStack } from "../../assets/pay-stark.svg";
 
-function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
+function PayStark({ formData,selectedOption, onStateTransfer,TotalPrice,finalAmount}) {
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
   const [cardOption, setCardOption] = useState("");
 
-  console.log(amount)
+ 
+
+
+
+
+
+
   useEffect(() => {
     // Call the function passed from the parent component whenever the states update
     onStateTransfer(isTransactionSuccessful, cardOption);
-  }, [isTransactionSuccessful, cardOption, onStateTransfer]);
+  }, [isTransactionSuccessful, cardOption, onStateTransfer,finalAmount]);
 
   const auth = getAuth();
 
@@ -47,13 +53,14 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
   const handleCardRadioChange = (e) => {
     setCardOption(e.target.value);
   };
-
-  const totalamount = parseFloat(amount + "00");
-
+   
+  const totalamount = parseInt(finalAmount);
+     
   const config = {
     reference: new Date().getTime().toString(),
     email,
-    amount: totalamount, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
+    // you can only send an integer 
+    amount:totalamount+'00', //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
     publicKey: "pk_test_5a4e23446df0c49c615306bdb20b6a22c3447915",
     phone: usernumber,
     metadata: {
@@ -64,8 +71,11 @@ function PayStark({ formData, amount, selectedOption, onStateTransfer }) {
       usercountry,
       usercity,
       useremail,
-    },
+    }
+    
   };
+  
+  
 
   const componentProps = {
     ...config,
