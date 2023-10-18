@@ -53,7 +53,11 @@ function MainCategoryBox(props) {
         <p className="weight-wtag">{props.product.weight}</p>
         <p className="weight-ptag">{props.product.name}</p>
       </div>
-      <div className="buttom-container">
+      <div className="buttom-container"
+      style={{position:'absolute',
+             width:'80%',
+            top:'76%' }}
+      >
         <div className="price-container">
           <div>
             <p>

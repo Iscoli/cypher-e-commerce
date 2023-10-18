@@ -35,7 +35,6 @@ import AppSection from "./components/Parts/AppSection/AppSection";
 
 function App() {
   let persistor = persistStore(store);
- 
 
   return (
     <Provider store={store}>
@@ -122,7 +121,7 @@ function App() {
 // Scroll to top on route change
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 

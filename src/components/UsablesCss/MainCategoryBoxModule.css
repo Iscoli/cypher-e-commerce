@@ -1,6 +1,7 @@
 .category-box {
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
   position: relative;
+ 
 }
 .product-img-container {
   display: flex;
@@ -13,8 +14,8 @@
   margin-top: 10px;
 }
 .weight-name {
-  margin-top: -3px;
   margin-left: 19px;
+  margin-bottom: 50px;
 }
 .weight-ptag {
   margin-top: -13px;
