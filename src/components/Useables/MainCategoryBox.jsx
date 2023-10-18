@@ -55,8 +55,8 @@ function MainCategoryBox(props) {
       </div>
       <div className="buttom-container"
       style={{position:'absolute',
-             width:'80%',
-            top:'76%' }}
+             width:'90%',
+            bottom:'5px' }}
       >
         <div className="price-container">
           <div>
