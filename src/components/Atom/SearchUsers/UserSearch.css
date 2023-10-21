@@ -15,6 +15,13 @@
   margin-top:5px;
 }
 
+
+
+.nav-input:focus {
+  outline: none;
+  
+}
+
 .search{
   position:absolute ;
   right:10px;

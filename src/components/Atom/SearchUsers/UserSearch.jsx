@@ -27,7 +27,8 @@ function UserSearch(){
     if(searchItem === ''){
       return;
     }else{
-      nav(`/search?query=${searchItem}`)
+      nav(`/search?query=${searchItem}`);
+      setSearchItem('')
     }
    }
 
