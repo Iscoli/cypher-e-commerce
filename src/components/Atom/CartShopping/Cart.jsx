@@ -6,7 +6,7 @@ import styles from '../CartShopping/Cart.moudle.css'
 
 function Cart(props){
    const data = useSelector(state => state.cartdata)
-   let cart = data.product.reduce((amount, item) => item.count + amount, 0);
+   let cart = data?.product?.reduce((amount, item) => item.count + amount, 0);
    return  <>
    <div className='cart-icon' onClick={props.CartToggle}><FontAwesomeIcon   className='svg' icon={faCartShopping}  />
    <div className='cartnumber'>{cart}</div></div>

@@ -1,0 +1,28 @@
+
+.swipper{
+  margin: 20px;
+
+}
+
+@media(max-width:768px){
+  .swipper{
+    
+    margin-top: 160px;
+  }
+}
+
+.result{
+  width:50%;
+}
+
+
+.sec3{
+  margin:10px 0;
+}
+
+
+
+.imgDiv{
+  display: flex;
+  justify-content: center;
+}

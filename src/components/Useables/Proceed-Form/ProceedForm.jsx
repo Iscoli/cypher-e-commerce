@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import React from "react";
 import "./ProceedForm.css";
-import { ReactComponent as ArrowLeft } from "../../assets/left-arrow.svg";
 import { ReactComponent as ArrowRight } from "../../assets/arrow-right.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { ReactComponent as Car } from "../../assets/car.svg";
@@ -28,7 +27,7 @@ function ProceedForm({
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const auth = getAuth();
-  const user = auth.currentUser;
+ 
 
   const [selectedOption, setSelectedOption] = useState("");
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
@@ -41,7 +40,7 @@ function ProceedForm({
 
   useEffect(() => {
     setAmount(TotalPrice);
-  }, []);
+  },[TotalPrice]);
 
   const [formData, setFormData] = useState({
     firstname: "",

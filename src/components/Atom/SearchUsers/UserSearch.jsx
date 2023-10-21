@@ -1,31 +1,37 @@
 import {useState} from 'react'
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './UserSearch.css'
+import './UserSearch.css';
+import { useNavigate } from 'react-router-dom';
+
+
+
 
 function UserSearch(){
+
+   const nav = useNavigate()
+
  
-    const [SearchItem, setSearchItem] = useState('')
+    const [searchItem, setSearchItem] = useState('')
 
   // const navigate = useNavigate();
+
+
+    const handleChange =(e)=>{
+        console.log(e.target.value);
+        setSearchItem(e.target.value);
+    }
+
    
-   const Search = (item)=>{
-            console.log('na him',item)
+   const onClick =()=>{
+    if(searchItem === ''){
+      return;
+    }else{
+      nav(`/search?query=${searchItem}`)
+    }
    }
 
 
-   const handleChange = (e) => setSearchItem(e.target.value)
-
-  const handleSubmit = ((e)=>{
-   e.preventDefault()
-         
-
-   Search(SearchItem)
-   setSearchItem('')
-
-  })
-  
-    console.log(SearchItem)
 
 
 
@@ -36,20 +42,24 @@ function UserSearch(){
  return(
   
     
-       <form onSubmit={handleSubmit}>
+       <form>
            <div className='main-SearchForm'>
             <div className='SearchForm'>
               <input
                 type='text'
                 className='nav-input'
                 placeholder='Search for products (e.g fish, apple, oil)'
-                value={SearchItem}
-                onChange={handleChange}
-                
+                value={searchItem}
+                onChange={handleChange}     
               />
               </div>
-              <div className='search'>
-              <FontAwesomeIcon style={{color: 'rgb(136, 136, 136)', fontSize: '20px'}} onClick={handleSubmit} className='Search-Button'   icon={faSearch}/> 
+  
+  
+              <div
+              style={{cursor:'pointer'}}
+               onClick={onClick}
+              className='search'>
+              <FontAwesomeIcon style={{color: 'rgb(136, 136, 136)', fontSize: '20px'}} className='Search-Button'   icon={faSearch}/> 
               
               </div>
               </div>

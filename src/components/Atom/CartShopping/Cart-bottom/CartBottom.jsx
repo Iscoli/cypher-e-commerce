@@ -4,10 +4,10 @@
     import { Link } from 'react-router-dom';
     
     function CartBottom({closeHandler}) {
-      const data = useSelector(state => state.cartdata);
-      const cart = [data.product]
-            const TotalPrice =cart ?. map((product,index)=>{
-        return ( product.reduce((a,c)=> a + c.price* c.count,0))
+      const data = useSelector(state => state?.cartdata);
+      const cart = [data?.product]
+            const TotalPrice =cart?.map((product,index)=>{
+        return ( product?.reduce((a,c)=> a + c.price* c.count,0))
       
       })
       return (

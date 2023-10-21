@@ -32,6 +32,7 @@ import IndexRoute from "./Pages/IndexRoute";
 import Proceeds from "./Pages/Proceeds";
 import OrderDetail from "./Pages/OrderDetail";
 import AppSection from "./components/Parts/AppSection/AppSection";
+import SearchPage from "./Pages/SearchPage";
 
 function App() {
   let persistor = persistStore(store);
@@ -91,6 +92,8 @@ function App() {
               <Route path="/privacy" element={<PrivacyPolicy />} />
 
               <Route path="/terms" element={<Terms />} />
+
+              <Route path="/search" element={<SearchPage />} />
 
               <Route path="/check" element={<PrivateRoute />}>
                 <Route path="/check" element={<Proceeds />} />
