@@ -39,6 +39,9 @@
   background: rgb(255, 255, 255);
   border-radius: 50%;
   margin-left: 9px;
+  position: absolute;
+  top: 0;
+  left: 28%;
 }
 .swip-img img {
   width: 23px;

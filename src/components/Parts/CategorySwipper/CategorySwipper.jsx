@@ -71,7 +71,13 @@ const CategorySwipper = () => {
                   <div className="swip-img">
                     <img src={img} />
                   </div>
-                  <p style={{ fontSize: "0.84rem" }}>{Name}</p>
+                  <p 
+                  style={{ fontSize: "0.84rem",
+                  marginTop:'50px',
+                  textAlign:'center'
+                  }}>
+                    {Name}
+                  </p>
                 </Link>
               </SwiperSlide>
             );
