@@ -102,7 +102,9 @@ function DashBoard() {
                 />
               </div>
 
-              <li className="dashboard-list" onClick={onLogout}>
+              <li 
+              style={{cursor:'pointer'}}
+              className="dashboard-list" onClick={onLogout}>
                 <LogOut /> LogOut
               </li>
             </ul>

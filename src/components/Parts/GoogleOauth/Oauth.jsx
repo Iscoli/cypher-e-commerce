@@ -37,7 +37,9 @@ function Oauth() {
 
   return (
     <>
-      <button className="google-auth-btn"  onClick={onClick}>
+      <button
+      style={{cursor:'pointer'}}
+      className="google-auth-btn"  onClick={onClick}>
       <p>Sign {location.pathname === '/sign-up' ? 'up' : 'in'} with Google</p>
       </button>
       
