@@ -4,16 +4,19 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .swipper-imgs {
-  width:99%;
+  width:95.9%;
   height: 360px; /* Adjust as needed */
   border-radius: 9px;
-  margin:2px;
+  margin:2px auto;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .main-swipper-flex1 {
@@ -54,6 +57,12 @@
   padding: 12px 24px;
   border-radius: 23px;
   color: #ffff;
+}
+.sliderText{
+  position: absolute;
+  z-index:30000;
+  top: 30%;
+  left:15%;
 }
 
 @media (max-width: 995px) {

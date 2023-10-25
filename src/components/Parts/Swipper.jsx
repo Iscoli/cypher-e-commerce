@@ -34,20 +34,45 @@ function Swipper() {
         className="mySwiper"
       >
         <div className="mySwipper-container">
-          <SwiperSlide>
+          <SwiperSlide 
+           style={{position:'relative'}}
+          >
             <img className="swipper-imgs" src={Basket1} alt="Basket one" />
+            <p
+             className="sliderText"
+            >Quality Freshness Guaranteed</p>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide 
+           style={{position:'relative'}}
+          >
             <img className="swipper-imgs" src={Basket2} alt="Basket two" />
+            <p
+             className="sliderText"
+            >Quality Freshness Guaranteed</p>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide 
+           style={{position:'relative'}}
+          >
             <img className="swipper-imgs" src={Basket3} alt="Basket three" />
+            <p
+             className="sliderText"
+            >Quality Freshness Guaranteed</p>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide 
+           style={{position:'relative'}}
+          >
             <img className="swipper-imgs" src={Basket4} alt="Basket four" />
+            <p
+             className="sliderText"
+            >Quality Freshness Guaranteed</p>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide 
+           style={{position:'relative'}}
+          >
             <img className="swipper-imgs" src={Basket5} alt="Basket five" />
+            <p
+             className="sliderText"
+            >Quality Freshness Guaranteed</p>
           </SwiperSlide>
         </div>
       </Swiper>
