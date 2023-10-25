@@ -22,7 +22,7 @@ import { useEffect,useState } from 'react';
            }
         },[auth.currentUser,email])
      
-        console.log(email,'hjajw')
+        console.log(email,'hjajw')  
       
 
     return  <div>
