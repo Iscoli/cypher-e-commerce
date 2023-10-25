@@ -92,11 +92,4 @@ const CategorySwipper = () => {
 
 export default CategorySwipper;
 
-// {slides.map((slide, index) => {
-//   return (
-//     <SwiperSlide key={index}>
-//       <div>{slide}</div>
-//       <CategorySwipBox categories={categories} data={data} />
-//     </SwiperSlide>
-//   );
-// })}
+

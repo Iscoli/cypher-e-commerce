@@ -1,28 +1,22 @@
-
-.swipper{
+.swipper {
   margin: 20px;
-
 }
 
-@media(max-width:768px){
-  .swipper{
-    
+@media (max-width: 768px) {
+  .swipper {
     margin-top: 160px;
   }
 }
 
-.result{
-  width:50%;
+.result {
+  width: 50%;
 }
 
-
-.sec3{
-  margin:50px 0;
+.sec3 {
+  margin: 50px 0;
 }
 
-
-
-.imgDiv{
+.imgDiv {
   display: flex;
   justify-content: center;
 }
