@@ -53,4 +53,7 @@
     justify-content: center;
     align-items: center;
   }
+  .swip-img{
+    left: 40px;
+  }
 }
