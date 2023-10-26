@@ -34,45 +34,70 @@ function Swipper() {
         className="mySwiper"
       >
         <div className="mySwipper-container">
-          <SwiperSlide 
-           style={{position:'relative'}}
-          >
+          <SwiperSlide style={{ position: "relative" }}>
             <img className="swipper-imgs" src={Basket1} alt="Basket one" />
-            <p
-             className="sliderText"
-            >Quality Freshness Guaranteed</p>
+            <div className="sliderText">
+              <h2>Quality Freshness Guaranteed</h2>
+              <p>
+                Intrinsically fashion performance based products rather than
+                accurate benefits
+              </p>
+              <Link to="/main-category/fish-meat">
+                <button className="btn1">Shop Now</button>
+              </Link>
+            </div>
           </SwiperSlide>
-          <SwiperSlide 
-           style={{position:'relative'}}
-          >
+          <SwiperSlide style={{ position: "relative" }}>
             <img className="swipper-imgs" src={Basket2} alt="Basket two" />
-            <p
-             className="sliderText"
-            >Quality Freshness Guaranteed</p>
+            <div className="sliderText">
+              <h2>Quality Freshness Guaranteed</h2>
+              <p>
+                Intrinsically fashion performance based products rather than
+                accurate benefits
+              </p>
+              <Link to="/main-category/snacks-instant">
+                <button className="btn1">Shop Now</button>
+              </Link>
+            </div>
           </SwiperSlide>
-          <SwiperSlide 
-           style={{position:'relative'}}
-          >
+          <SwiperSlide style={{ position: "relative" }}>
             <img className="swipper-imgs" src={Basket3} alt="Basket three" />
-            <p
-             className="sliderText"
-            >Quality Freshness Guaranteed</p>
+            <div className="sliderText">
+              <h2>Quality Freshness Guaranteed</h2>
+              <p>
+                Intrinsically fashion performance based products rather than
+                accurate benefits
+              </p>
+              <Link to="/main-category/household-tools">
+                <button className="btn1">Shop Now</button>
+              </Link>
+            </div>
           </SwiperSlide>
-          <SwiperSlide 
-           style={{position:'relative'}}
-          >
+          <SwiperSlide style={{ position: "relative" }}>
             <img className="swipper-imgs" src={Basket4} alt="Basket four" />
-            <p
-             className="sliderText"
-            >Quality Freshness Guaranteed</p>
+            <div className="sliderText">
+              <h2>Quality Freshness Guaranteed</h2>
+              <p>
+                Intrinsically fashion performance based products rather than
+                accurate benefits
+              </p>
+              <Link to="/main-category/fruits-vegetable">
+                <button className="btn1">Shop Now</button>
+              </Link>
+            </div>
           </SwiperSlide>
-          <SwiperSlide 
-           style={{position:'relative'}}
-          >
+          <SwiperSlide style={{ position: "relative" }}>
             <img className="swipper-imgs" src={Basket5} alt="Basket five" />
-            <p
-             className="sliderText"
-            >Quality Freshness Guaranteed</p>
+            <div className="sliderText">
+              <h2>Quality Freshness Guaranteed</h2>
+              <p>
+                Intrinsically fashion performance based products rather than
+                accurate benefits
+              </p>
+              <Link to="/main-category/breakfast">
+                <button className="btn1">Shop Now</button>
+              </Link>
+            </div>
           </SwiperSlide>
         </div>
       </Swiper>
@@ -87,7 +112,7 @@ function Swipper() {
           </p>
         </div>
         <div className="swipper-flex2">
-          <Link to="/">
+          <Link to="/main-category/fruits-vegetable">
             <button className="btn">Shop Now</button>
           </Link>
         </div>
