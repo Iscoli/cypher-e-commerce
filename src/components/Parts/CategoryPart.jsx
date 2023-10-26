@@ -9,14 +9,14 @@ function CategoryPart() {
     <div className="sec1">
       <div style={{position:'relative'}}>
         <img className="pic1" src={bread} alt="" />
-        {/* <div className="pic1Sub">
+        <div className="pic1Sub">
           <p>Taste of</p>
           <h3>fresh &amp; natural</h3>
           <p>Weekend discount offer</p>
           <div className="natural-btn">
             <button className="">shop now</button>
           </div>
-        </div> */}
+        </div>
       </div>
       <div>
         <img className="pic2" src={fish} alt="" />
