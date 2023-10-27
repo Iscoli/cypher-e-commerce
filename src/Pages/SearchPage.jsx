@@ -25,13 +25,13 @@ function SearchPage() {
       </section>
  
       <section
-      className={'swipper'}
+      className={'swipp'}
       >
         <CategorySwipper/>
       </section>
 
-      <section className={'sec3'}>
-        <div className={'imgDiv'}>
+      <section className={'stage3'}>
+        <div className={'resultDiv'}>
           <img 
           className={'result'}
            src={result}
