@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import CategoryPart from "../components/Parts/CategoryPart";
 import CategorySwipper from "../components/Parts/CategorySwipper/CategorySwipper";
 import result from  '../components/assets/ba-sakamako.svg';
-import styles from './PagesStyle/SearchPage.module.css';
+import  './PagesStyle/SearchPage.module.css';
 
 function SearchPage() {
 
@@ -23,17 +23,17 @@ function SearchPage() {
       <section>
         <CategoryPart/>
       </section>
-
+ 
       <section
-      className={styles.swipper}
+      className={'swipper'}
       >
         <CategorySwipper/>
       </section>
 
-      <section className={styles.sec3}>
-        <div className={styles.imgDiv}>
+      <section className={'sec3'}>
+        <div className={'imgDiv'}>
           <img 
-          className={styles.result}
+          className={'result'}
            src={result}
           />
         </div>
