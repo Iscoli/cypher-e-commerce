@@ -1,18 +1,18 @@
-.swipp {
+.cont {
   margin: 20px;
 }
 
 @media (max-width: 768px) {
-  .swipp {
-    margin-top: 160px;
+  .cont {
+    margin-top: 195px;
   }
 }
 
-.result {
+.resultImg {
   width: 50%;
 }
 
-.stage3 {
+.secn3 {
   margin: 50px 0;
 }
 
