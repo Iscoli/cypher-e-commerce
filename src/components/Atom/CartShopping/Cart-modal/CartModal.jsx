@@ -12,7 +12,9 @@ function CartModal(props) {
         className={props.bude ? "main-phmod cartaway " : "main-phmod carthere"}
       >
         <div className="cartmodal-nav">
-          <div className="shopping-cart">
+          <div className="shopping-cart"
+          style={{height:'10%'}}
+          >
             <div>
               <img src={Cart} alt="shopping cart" />
             </div>
@@ -36,6 +38,7 @@ function CartModal(props) {
         className={
           props.bude ? "main-botphmoda cartaway " : "main-botphmoda carthere"
         }
+       
       >
         <CartBottom closeHandler={props.closeModalHandler} />
       </div>
