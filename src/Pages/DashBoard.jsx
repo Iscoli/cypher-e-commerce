@@ -6,7 +6,7 @@ import { userDetails } from "../Redux";
 import { fetchAllUserOrders } from "../Redux";
 import { Outlet } from "react-router";
 import "../Pages/PagesStyle/DashBoard.css";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import DashBoardLink from "../components/Useables/DashBoardLink/DashBoardLink";
 import { ReactComponent as Profile } from "../components/assets/person-check.svg";
@@ -24,13 +24,15 @@ function DashBoard() {
 
   useEffect(() => {
     dispatch(fetchAllUserOrders(auth.currentUser.uid));
+    // eslint-disable-next-line
   }, [auth.currentUser.uid]);
 
-  const users = useSelector((state) => state.user);
+  // const users = useSelector((state) => state.user);
   useEffect(() => {
     if (user !== null) {
       dispatch(userDetails(user));
     }
+    // eslint-disable-next-line
   }, []);
 
   const navigate = useNavigate();
@@ -47,8 +49,8 @@ function DashBoard() {
         // ..
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        // const errorCode = error.code;
+        // const errorMessage = error.message;
         // ..
       });
   };
@@ -70,7 +72,9 @@ function DashBoard() {
               </div>
               {user ? (
                 <div className="email-circle">
-                  <img className="circle-img" src={photoURL} />{" "}
+                  <img className="circle-img" 
+                  alt='circle-img'
+                  src={photoURL} />{" "}
                 </div>
               ) : (
                 <div>

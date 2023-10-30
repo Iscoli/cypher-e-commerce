@@ -22,7 +22,7 @@ function AppSection() {
     <div className="appsection-container">
       <section className="AppSection Py5">
         <div>
-          <img className="appstore-img fir-img" src={Wtrolley} alt="picture" />
+          <img className="appstore-img fir-img" src={Wtrolley} alt="store-img" />
         </div>
         <div className="app-content">
           <div className="app-text">

@@ -29,7 +29,8 @@ function CheckOut() {
     const updatedDiscountedPrices = calculateDiscountedPrices();
 
     setDiscountedPrice(updatedDiscountedPrices);
-  }, [cart[0]]);
+    // eslint-disable-next-line
+  },[cart[0]]);
 
   const [totalDiscountedPriceSum, setTotalDiscountedPriceSum] = useState(0);
 
@@ -42,6 +43,7 @@ function CheckOut() {
   // useEffect to watch for changes in the discountedPrice array
   useEffect(() => {
     calculateTotalDiscountedPriceSum();
+    // eslint-disable-next-line
   }, [discountedPrice]); // This dependency array will trigger the effect whenever discountedPrice changes
 
   // Rounding the total discounted price sum to two decimal places
@@ -78,7 +80,7 @@ function CheckOut() {
             <div className="sum-total">
               <p>
                 <span>Subtotal</span>
-                {TotalPrice == 0 ? (
+                {TotalPrice === 0 ? (
                   <span>$00.00</span>
                 ) : (
                   <span>${TotalPrice}.00</span>
@@ -106,12 +108,12 @@ function CheckOut() {
 
               <h2>
                 <span>Total Cost</span>
-                {TotalAmount == 0 ? (
+                {TotalAmount === 0 ? (
                   <span>$00.00</span>
                 ) : (
                   <span>
                     ${TotalAmount}
-                    {roundedTotalDiscountedPriceSum == "0.00" ? ".00" : ""}{" "}
+                    {roundedTotalDiscountedPriceSum === "0.00" ? ".00" : ""}{" "}
                   </span>
                 )}
               </h2>

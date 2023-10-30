@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "../Pages/PagesStyle/Order.css";
 import { Link } from "react-router-dom";
-import DisplaySpinner from "../components/Atom/DisplaySpinner";
+// import DisplaySpinner from "../components/Atom/DisplaySpinner";
 
 function Orders() {
   const mainOrders = useSelector((state) => state.orders);

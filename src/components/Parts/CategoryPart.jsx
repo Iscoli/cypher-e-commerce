@@ -2,7 +2,7 @@ import React from "react";
 import bread from "../assets/Bread & bakery.webp";
 import fish from "../assets/fish & meat.webp";
 import fresh from "../assets/fresh & natural.webp";
-import styles from "./PartsStyle/CategoryPart.moudle.css";
+import "./PartsStyle/CategoryPart.moudle.css";
 import { Link } from "react-router-dom";
 
 function CategoryPart() {

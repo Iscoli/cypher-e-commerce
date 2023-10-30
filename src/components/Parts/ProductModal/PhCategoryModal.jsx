@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import "../ProductModal/PhCategoryModal.css";
 import Pages from "../../Useables/Pages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

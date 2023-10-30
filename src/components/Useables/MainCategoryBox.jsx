@@ -1,9 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import styles from "../UsablesCss/MainCategoryBoxModule.css";
+import  "../UsablesCss/MainCategoryBoxModule.css";
 import { ReactComponent as AddCart } from "../assets/button.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcaseMedical } from "@fortawesome/free-solid-svg-icons";
 import { fetchCartData, decreaseProductQuantity } from "../../Redux";
 import { useSelector, useDispatch } from "react-redux";
 

@@ -8,7 +8,7 @@ import '../Pages/PagesStyle/SignUp.css';
 import Oauth from '../components/Parts/GoogleOauth/Oauth';
 import visibilityIcon from '../components/assets/visibilityIcon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faEnvelope, faHeartPulse, faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope,  faLock, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate} from 'react-router';
 import {Link} from 'react-router-dom';
 import ForgotPwd from './ForgotPwd';

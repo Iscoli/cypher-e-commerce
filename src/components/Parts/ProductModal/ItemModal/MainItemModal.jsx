@@ -8,6 +8,7 @@ function MainItemModal({ closeModalHandler }) {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCategory());
+    // eslint-disable-next-line
   }, []);
   const data = useSelector((state) => state.categories);
   const categories = Object.values(data.categories);

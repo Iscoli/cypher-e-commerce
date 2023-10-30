@@ -32,7 +32,9 @@ function SearchPage() {
           <div className={styles.resultDiv}>
             {" "}
             {/* Use CSS module class */}
-            <img className={styles.resultImg} src={result} />
+            <img className={styles.resultImg}
+            alt='result-img'
+            src={result} />
           </div>
           <p style={{ textAlign: "center" }}>
             Sorry, we cannot find this product 😞

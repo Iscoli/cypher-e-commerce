@@ -10,23 +10,23 @@ function OrderDetail({ invoices }) {
   const {
     senderName,
     items,
-    senderAddress,
-    firstName,
-    lastName,
+    // senderAddress,
+    // firstName,
+    // lastName,
     email,
     address,
-    country,
-    code,
+    // country,
+    // code,
     city,
     number,
     totalPriceInCart,
     totalPriceToPay,
-    shipping_cost,
-    order_id,
+    // shipping_cost,
+    // order_id,
     invoice,
     discountPrice,
     status,
-    userRef,
+    // userRef,
     created_at,
   } = invoices;
 
@@ -85,7 +85,7 @@ function OrderDetail({ invoices }) {
           </thead>
           {items?.map((order, index) => {
             console.log(order, "ooorr");
-            const { status, name, count, price } = order;
+            const { name, count, price } = order;
             return (
               <tbody key={index}>
                 <tr>

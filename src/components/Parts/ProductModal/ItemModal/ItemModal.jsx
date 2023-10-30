@@ -19,7 +19,8 @@ function ItemModal({ item, closeModalHandler }) {
         <div>
           <div className="product-modal">
             <div className="modalimg-container" onClick={Toggle}>
-              <img className="main-modalimg" src={item.img} />
+              <img className="main-modalimg" src={item.img}
+              alt='item-img' />
               <span className="categor-name">{item.Name}</span>
             </div>
 

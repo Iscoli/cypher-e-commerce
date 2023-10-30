@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import MainCategoryBox from "./MainCategoryBox";
-import styles from "../UsablesCss/MainCategoryItem.moudle.css";
+import  "../UsablesCss/MainCategoryItem.moudle.css";
 import axios from "axios";
-import { useSelector } from "react-redux";
+
 
 function MainCategoryItem(props) {
   // const data = useSelector(state => state.maincategories)
@@ -37,6 +37,7 @@ function MainCategoryItem(props) {
       }
     };
     getMainCategories();
+    // eslint-disable-next-line
   }, [props.param]);
 
   const cartCount = (id) => {
@@ -50,7 +51,7 @@ function MainCategoryItem(props) {
     <div className="product">
       {categories.map(
         ([name, product], index) => (
-          (<span>{cartCount(product.id)}</span>),
+          (<span>{cartCount(product.id)}</span>)
           (<MainCategoryBox name={name} product={product} key={index} />)
         )
       )}

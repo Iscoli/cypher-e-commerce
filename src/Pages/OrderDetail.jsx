@@ -15,6 +15,7 @@ function OrderDetail() {
      
       useEffect(()=>{
         dispatch(fetchOrderDetails( orderDetails))
+        // eslint-disable-next-line
       },[orderDetails])
        
       console.log(invoices.error,'iniin')

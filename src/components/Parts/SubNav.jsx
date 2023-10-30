@@ -22,7 +22,7 @@
                <div className='flex-11'>
                <div className='menu-trigger' 
                style={{cursor:"pointer"}}
-               onClick={()=>(setOpen(!open),setBude(false))}>
+               onClick={()=>{setOpen(!open);setBude(false);}}>
                    Category     <FontAwesomeIcon  icon={open? faAngleUp : faAngleDown}/> 
                </div>
               
@@ -49,7 +49,11 @@
                 </Link>
                </div>
                <div className='flex-14'> 
-               <div className='menu-trigge' onClick={()=>(setBude(!bude),setOpen(false))}>
+               <div className='menu-trigge'onClick={() => {
+                                                        setBude(!bude);
+                                                        setOpen(false);
+                                                      }}
+                                                      >
                    Pages     <FontAwesomeIcon icon={bude? faAngleUp : faAngleDown}/> 
                </div>
                <div className={`dropdown-menus ${bude? 'active' : 'inactive'}`}>

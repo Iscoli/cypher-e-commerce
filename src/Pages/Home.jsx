@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import Navbar from "../Header/Navbar";
+import { useEffect } from "react";
 import Swipper from "../components/Parts/Swipper";
 import "./PagesStyle/Home.css";
 import FeaturedCategories from "../components/Parts/FeaturedCategories";
@@ -12,6 +10,7 @@ function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCategory());
+    // eslint-disable-next-line
   }, []);
   const data = useSelector((state) => state.categories);
 

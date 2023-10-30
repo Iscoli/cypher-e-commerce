@@ -1,7 +1,7 @@
-    import React, { useEffect, usestate } from "react";
+    import React, { useEffect} from "react";
     import { toast } from "react-toastify";
     import { PaystackConsumer } from "react-paystack";
-    import { getAuth, updateProfile } from "firebase/auth";
+    import { getAuth} from "firebase/auth";
     import "./PayStack.css";
     import { useState } from "react";
     import { ReactComponent as CashDelivery } from "../../assets/delivery.svg";
@@ -54,10 +54,7 @@
         console.log("closed");
       };
 
-      const handleCardRadioChange = (e) => {
-        setCardOption(e.target.value);
-      };
-
+    
       const totalamount = parseInt(finalAmount);
 
       const config = {

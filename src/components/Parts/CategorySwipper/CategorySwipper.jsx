@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { fetchCategory } from "../../../Redux";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y } from "swiper";
@@ -6,15 +6,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./CategorySwipper.css";
 import { Link } from "react-router-dom";
-import CategorySwipBox from "../../Useables/CategorySwipper/CategorySwipBox";
 import { useSelector, useDispatch } from "react-redux";
 
 const CategorySwipper = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCategory());
-  }, []);
-  console.log("hello wolr");
+
+  },);
+
   const data = useSelector((state) => state.categories);
 
   const categories = Object.values(data.categories);
@@ -69,7 +69,8 @@ const CategorySwipper = () => {
                   to={`/main-category/${Name}`}
                 >
                   <div className="swip-img">
-                    <img src={img} />
+                    <img src={img} 
+                    alt='mentos'/>
                   </div>
                   <p
                     style={{

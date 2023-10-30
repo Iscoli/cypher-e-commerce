@@ -11,7 +11,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import SubNav from "../components/Parts/SubNav";
 import CartModal from "../components/Atom/CartShopping/Cart-modal/CartModal";
-import Backdrop from "./Backdrop";
+
 
 function Navbar() {
   const [open, setOpen] = useState(true);

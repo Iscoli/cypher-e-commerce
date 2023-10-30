@@ -8,7 +8,6 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import Oauth from "../components/Parts/GoogleOauth/Oauth";
-import AppSection from "../components/Parts/AppSection/AppSection";
 import ForgotPwd from "./ForgotPwd";
 
 function SignIn() {

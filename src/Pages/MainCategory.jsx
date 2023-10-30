@@ -1,13 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
 import { useEffect } from 'react';
-import axios from 'axios';
-import { useParams,Link  } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import Navbar from '../Header/Navbar';
 import CategorySwipper from '../components/Parts/CategorySwipper/CategorySwipper';
 import styles from '../Pages/PagesStyle/MainCategory.module.css';
 import { fetchMainCategory} from '../Redux';
-import { useSelector,useDispatch } from 'react-redux';
+import {useDispatch } from 'react-redux';
 import MainCategoryItem from '../components/Useables/MainCategoryItem';
 import CategoryPart from '../components/Parts/CategoryPart';
 function MainCategory() {
@@ -19,7 +17,7 @@ function MainCategory() {
    
    dispatch(fetchMainCategory(param))
     
-    
+    // eslint-disable-next-line
   },[])
  
 

@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { getAuth, updateProfile } from "firebase/auth";
 import "./PagesStyle/profile.css";
 import { updateDoc, doc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { db, storage } from "../firebase.config";
-import axios from "axios";
-import Navbar from "../Header/Navbar";
+
 
 function Profile() {
   const [changeDetails, setChangeDetails] = useState(false);
   const auth = getAuth();
 
-  const { displayName, email, uid, photoURL, phoneNumber } = auth.currentUser;
+  const {uid} = auth.currentUser;
 
   const [formData, setFormData] = useState({
     username: auth.currentUser.displayName,
