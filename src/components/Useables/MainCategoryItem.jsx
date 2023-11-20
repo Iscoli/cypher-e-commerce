@@ -2,7 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import MainCategoryBox from "./MainCategoryBox";
+import  "../UsablesCss/MainCategoryItem.moudle.css";
 import axios from "axios";
+
 
 function MainCategoryItem(props) {
   // const data = useSelector(state => state.maincategories)
@@ -46,13 +48,13 @@ function MainCategoryItem(props) {
 
   return (
     <div className="product">
-    {categories.map(([name, product], index) => (
-      <div key={index}>
-        <span>{cartCount(product.id)}</span>
-        <MainCategoryBox name={name} product={product} />
-      </div>
-    ))}
-  </div>
+      {categories.map(
+        ([name, product], index) => (
+          (<span>{cartCount(product.id)}</span>),
+          (<MainCategoryBox name={name} product={product} key={index} />)
+        )
+      )}
+    </div>
   );
 }
 

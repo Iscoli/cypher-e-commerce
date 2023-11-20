@@ -23,7 +23,8 @@ function UserSearch(){
     }
 
    
-   const onClick =()=>{
+   const handleSubmit =(e)=>{
+    e.preventDefault();
     if(searchItem === ''){
       return;
     }else{
@@ -43,7 +44,7 @@ function UserSearch(){
  return(
   
     
-       <form>
+       <form onSubmit={handleSubmit}>
            <div className='main-SearchForm'>
             <div className='SearchForm'>
               <input
@@ -58,7 +59,7 @@ function UserSearch(){
   
               <div
               style={{cursor:'pointer'}}
-               onClick={onClick}
+              onClick={handleSubmit}
               className='search'>
               <FontAwesomeIcon style={{color: 'rgb(136, 136, 136)', fontSize: '20px'}} className='Search-Button'   icon={faSearch}/> 
               

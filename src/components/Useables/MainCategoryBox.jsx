@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import  "../UsablesCss/MainCategoryBoxModule.css";
+import "../UsablesCss/MainCategoryBoxModule.css";
 import { ReactComponent as AddCart } from "../assets/button.svg";
 import { fetchCartData, decreaseProductQuantity } from "../../Redux";
 import { useSelector, useDispatch } from "react-redux";
@@ -51,10 +51,9 @@ function MainCategoryBox(props) {
         <p className="weight-wtag">{props.product.weight}</p>
         <p className="weight-ptag">{props.product.name}</p>
       </div>
-      <div className="buttom-container"
-      style={{position:'absolute',
-             width:'90%',
-            bottom:'5px' }}
+      <div
+        className="buttom-container"
+        style={{ position: "absolute", width: "90%", bottom: "5px" }}
       >
         <div className="price-container">
           <div>
@@ -79,17 +78,23 @@ function MainCategoryBox(props) {
         </div>
 
         {cartCount(props.product.id) >= 1 ? (
-          <div  className="cart-countnub">
+          <div className="cart-countnub">
             <button
-             style={{cursor:'pointer'}} 
-             onClick={() => handleAdd(props.product)}>+</button>
+              style={{ cursor: "pointer" }}
+              onClick={() => handleAdd(props.product)}
+            >
+              +
+            </button>
             <span>{cartCount(props.product.id)}</span>
             <button
-             style={{cursor:'pointer'}}
-             onClick={() => handleDecrease(props.product)}>-</button>
+              style={{ cursor: "pointer" }}
+              onClick={() => handleDecrease(props.product)}
+            >
+              -
+            </button>
           </div>
         ) : (
-          <span style={{cursor:'pointer'}}>
+          <span style={{ cursor: "pointer" }}>
             <AddCart
               className="briefcase-icon"
               onClick={() => {
@@ -99,7 +104,6 @@ function MainCategoryBox(props) {
                   handleAdd(props.product);
                 }
               }}
-           
               disabled={isStockOut}
             />
           </span>
@@ -108,7 +112,12 @@ function MainCategoryBox(props) {
 
       <p className="discount-ptag">
         {props.product.discount ? (
-          <span className="discount">{`${props.product.discount}% off`} </span>
+          <span
+            style={{ display: props.product.stock ? "block" : "none" }}
+            className="discount"
+          >
+            {`${props.product.discount}% off`}{" "}
+          </span>
         ) : (
           ""
         )}
