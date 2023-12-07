@@ -1,11 +1,13 @@
-import React from 'react'
+import OfferHeader from "../components/Parts/offerHeader/OfferHeader";
 
 function Offer() {
+  const title='Offer'
   return (
     <div>
-       <h1>Offer</h1>
+      <OfferHeader title={title} />
+      <h1>Offer</h1>
     </div>
-  )
+  );
 }
 
-export default Offer
+export default Offer;

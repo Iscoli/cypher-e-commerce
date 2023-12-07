@@ -1,0 +1,28 @@
+.faqContainer {
+  width: 100%;
+}
+
+.flex1 {
+  width: 90%;
+}
+
+.flex2 {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .faqContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .flex1 {
+    flex-basis: 37%;
+  }
+
+  .flex1 {
+    flex-basis: 41%;
+  }
+}

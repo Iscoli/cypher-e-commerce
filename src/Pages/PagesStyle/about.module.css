@@ -1,0 +1,78 @@
+.mainContainer {
+  position: block;
+  margin-top: 4rem;
+  margin-bottom: 60px;
+}
+
+.siginBg {
+  margin-bottom: 2rem;
+  padding: 4.8rem;
+}
+
+.sec1 {
+  text-align: center;
+}
+
+.abtImage {
+  width: 80%;
+}
+
+.flex2 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.flex4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutInfo {
+  background: rgb(238, 242, 255);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 10px;
+}
+
+@media (min-width: 995px) {
+  .mainContainer {
+    position: block;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    padding-top: 2.5rem;
+  }
+  .flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .flex4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .aboutInfo {
+    background: rgb(238, 242, 255);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px;
+    text-align: left;
+  }
+
+  .abtImage {
+    width: 100%;
+  }
+  .flex1 {
+    flex-basis: 50%;
+  }
+  .flex1 p {
+    font-size: 1.05rem;
+  }
+
+  .flex2 {
+    flex-basis: 40%;
+  }
+}

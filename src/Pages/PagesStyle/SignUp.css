@@ -20,17 +20,15 @@
 .showPassword {
   position: absolute;
   right: 15px;
-  
 }
 .faEnvelope {
   position: absolute;
   width: 30px;
-  
 }
 .emailInputDiv {
   display: flex;
   flex-direction: column;
-  margin-bottom:1.5rem;
+  margin-bottom: 1.5rem;
 }
 .emailInputDiv input {
   max-width: 100%;

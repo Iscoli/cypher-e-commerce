@@ -22,7 +22,11 @@ function AppSection() {
     <div className="appsection-container">
       <section className="AppSection Py5">
         <div>
-          <img className="appstore-img fir-img" src={Wtrolley} alt="store-img" />
+          <img
+            className="appstore-img fir-img"
+            src={Wtrolley}
+            alt="store-img"
+          />
         </div>
         <div className="app-content">
           <div className="app-text">
@@ -64,24 +68,79 @@ function AppSection() {
       <section className="company-container">
         <div>
           <h1>Company</h1>
-          <p>About us</p>
-          <p>Contact us</p>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/about"
+          >
+            {" "}
+            <p>About us</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/contact"
+          >
+            {" "}
+            <p>Contact us</p>
+          </Link>
           <p>Careers</p>
           <p>Latest News</p>
         </div>
+
         <div>
           <h1>Top Category</h1>
-          <p>Fish & Meat</p>
-          <p>Soft Drinks</p>
-          <p>Baby Care</p>
-          <p>Beauty & Health</p>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="main-category/fish-meat"
+          >
+            <p>Fish & Meat</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="main-category/drinks"
+          >
+            <p>Soft Drinks</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="main-category/baby-care"
+          >
+            {" "}
+            <p>Baby Care</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="main-category/beauty-health"
+          >
+            <p>Beauty & Health</p>
+          </Link>
         </div>
         <div>
           <h1>My Account</h1>
-          <p>My Orders</p>
-          <p> Dashboard</p>
-          <p>Recent Orders</p>
-          <p>Updated Profile</p>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/DashBoard/my-orders"
+          >
+            {" "}
+            <p>My Orders</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/DashBoard"
+          >
+            <p> Dashboard</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/DashBoard/orders"
+          >
+            <p>Recent Orders</p>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/DashBoard/profile"
+          >
+            <p>Updated Profile</p>
+          </Link>
         </div>
         <div>
           <Cypher className="cypher-bottom" />

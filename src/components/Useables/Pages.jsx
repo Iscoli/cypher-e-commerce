@@ -23,7 +23,7 @@ function Pages({ closeModalHandler }) {
     },
 
     {
-      path: "/comment",
+      path: "/faq",
       name: "FAQ",
       icon: <FAQ />,
     },
@@ -33,7 +33,7 @@ function Pages({ closeModalHandler }) {
       icon: <About />,
     },
     {
-      path: "/product",
+      path: "/contact",
       name: "Contact US",
       icon: <Contact />,
     },

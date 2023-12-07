@@ -41,7 +41,7 @@ function CartItem() {
           <div key={id}>
             <div className="cart-container">
               <div className="cart-imagediv">
-                <img className="cart-img" src={imgUrl} />
+                <img className="cart-img" alt='cart-pic'src={imgUrl} />
               </div>
               <div className="cart-details">
                 <div>

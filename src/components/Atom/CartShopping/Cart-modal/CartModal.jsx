@@ -2,7 +2,6 @@ import React from "react";
 import "./CartModal.moudle.css";
 import Cart from "../assets/cart-add.svg";
 import CartItem from "../Cart-Item/CartItem";
-import { Link } from "react-router-dom";
 import CartBottom from "../Cart-bottom/CartBottom";
 
 function CartModal(props) {
