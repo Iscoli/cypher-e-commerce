@@ -1,6 +1,107 @@
-.boxDiv{
+.sec1 {
+  width: 90%;
+  margin: 0 auto;
+}
+.sec2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.div1,
+.div2,
+.div3 {
+  margin-top: 20px;
+}
+
+.myContainer {
+  display: grid;
+  grid-gap: 2rem;
+}
+.form input {
+  width: 100%;
+  height: 6vh;
+  border: 1px solid #e6dfdf;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.form textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e6dfdf;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+.form button {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.boxDiv {
   border: 1px solid #eef2ff;
   border-radius: 10px;
   padding: 1.75rem;
   text-align: center;
+  background-color: #fff;
+  margin: "0 2rem";
+}
+
+.contactImg {
+  display: none;
+}
+.form label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0.01rem;
+  display: block; /* Ensures each label is on a new line */
+}
+
+@media (min-width: 768px) {
+  .myContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contactImg {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .myContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sec2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .flex1 {
+    flex-basis: 40%;
+  }
+  .flex2 {
+    flex-basis: 40%;
+  }
+  .mainDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .form button {
+    width: 50%;
+  }
 }

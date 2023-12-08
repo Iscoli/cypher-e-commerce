@@ -27,7 +27,6 @@ function ProceedForm({
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const auth = getAuth();
- 
 
   const [selectedOption, setSelectedOption] = useState("");
   const [isTransactionSuccessful, setTransactionSuccessful] = useState(false);
@@ -40,7 +39,7 @@ function ProceedForm({
 
   useEffect(() => {
     setAmount(TotalPrice);
-  },[TotalPrice]);
+  }, [TotalPrice]);
 
   const [formData, setFormData] = useState({
     firstname: "",

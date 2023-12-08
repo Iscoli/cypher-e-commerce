@@ -38,17 +38,17 @@ function Pages({ closeModalHandler }) {
       icon: <Contact />,
     },
     {
-      path: "/product",
+      path: "/privacy",
       name: "Privacy Policy",
       icon: <Privacy />,
     },
     {
-      path: "/product",
+      path: "/terms",
       name: "Terms & Condition",
       icon: <Terms />,
     },
     {
-      path: "/product",
+      path: "/*",
       name: "404",
       icon: <NotFound />,
     },
