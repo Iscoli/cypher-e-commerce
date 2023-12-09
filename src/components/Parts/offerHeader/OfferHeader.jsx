@@ -1,19 +1,17 @@
- import React from 'react';
- import styles from './offerHeader.module.css'
- 
- function offerHeader({title}) {
+import React from "react";
+import styles from "./offerHeader.module.css";
 
-   return (
+function offerHeader({ title }) {
+  return (
     <div className={styles.mainContainer}>
-    <div
-      style={{ fontSize: "1.8rem" }}
-      className={`${styles.siginBg} ${styles.sharedPagesDiv}`}
-    >
-     <h5>{title}</h5>
+      <div
+        style={{ fontSize: "1.8rem" }}
+        className={`${styles.siginBg} ${styles.sharedPagesDiv}`}
+      >
+        <h5>{title}</h5>
+      </div>
     </div>
-    </div>
-   )
- }
- 
- export default offerHeader
- 
+  );
+}
+
+export default offerHeader;

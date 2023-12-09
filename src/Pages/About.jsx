@@ -3,10 +3,10 @@ import styles from "./PagesStyle/about.module.css";
 import OfferHeader from "../components/Parts/offerHeader/OfferHeader";
 
 function About() {
-  const title = 'About'
+  const title = "About";
   return (
     <div>
-      <OfferHeader title={title}/>
+      <OfferHeader title={title} />
       <div style={{ padding: "1.5rem" }}>
         <section className={`${styles.flex} ${styles.sec1}`}>
           <div className={styles.flex1}>

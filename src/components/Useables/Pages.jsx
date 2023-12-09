@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../UsablesCss/pages.css";
-import { ReactComponent as Offer } from "../assets/offer.svg";
+// import { ReactComponent as Offer } from "../assets/offer.svg";
 import { ReactComponent as FAQ } from "../assets/faqe.svg";
 import { ReactComponent as NotFound } from "../assets/404e.svg";
 import { ReactComponent as Privacy } from "../assets/privacy.svg";
@@ -11,11 +11,11 @@ import { ReactComponent as About } from "../assets/about.svg";
 import { ReactComponent as Terms } from "../assets/tems.svg";
 function Pages({ closeModalHandler }) {
   const PagesItem = [
-    {
-      path: "/offer",
-      name: "Offer",
-      icon: <Offer />,
-    },
+    // {
+    //   path: "/offer",
+    //   name: "Offer",
+    //   icon: <Offer />,
+    // },
     {
       path: "/check",
       name: "Checkout",

@@ -99,7 +99,9 @@ function Terms() {
         <div className={styles.textDiv}>
           <h4>Your Privacy</h4>
           <p>
-            Please read <Link to="/privacy">Privacy Policy</Link>
+            Please read <Link 
+            className={styles.privacy}
+            to="/privacy">Privacy Policy</Link>
           </p>
         </div>
 

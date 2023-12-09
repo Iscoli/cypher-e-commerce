@@ -51,8 +51,10 @@ function PrivacyPolicy() {
           </p>
 
           <ul>
-           <li>Provide, operate, and maintain our website, to provide you with
-            updates and other information.</li> 
+            <li>
+              Provide, operate, and maintain our website, to provide you with
+              updates and other information.
+            </li>
             <li>
               Improve, personalize, and expand our website,and other information
               relating to the website.

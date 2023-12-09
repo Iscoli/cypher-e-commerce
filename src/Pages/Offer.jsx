@@ -1,7 +1,7 @@
 import OfferHeader from "../components/Parts/offerHeader/OfferHeader";
 
 function Offer() {
-  const title='Offer'
+  const title='Mega  Offer'
   return (
     <div>
       <OfferHeader title={title} />
