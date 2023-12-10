@@ -6,6 +6,11 @@ import { fetchCategory } from "../Redux";
 import CategoryItem from "../components/Useables/CategoryItem";
 import PopularItem from "../components/Useables/PopularItem";
 import { useSelector, useDispatch } from "react-redux";
+import DeliveryBox from '../components/Parts/DeliveryBox/DeliveryBox';
+
+
+
+
 function Home() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -32,6 +37,10 @@ function Home() {
           </div>
           <div className="section-3">
             <PopularItem />
+          </div>
+
+          <div style={{width:'95%', margin:'35px auto'}} className="div">
+            <DeliveryBox/>
           </div>
         </div>
       </div>

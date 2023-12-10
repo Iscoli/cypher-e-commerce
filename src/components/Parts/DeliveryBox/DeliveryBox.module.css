@@ -1,0 +1,56 @@
+.DeliveryContainer {
+  background: #10b981;
+  border-radius: 10px;
+  padding: 2.5rem 2.5rem;
+}
+
+.InnerContainer {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.btn {
+  background: #10b981;
+  border-color: #10b981;
+  cursor: pointer;
+  padding: 0.6rem 1.8rem;
+  color: #fff;
+  border-radius:50rem;
+}
+
+.flex2{
+  display: none;
+}
+
+.flex1 span{
+    color: #10b981;
+}
+
+.organic{
+  font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+@media(min-width:768px){
+ .InnerContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ } 
+
+ .flex1{
+  flex-basis:50%;
+ }
+
+ .flex2{
+  display: block;
+  flex-direction:30%;
+  
+ }
+ .flex2 img{
+  width:80%;
+ }
+}
