@@ -153,6 +153,7 @@ function Profile() {
           disabled={!changeDetails}
           style={{
             cursor: !changeDetails ? "not-allowed" : "pointer",
+            
           }}
         />
       </form>
@@ -167,7 +168,9 @@ function Profile() {
               setChangeDetails((prevState) => !prevState);
             }}
           >
-            {changeDetails ? "Done" : "Edit Profile"}
+            {changeDetails ?
+            <button className="warning-btn">Update Profile</button> :
+            <button  className="Edit-btn">Edit Profile</button>}
           </p>
         </div>
 
@@ -177,7 +180,8 @@ function Profile() {
               setChangeDetails((prevState) => !prevState);
             }}
           >
-            {changeDetails ? "Cancel" : ""}
+            {changeDetails ? 
+            <button  className="Cancel-btn">Cancel</button> : ""}
           </p>
         </div>
       </div>

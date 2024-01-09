@@ -68,7 +68,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
 }
 @media (min-width: 450px) {
@@ -80,7 +79,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
 }
 @media (min-width: 550px) {
@@ -92,7 +90,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
 }
 @media (min-width: 590px) {
@@ -104,7 +101,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
 }
 
@@ -117,7 +113,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
 }
 @media (min-width: 850px) {
@@ -129,7 +124,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
   .categoty-name {
     font-size: 0.85rem;
@@ -146,7 +140,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
   .categoty-name {
     font-size: 0.85rem;
@@ -162,7 +155,6 @@
     grid-gap: 0.2rem;
     justify-content: center;
     align-self: center;
-   
   }
   .box-contain {
     display: flex;
@@ -197,7 +189,6 @@
     grid-gap: 0.4rem;
     justify-content: center;
     align-self: center;
-   
   }
   .category-img {
     padding: 5px;

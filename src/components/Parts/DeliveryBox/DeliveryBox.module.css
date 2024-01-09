@@ -16,41 +16,38 @@
   cursor: pointer;
   padding: 0.6rem 1.8rem;
   color: #fff;
-  border-radius:50rem;
+  border-radius: 50rem;
 }
 
-.flex2{
+.flex2 {
   display: none;
 }
 
-.flex1 span{
-    color: #10b981;
+.flex1 span {
+  color: #10b981;
 }
 
-.organic{
+.organic {
   font-size: 1.2rem;
-    font-weight: 500;
+  font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  .InnerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
+  .flex1 {
+    flex-basis: 50%;
+  }
 
-@media(min-width:768px){
- .InnerContainer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- } 
-
- .flex1{
-  flex-basis:50%;
- }
-
- .flex2{
-  display: block;
-  flex-direction:30%;
-  
- }
- .flex2 img{
-  width:80%;
- }
+  .flex2 {
+    display: block;
+    flex-direction: 30%;
+  }
+  .flex2 img {
+    width: 80%;
+  }
 }

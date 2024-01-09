@@ -72,9 +72,7 @@ function DashBoard() {
               </div>
               {user ? (
                 <div className="email-circle">
-                  <img className="circle-img" 
-                  alt='circle-img'
-                  src={photoURL} />{" "}
+                  <img className="circle-img" alt="circle-img" src={photoURL} />{" "}
                 </div>
               ) : (
                 <div>
@@ -85,7 +83,7 @@ function DashBoard() {
           </div>
         </div>
 
-        <div className="main-outletContainer">
+        <div  className="main-outletContainer">
           <div className="container-dashboard">
             <ul className="samba">
               <DashBoardLink
@@ -106,10 +104,12 @@ function DashBoard() {
                 />
               </div>
 
-              <li 
-              style={{cursor:'pointer'}}
-              className="dashboard-list" onClick={onLogout}>
-                <LogOut /> LogOut
+              <li
+                style={{ cursor: "pointer" }}
+                className="dashboard-list"
+                onClick={onLogout}
+              >
+                <LogOut /> <span style={{ fontSize: "0.9rem" }}>LogOut</span>
               </li>
             </ul>
           </div>
