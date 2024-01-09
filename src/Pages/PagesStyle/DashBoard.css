@@ -1,9 +1,6 @@
-
-
 .main-dashboard {
   position: relative;
   margin-top: 90px;
-  
 }
 .main-outletContainer {
   display: block;
@@ -101,17 +98,16 @@
   border-radius: 50%;
 }
 
-.dashboard-list{
-  list-style:none; 
- padding: 10px;
+.dashboard-list {
+  list-style: none;
+  padding: 10px;
 }
 
 /* .dashboard-list svg{
   vertical-align:baseline; 
 } */
 
-
-.dashboard-list span{
+.dashboard-list span {
   margin-left: 10px;
   font-size: 0.9rem;
 }
@@ -125,7 +121,7 @@
   .main-outletContainer {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items: flex-start;
     position: relative;
   }
   .container-dashboard {

@@ -23,7 +23,7 @@ function PopularItem() {
   return (
     <div className="popular-container">
       <div className="popular-tag">
-        <h3>Popular Products for Daily Shopping</h3>
+        <h3 style={{padding:'2rem'}}>Popular Products for Daily Shopping</h3>
         <p>
           See all our popular products in this week. You can choose your daily
           needs products from this list and get some special offer with free
