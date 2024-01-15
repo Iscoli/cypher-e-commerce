@@ -63,7 +63,7 @@ function DashBoard() {
             <div className="welcome-container">
               <div className="welcome-text">
                 <h5 className="welcome-name">
-                  Welcome,{" "}
+                  Welcome,
                   <span className="displayName">
                     {user.displayName.split(" ")[0]}
                   </span>
@@ -72,7 +72,7 @@ function DashBoard() {
               </div>
               {user ? (
                 <div className="email-circle">
-                  <img className="circle-img" alt="circle-img" src={photoURL} />{" "}
+                  <img className="circle-img" alt="circle-img" src={photoURL} />
                 </div>
               ) : (
                 <div>

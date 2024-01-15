@@ -1,11 +1,11 @@
-.main-dashboard {
+.MainDashboard {
   position: relative;
   margin-top: 90px;
 }
-.main-outletContainer {
+.MainOutletContainer {
   display: block;
 }
-.dashboard-outlet {
+.DashboardOutlet {
   background: #f3f4f6;
   font-family: Open Sans, sans-serif;
   padding: 10px;
@@ -14,21 +14,21 @@
   margin: 0 auto;
 }
 
-.welcome {
+.Welcome {
   background-color: rgb(238, 242, 255);
   margin: auto;
   padding: 0.1rem;
 }
-.welcome .welcome-container {
+.Welcome .WelcomeContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.email-circle {
+.EmailCircle {
   font-size: 3rem;
 }
-.first-email {
+.FirstEmail {
   position: relative;
   background-color: #663399;
   display: inline-block;
@@ -43,20 +43,20 @@
   padding-top: 0.5rem;
 }
 
-.welcome-text {
+.WelcomeText {
   margin-left: 2.6rem;
   margin-top: -1rem;
 }
-.welcome-name {
+.WelcomeName {
   font-size: 1.5rem;
 }
-.welcome-name span {
+.WelcomeName span {
   color: #059669;
 }
 .email {
   margin-top: -1rem;
 }
-.link-style {
+.linkStyle {
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@
   margin-top: 19px;
 }
 
-.first-email {
+.FirstEmail {
   position: relative;
   background-color: #663399;
   display: inline-block;
@@ -83,24 +83,22 @@
   padding-top: 0.3rem;
 }
 
-.email-circle {
+.EmailCircle {
   display: none;
 }
-.outlet-product {
+.OutletProduct {
   background: #fff;
   width: 95%;
   padding: 20px;
   margin: auto;
   margin-top: 30px;
 }
-.circle-img {
+.CircleImg {
   max-width: 100px;
   border-radius: 50%;
-  margin-top: 2px;
-  max-height: 95%;
 }
 
-.dashboard-list {
+.DashboardList {
   list-style: none;
   padding: 10px;
 }
@@ -109,40 +107,39 @@
   vertical-align:baseline; 
 } */
 
-.dashboard-list span {
+.DashboardList span {
   margin-left: 10px;
   font-size: 0.9rem;
 }
 
 @media (min-width: 995px) {
-  .main-dashboard {
+  .MainDashboard {
     position: relative;
     margin-top: 90px;
   }
 
-  .main-outletContainer {
+  .MainOutletContainer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     position: relative;
   }
-  .container-dashboard {
+  .ContainerDashboard {
     flex-basis: 35%;
     position: sticky;
     top: 120px;
-    height: 100%;
   }
-  .outlet-product {
+  .OutletProduct {
     flex-basis: 63%;
     max-width: 100%;
   }
-  .main-dashboard {
+  .MainDashboard {
     position: relative;
     margin-top: 150px;
   }
 }
 @media (min-width: 900px) {
-  .email-circle {
+  .EmailCircle {
     display: block;
   }
 }

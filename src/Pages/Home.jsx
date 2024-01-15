@@ -27,7 +27,7 @@ function Home() {
         <div className="section-1">
           <Swipper />
         </div>
-
+         
         <div className="section-2">
           <div className="part1">
             <FeaturedCategories />

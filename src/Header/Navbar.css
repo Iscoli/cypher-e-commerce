@@ -80,6 +80,7 @@ nav .container-nav {
 }
 .user-email h1 {
   color: #ffff;
+  margin-top: 18px;
 }
 @media (min-width: 995px) {
   .top {

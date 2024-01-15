@@ -15,22 +15,23 @@ function Orders() {
         <p className="text-danger">network error!</p>
       ) : (
         <div className="userOrdersPage">
-          <h3 style={{margin:'5px 0px'}}>My Orders</h3>
+          <h3 style={{ margin: "5px 0px" }}>My Orders</h3>
           <table>
-            <thead >
+            <thead>
               <tr>
                 <th>id</th>
                 <th>order time</th>
                 <th>method</th>
                 <th>status</th>
                 <th>total</th>
-                <th>TRX. <br></br>
-                 Refrence
+                <th>
+                  TRX. <br></br>
+                  Refrence
                 </th>
                 <th>action</th>
               </tr>
             </thead>
-            
+
             {allUserOrders.map((order, index) => {
               const {
                 status,
@@ -70,7 +71,7 @@ function Orders() {
             })}
           </table>
         </div>
-      ) }
+      )}
     </div>
   );
 }

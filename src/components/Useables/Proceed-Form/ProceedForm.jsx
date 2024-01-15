@@ -323,20 +323,21 @@ function ProceedForm({
               TotalPrice={TotalPrice}
               finalAmount={finalAmount}
             />
-          </div>
-          <div className="submitBtn">
-            <Link to="/" className="shoppiin">
-              <span>
-                <ArrowRight className="btn-leftarrow" />
-              </span>
-              continue shopping
-            </Link>
-            <button type="submit" className="btn">
-              confirm order
-              <span>
-                <ArrowRight className="btn-rightarrow" />
-              </span>
-            </button>
+
+            <div className="submitBtn">
+              <Link to="/" className="shoppiin">
+                <span>
+                  <ArrowRight className="btn-leftarrow" />
+                </span>
+                continue shopping
+              </Link>
+              <button type="submit" className="btn">
+                confirm order
+                <span>
+                  <ArrowRight className="btn-rightarrow" />
+                </span>
+              </button>
+            </div>
           </div>
         </form>
       </div>

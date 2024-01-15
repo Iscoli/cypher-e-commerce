@@ -62,14 +62,12 @@
   color: #10b981;
 }
 
-
-input[type="file"]::file-selector-button{
-background-color: #10b981;
-padding: 9.8px 16px;
-border-radius: 0.4rem;
-color: #fff;
+input[type="file"]::file-selector-button {
+  background-color: #10b981;
+  padding: 9.8px 16px;
+  border-radius: 0.4rem;
+  color: #fff;
 }
-
 
 .profile-image button {
   color: #10b981;
@@ -86,23 +84,22 @@ color: #fff;
   cursor: pointer;
 }
 
-.Edit-btn{
+.Edit-btn {
   color: #fff;
   background-color: #212529;
   border-color: #212529;
   padding: 8px 24px;
-  font-size:1rem;
+  font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
 }
 
-
-.Cancel-btn{
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-    padding: 3px 8px;
-    font-size:1rem;
-    border-radius:3px;   
-    cursor: pointer;
+.Cancel-btn {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  padding: 3px 8px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
 }
