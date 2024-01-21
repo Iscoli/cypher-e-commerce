@@ -7,7 +7,7 @@ import CategoryItem from "../components/Useables/CategoryItem";
 import PopularItem from "../components/Useables/PopularItem";
 import { useSelector, useDispatch } from "react-redux";
 import DeliveryBox from '../components/Parts/DeliveryBox/DeliveryBox';
-
+import DiscountBox from "../components/Parts/DiscountBox/DiscountBox"
 
 
 
@@ -27,7 +27,7 @@ function Home() {
         <div className="section-1">
           <Swipper />
         </div>
-         
+
         <div className="section-2">
           <div className="part1">
             <FeaturedCategories />
@@ -39,8 +39,12 @@ function Home() {
             <PopularItem />
           </div>
 
-          <div style={{width:'95%', margin:'35px auto'}} className="div">
-            <DeliveryBox/>
+          <div style={{ width: "95%", margin: "35px auto" }} className="div">
+            <DeliveryBox />
+          </div>
+
+          <div style={{ width: "100%", margin: "35px auto" }} className="div">
+            <DiscountBox />
           </div>
         </div>
       </div>
