@@ -1,0 +1,9 @@
+.ptag{
+  padding:0.1rem 5rem ;
+}
+
+@media(max-width:500px){
+  .ptag{
+  padding:0.1rem  2.3rem;
+}
+}

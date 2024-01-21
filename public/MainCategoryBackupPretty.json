@@ -2745,19 +2745,7 @@
         "subcategory": "baby food",
         "__collections__": {}
       },
-      "cerelac-cherry": {
-        "imgUrl": "https://cdn.pixabay.com/photo/2016/12/17/18/50/cherry-1914118_640.jpg",
-        "maincategory": "baby care",
-        "price": 17,
-        "name": "cerelac cherry",
-        "weight": "400g",
-        "discount": 10,
-        "details": ["foods", "cerelac"],
-        "id": 174,
-        "stock": 0,
-        "subcategory": "baby food",
-        "__collections__": {}
-      },
+  
       "kimbo-coffe": {
         "imgUrl": "https://www.kimbocoffee.com/cdn/shop/collections/K-CUP_Static_6_650x.png?v=1692619365",
         "maincategory": "drinks",
