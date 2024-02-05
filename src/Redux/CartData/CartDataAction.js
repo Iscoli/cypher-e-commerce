@@ -1,7 +1,6 @@
 import { ADD_CART_DATA,REMOVE_PRODUCT,DECREASE_QUANTITY } from "./CartDataTypes";
 
 export const fetchCartData = (product,numOfItemPurchased)  => (dispatch) => {
-  
   dispatch({
     type: ADD_CART_DATA,
     payload: { product,numOfItemPurchased},

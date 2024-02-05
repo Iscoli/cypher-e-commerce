@@ -33,6 +33,7 @@ import Proceeds from "./Pages/Proceeds";
 import OrderDetail from "./Pages/OrderDetail";
 import AppSection from "./components/Parts/AppSection/AppSection";
 import SearchPage from "./Pages/SearchPage";
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   let persistor = persistStore(store);
@@ -42,77 +43,88 @@ function App() {
       <PersistGate persistor={persistor}>
         <Router>
           <ScrollToTopOnRouteChange />
-          <div
-            className="major-container"
-            style={{
-              maxWidth: "1400px",
-              minWidth: "300px",
-              margin: "0 auto",
-              backgroundColor: "#f5f5f5",
-              borderRadius: "8px",
-              boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-              // overflow: "auto",
-            }}
-          >
-            <Navbar
+        
+            <div
+              className="major-container"
               style={{
-                maxWidth: "1200px",
+                maxWidth: "1400px",
+               
+                minWidth: "300px",
+                margin: "0 auto",
+                backgroundColor: "#f5f5f5",
+                borderRadius: "8px",
+                boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+                overflow: "hidden",
               }}
-            />
-
-            <Routes>
-              <Route path="/" element={<Home />} />
-
-              <Route path="/DashBoard" element={<PrivateRoute />}>
-                <Route path="/DashBoard" element={<DashBoard />}>
-                  <Route index element={<IndexRoute />} />
-                  <Route path="my-orders" element={<IndexRoute />} />
-                  <Route path="profile" element={<Profile />} />
-                  <Route path="changepwd" element={<ChangePwd />} />
-                  <Route path="orders" element={<Orders />} />
-                </Route>
-              </Route>
-
-              <Route path="/sign-in" element={<SignIn />} />
-
-              <Route path="/sign-up" element={<SignUp />} />
-
-              <Route path="/forgot-password" element={<ForgotPwd />} />
-
-              <Route path="/offer" element={<Offer />} />
-
-              <Route path="/checkout" element={<CheckOut />} />
-
-              <Route path="/faq" element={<FAQ />} />
-
-              <Route path="/about" element={<About />} />
-
-              <Route path="/contact" element={<Contact />} />
-
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-
-              <Route path="/terms" element={<Terms />} />
-
-              <Route path="/search" element={<SearchPage />} />
-
-              <Route path="/check" element={<PrivateRoute />}>
-                <Route path="/check" element={<Proceeds />} />
-              </Route>
-
-              <Route path="/order" element={<PrivateRoute />}>
-                <Route path="/order/:orderDetails" element={<OrderDetail />} />
-              </Route>
-
-              <Route path="/sub-category/:product" element={<SubCategory />} />
-              <Route
-                path="/main-category/:category"
-                element={<MainCategory />}
+            >
+              <Navbar
+                style={{
+                  maxWidth: "1200px",
+                }}
               />
-              <Route path="/*" element={<NotFound />} />
-            </Routes>
 
-            <AppSection />
-          </div>
+              <Routes>
+                <Route path="/" element={<Home />} />
+
+                <Route path="/DashBoard" element={<PrivateRoute />}>
+                  <Route path="/DashBoard" element={<DashBoard />}>
+                    <Route index element={<IndexRoute />} />
+                    <Route path="my-orders" element={<IndexRoute />} />
+                    <Route path="profile" element={<Profile />} />
+                    <Route path="changepwd" element={<ChangePwd />} />
+                    <Route path="orders" element={<Orders />} />
+                  </Route>
+                </Route>
+
+                <Route path="/sign-in" element={<SignIn />} />
+
+                <Route path="/sign-up" element={<SignUp />} />
+
+                <Route path="/forgot-password" element={<ForgotPwd />} />
+
+                <Route path="/product/:name" element={<ProductDetails />} />
+
+                <Route path="/offer" element={<Offer />} />
+
+                <Route path="/checkout" element={<CheckOut />} />
+
+                <Route path="/faq" element={<FAQ />} />
+
+                <Route path="/about" element={<About />} />
+
+                <Route path="/contact" element={<Contact />} />
+
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+
+                <Route path="/terms" element={<Terms />} />
+
+                <Route path="/search" element={<SearchPage />} />
+
+                <Route path="/check" element={<PrivateRoute />}>
+                  <Route path="/check" element={<Proceeds />} />
+                </Route>
+
+                <Route path="/order" element={<PrivateRoute />}>
+                  <Route
+                    path="/order/:orderDetails"
+                    element={<OrderDetail />}
+                  />
+                </Route>
+
+                <Route
+                  path="/sub-category/:product"
+                  element={<SubCategory />}
+                />
+                <Route
+                  path="/main-category/:category"
+                  element={<MainCategory />}
+                />
+                <Route path="/*" element={<NotFound />} />
+              </Routes>
+
+              <AppSection />
+            </div>
+        
         </Router>
 
         <ToastContainer />

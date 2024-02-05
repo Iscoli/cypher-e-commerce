@@ -1,16 +1,28 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../UsablesCss/MainCategoryBoxModule.css";
-import { ReactComponent as AddCart } from "../assets/button.svg";
-import { fetchCartData, decreaseProductQuantity } from "../../Redux";
+import "../../UsablesCss/MainCategoryBoxModule.css";
+import { ReactComponent as AddCart } from "../../assets/button.svg";
+import { fetchCartData, decreaseProductQuantity } from "../../../Redux";
 import { useSelector, useDispatch } from "react-redux";
 
-function MainCategoryBox(props) {
+function RelatedProductBox({
+  id,
+  count,
+  imgUrl,
+  price,
+  name,
+  discount,
+  stock,
+  weight,
+}) {
+  
+
+  console.log(id, count, imgUrl, price, name, discount, stock, weight, "kaya");
   const dispatch = useDispatch();
   const [isStockOut, setIsStockOut] = useState(false);
 
   const numOfItemsPurchased = 1;
+
   const handleAdd = ({ id, count, imgUrl, price, name, discount }) => {
     const discountValue = discount || 0;
     dispatch(
@@ -20,43 +32,33 @@ function MainCategoryBox(props) {
       )
     );
   };
+
   const handleDecrease = ({ id }) => {
     dispatch(decreaseProductQuantity(id));
   };
+
   const data = useSelector((state) => state.cartdata);
-  const cart = [data.product];
-
-  let cartItem = [];
-
-  cart?.map((product, index) => {
-    return cartItem.push(product);
-  });
+  const cartItem = data.product || [];
 
   const cartCount = (id) => {
-    const product = cart[0]?.find((item) => item.id === id);
+    const product = cartItem.find((item) => item.id === id);
 
     if (!product) return 0;
-    return product?.count;
+    return product.count;
   };
 
-  const suna = props.name;
-
-
+  const suna = name;
 
   return (
     <div className="category-box">
       <div className="product-img-container">
         <Link to={`/product/${suna}`}>
-          <img
-            className="products-img"
-            src={props.product.imgUrl}
-            alt="products"
-          />
+          <img className="products-img" src={imgUrl} alt="products" />
         </Link>
       </div>
       <div className="weight-name">
-        <p className="weight-wtag">{props.product.weight}</p>
-        <p className="weight-ptag">{props.product.name}</p>
+        <p className="weight-wtag">{weight}</p>
+        <p className="weight-ptag">{name}</p>
       </div>
       <div
         className="buttom-container"
@@ -65,37 +67,34 @@ function MainCategoryBox(props) {
         <div className="price-container">
           <div>
             <p>
-              {props.product.discount
-                ? `$${(
-                    props.product.price -
-                    (props.product.price * props.product.discount) / 100
-                  ).toFixed(2)}`
+              {discount
+                ? `$${(price - (price * discount) / 100).toFixed(2)}`
                 : ""}
             </p>
           </div>
           <div>
-            <p
-              className={
-                props.product.discount ? "discount-stroke" : "discount-price"
-              }
-            >
-              ${props.product.price}
+            <p className={discount ? "discount-stroke" : "discount-price"}>
+              ${price}
             </p>
           </div>
         </div>
 
-        {cartCount(props.product.id) >= 1 ? (
+        {cartCount(id) >= 1 ? (
           <div className="cart-countnub">
             <button
               style={{ cursor: "pointer" }}
-              onClick={() => handleAdd(props.product)}
+              onClick={() =>
+                handleAdd({ id, count, imgUrl, price, name, discount })
+              }
             >
               +
             </button>
-            <span>{cartCount(props.product.id)}</span>
+            <span>{cartCount(id)}</span>
             <button
               style={{ cursor: "pointer" }}
-              onClick={() => handleDecrease(props.product)}
+              onClick={() =>
+                handleDecrease({ id, count, imgUrl, price, name, discount })
+              }
             >
               -
             </button>
@@ -105,10 +104,10 @@ function MainCategoryBox(props) {
             <AddCart
               className="briefcase-icon"
               onClick={() => {
-                if (props.product.stock === 0) {
+                if (stock === 0) {
                   setIsStockOut(true);
                 } else {
-                  handleAdd(props.product);
+                  handleAdd({ id, count, imgUrl, price, name, discount });
                 }
               }}
               disabled={isStockOut}
@@ -118,26 +117,22 @@ function MainCategoryBox(props) {
       </div>
 
       <p className="discount-ptag">
-        {props.product.discount ? (
+        {discount ? (
           <span
-            style={{ display: props.product.stock ? "block" : "none" }}
+            style={{ display: stock ? "block" : "none" }}
             className="discount"
           >
-            {`${props.product.discount}% off`}{" "}
+            {`${discount}% off`}{" "}
           </span>
         ) : (
           ""
         )}
       </p>
       <span>
-        {props.product.stock === 0 ? (
-          <span className="stock-out">Stock Out</span>
-        ) : (
-          ""
-        )}
+        {stock === 0 ? <span className="stock-out">Stock Out</span> : ""}
       </span>
     </div>
   );
 }
 
-export default MainCategoryBox;
+export default RelatedProductBox;

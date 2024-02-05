@@ -114,6 +114,7 @@
         "stock": 129,
         "subcategory": "cosmetics",
         "__collections__": {}
+      
       }
     },
     "oral-care": {
@@ -984,7 +985,7 @@
         "subcategory": "juice",
         "__collections__": {}
       },
-      "orabge-juice": {
+      "orange-juice": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/qcEAAOSwDwBlDZan/s-l300.webp",
         "maincategory": "drinks",
         "price": 11,
@@ -1191,6 +1192,7 @@
         "price": 14,
         "name": "fresh dates",
         "weight": "10oz",
+         "maincategory": "fruits-vegetable",
         "details": ["dates", "fresh fruits"],
         "id": 55,
         "stock": 78,
@@ -1199,62 +1201,65 @@
       },
       "haitian-mango": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/ab0AAOSwWQtkc-qT/s-l225.webp",
-        "maincategory": "fruits & vegetable",
         "price": 10,
         "name": "haitian mangoes",
         "discount": 20,
         "weight": "8ct",
         "details": ["mango", "fresh fruits"],
         "id": 54,
+        "maincategory": "fruits-vegetable",
         "stock": 89,
         "subcategory": "fresh fruits",
         "__collections__": {}
       },
       "clementine": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/yHQAAOSwjDZYchwq/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+       
         "price": 13,
         "name": "rainbow chard",
         "weight": "5ct",
         "details": ["rainbow-chard", "fresh fruits"],
         "id": 15,
+        "maincategory": "fruits-vegetable",
         "stock": 90,
         "subcategory": "fresh fruits",
         "__collections__": {}
       },
       "cranberries": {
         "imgUrl": "https://i.ebayimg.com/images/g/RqEAAOSwi~JgOOk3/s-l1600.png",
-        "maincategory": "fruits & vegetable",
+      
         "price": 15,
         "name": "cranberries",
         "discount": 13,
         "weight": "9.5oz",
         "details": ["cranberries", ""],
         "id": 56,
+        "maincategory": "fruits-vegetable",
         "stock": 42,
         "subcategory": "fresh fruits",
         "__collections__": {}
       },
       "avocado": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/C0oAAOSw5HNiqCfi/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+       
         "price": 13,
         "name": "avocado juice fruit",
         "weight": "11Ib",
         "details": ["avocado", "fresh fruits"],
         "id": 58,
+        "maincategory": "fruits-vegetable",
         "stock": 70,
         "subcategory": "fresh fruits",
         "__collections__": {}
       },
       "blueberry": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/~UMAAOSwxaFjdQUU/s-l300.webp",
-        "maincategory": "fruits & vegetable",
         "price": 15,
         "name": "blueberry",
         "weight": "25qt",
         "details": ["blueberries", "fresh fruits"],
         "id": 18,
+        "maincategory": "fruits-vegetable",
         "stock": 68,
         "subcategory": "fresh fruits",
         "__collections__": {}
@@ -1474,6 +1479,7 @@
         "stock": 150,
         "subcategory": "cleaning tools",
         "__collections__": {}
+    
       },
       "pad-brush": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/EmUAAOSwJKNliHkE/s-l300.webp",

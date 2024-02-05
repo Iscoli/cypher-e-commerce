@@ -3,7 +3,7 @@
     "baby-care": {
       "biomil": {
         "imgUrl": "https://images.othoba.com/images/thumbs/0596304_biomil-3-baby-milk-powder-103232-350-g.jpeg",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 16,
         "name": "biomil-1 food",
         "discount": 13,
@@ -16,7 +16,7 @@
       },
       "cerelac-cherry": {
         "imgUrl": "https://cdn.pixabay.com/photo/2016/12/17/18/50/cherry-1914118_640.jpg",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 17,
         "name": "cerelac cherry",
         "weight": "400g",
@@ -29,7 +29,7 @@
       },
       "cerelac-food": {
         "imgUrl": "https://cdn.pixabay.com/photo/2022/07/01/12/14/cornflakes-7295520_640.png",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 15,
         "name": "cerelac cornflakes",
         "weight": "400g",
@@ -41,7 +41,7 @@
       },
       "glory-diaper": {
         "imgUrl": "https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/8845e144-8902-4204-b80f-9dc7dc2f4bcb/Images/ProductImages/Source/3014401%20Glory%20Adult%20Diaper%20Large%208%20Packet.jpg",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 16,
         "name": "glory diaper",
         "weight": "8pcs",
@@ -53,7 +53,7 @@
       },
       "huggies-diaper": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/ThAAAOSwKwphbwF7/s-l300.webp",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 9,
         "name": "huggies diaper",
         "weight": "36pcs",
@@ -68,7 +68,7 @@
     "beauty-health": {
       "after-shave": {
         "imgUrl": "https://media.istockphoto.com/id/967799712/photo/a-man-putting-perfume-in-the-bathroom.jpg?s=612x612&w=0&k=20&c=BqfeucboCZ3nvwsHBPK50a6gBtaSPa4luK0TzNv9jHg=",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 8,
         "name": "denim after shave",
         "weight": "100ml",
@@ -80,7 +80,7 @@
       },
       "col-wash": {
         "imgUrl": "https://media.istockphoto.com/id/1300904209/photo/picture-of-washing-vegetables-with-water-in-the-kitchen.jpg?s=612x612&w=0&k=20&c=2RdriWR5dnrSX9qV9HPup9I-_Qg8E5tzNmDcZCssm4I=",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 12,
         "name": "colgate mouthwash",
         "weight": "250ml",
@@ -92,7 +92,7 @@
       },
       "face-wash": {
         "imgUrl": "https://cdn.pixabay.com/photo/2021/01/09/21/58/face-5903577_640.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 8,
         "name": "erin face wash",
         "discount": 8,
@@ -105,7 +105,7 @@
       },
       "gillette-vector": {
         "imgUrl": "https://cdn.pixabay.com/photo/2017/04/04/17/20/mach-3-2202255_1280.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 6,
         "name": "gillette vector refillable",
         "weight": "100ml",
@@ -117,7 +117,7 @@
       },
       "hair-shampoo": {
         "imgUrl": "https://cdn.pixabay.com/photo/2018/08/14/13/49/botanical-3605608_1280.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 8,
         "name": "herbal hair shampoo",
         "weight": "8fl-oz",
@@ -129,7 +129,7 @@
       },
       "nail-polish": {
         "imgUrl": "https://media.istockphoto.com/id/693200338/photo/professional-gel-hybrid-manicure-set-at-beautician-salon.jpg?s=612x612&w=0&k=20&c=wAZeu8kzFOyUiumhlq9FviG6Dta-bb1eiWgWiRY5s8k=",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 8,
         "name": "nail polish",
         "weight": "5fl-oz",
@@ -141,7 +141,7 @@
       },
       "neem-soap": {
         "imgUrl": "https://cdn.pixabay.com/photo/2018/02/01/15/53/soap-3123468_640.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 12,
         "name": "neew original soap",
         "weight": "75g",
@@ -164,7 +164,7 @@
       },
       "organic-gel": {
         "imgUrl": "https://media.istockphoto.com/id/1269676838/photo/afro-american-woman-in-bathrobe-spending-morning-in-bathroom.webp?b=1&s=170667a&w=0&k=20&c=6abdtWAbWcNLRGaRuWF-dwb6c5WCz_tdOb0n0ypoBpY=",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 0,
         "name": "avalon organic gel",
         "weight": "",
@@ -176,7 +176,7 @@
       },
       "pantene-care": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhzSd_GBg9a--cqI7MM1eURNolGb61qTJNp18rlaAh8VVOVUJcDoh7EfL6A&s",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 9,
         "name": "pantene hair care",
         "discount": 16,
@@ -190,7 +190,7 @@
 
       "pep-brush": {
         "imgUrl": "https://cdn.pixabay.com/photo/2018/05/31/23/23/watercolor-3445376_640.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 5,
         "name": "pepsodent toothbrush",
         "weight": "1pcs",
@@ -202,7 +202,7 @@
       },
       "rev-lip": {
         "imgUrl": "https://cdn.pixabay.com/photo/2018/02/09/14/55/lips-3141753_640.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 6,
         "name": "revlon lipstick",
         "weight": "6",
@@ -214,7 +214,7 @@
       },
       "sunscreen lotion": {
         "imgUrl": "https://cdn.pixabay.com/photo/2019/12/23/01/16/cream-4713579_1280.jpg",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 7,
         "name": "sunscreen lotion",
         "weight": "each",
@@ -228,7 +228,7 @@
     "biscuits-cakes": {
       "bisk-club-food": {
         "imgUrl": "https://www.pranfoods.net/sites/default/files/2023-09/Fruit%20FUn%20750%20Pineapple.png",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 11,
         "name": "bisk club cream biscuit",
         "weight": "1pac",
@@ -240,7 +240,7 @@
       },
       "dan-cake-layer": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLboN8K8mP56zx8jcbMXpXZquXdiH7RtxTVngPY28saQ&s",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 8,
         "name": "dan cake layer cake",
         "weight": "1box",
@@ -252,7 +252,7 @@
       },
       "dan-choco": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmAMEt1M-mbUS6_7xH82LG1arMpa_mR29qvqpJRq8uUg&s",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 10,
         "name": "dan cake chocolate muffin",
         "weight": "1box",
@@ -264,7 +264,7 @@
       },
       "dan-pound": {
         "imgUrl": "https://paikaree.com.bd/public/uploads/products/photos/dan-cake-chocolate-pound-cake---280g-paikaree.webp",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 9,
         "name": "dan cake pound cake",
         "weight": "1box",
@@ -276,7 +276,7 @@
       },
       "dekko-cookie": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUgEHhs5tRKHLxk4ozVdo3NfHf3xjOzAaCwcaY6uVRw&s",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 9,
         "name": "dekko ovaltine-cookie biscuit",
         "weight": "1box",
@@ -288,7 +288,7 @@
       },
       "milk-biscuit": {
         "imgUrl": "https://chaldn.com/_mpimage/dekko-amore-cookies-biscuit-family-pack-300-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D94195&q=best&v=1",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 11,
         "name": "fun milk water biscuit",
         "discount": 15,
@@ -301,18 +301,6 @@
       }
     },
     "breakfast": {
-      "bread": {
-        "imgUrl": "https://i.ebayimg.com/thumbs/images/g/LnQAAOSwxUpjAsNw/s-l500.jpg",
-        "maincategory": "breakfast",
-        "price": 9,
-        "name": "bread",
-        "weight": "1pc",
-        "details": ["breakfast", "bread"],
-        "id": 93,
-        "stock": 78,
-        "subcategory": "bread",
-        "__collections__": {}
-      },
       "pita-bread": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/GwkAAOSwDwplqGiI/s-l300.webp",
         "maincategory": "breakfast",
@@ -324,6 +312,7 @@
         "stock": 199,
         "subcategory": "bread",
         "__collections__": {}
+        
       },
       "whole-bread": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/PVYAAOSw-H1lGTTz/s-l300.webp",
@@ -402,7 +391,7 @@
     "cooking-essentials": {
       "aarong-rice": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34LnCFKT8ePA49o--r45dwHvq2uG-moT6unxFWFTwzw&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 13,
         "name": "aarong nazirshail rice",
         "weight": "5kg",
@@ -414,7 +403,7 @@
       },
       "kalijira-rice": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWaY9WVfte-axiQMTaNttQXR_B5irTY1PscDDGbfsUQ&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 12,
         "name": "kalijira premium rice",
         "weight": "5kg",
@@ -426,7 +415,7 @@
       },
       "kataribhog-rice": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkKah5P_0z2OZyl11dqZR17vpSLRFtFFcIAl9bEIqNtg&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 10,
         "name": "aarong kataribhog",
         "weight": "5kg",
@@ -438,7 +427,7 @@
       },
       "chinigura-rice": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXYWPBOkaiFPfLqzG_grAZopeXK7-bp57sUYu8oQz1w&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 14,
         "name": "fresh chinigura rice",
         "weight": "5kg",
@@ -450,7 +439,7 @@
       },
       "aci-aroma-oil": {
         "imgUrl": "https://www.aci-bd.com/assets/images/news/2021/aroma-edible-oil.png",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 10,
         "name": "ACI aroma mustard oil",
         "weight": "1ltr",
@@ -462,7 +451,7 @@
       },
       "aci-pure-oil": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGFkzOgirC1Nfy7rWZDZiUYdOxkTuHYrbu0OgfnofaA&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 9,
         "name": "ACI pure mustard oil",
         "weight": "200ml",
@@ -474,7 +463,7 @@
       },
       "soya-oil": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/IjEAAOSwTrNkUJaB/s-l300.webp",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 10,
         "name": "fresh soyabean oil",
         "weight": "5ltr",
@@ -486,7 +475,7 @@
       },
       "mustard-oil": {
         "imgUrl": "https://i.ebayimg.com/images/g/Mt0AAOSwzZRk7x-W/s-l1600.jpg",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 11,
         "name": "fresh mustard oil",
         "weight": "500ml",
@@ -498,7 +487,7 @@
       },
       "fortune-oil": {
         "imgUrl": "https://i.ebayimg.com/images/g/2u4AAOSwrwhkh5KM/s-l1600.jpg",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 8,
         "name": "fortune oil",
         "weight": "5ltr",
@@ -510,7 +499,7 @@
       },
       "aci-flour": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc8l1IfHqJOldPV37_zxuwpAdtshBp1WgdHUwJMrJ0qA&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 9,
         "name": "ACI pure flour",
         "weight": "1kg",
@@ -522,7 +511,7 @@
       },
       "aci-nutrilife-flour": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xyfEQbKsUoYLVAr1A2Aj5scTaDlgcwFOPRFUhIKmpw&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 12,
         "name": "ACI nutrilife flour",
         "weight": "1kg",
@@ -534,7 +523,7 @@
       },
       "aci-oats-flour": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFC0HrZGn9-MLQJybrFZU6_fKBqqc6LREAFU0pwpd4JQ&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 10,
         "name": "ACI nutrilife oats flour",
         "weight": "1kg",
@@ -547,7 +536,7 @@
 
       "aci-salt": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqFb_3rx_mjeyhOWgQxxRtlvlv3Z5MiTI1L4N2v3u2g&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 10,
         "name": "ACI pure salt",
         "weight": "750g",
@@ -559,7 +548,7 @@
       },
       "aci-sugar": {
         "imgUrl": "https://virtualshoppersbd.com/storage/uploads/sugar.jpg",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 12,
         "name": "ACI pure sugar",
         "weight": "1kg",
@@ -571,7 +560,7 @@
       },
       "bg-aci-flour": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ71h4f3moBiAgyibpVEKHIPdnrwqOtMjlglm2FlkkuQ&s",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 16,
         "name": "ACI pure flour (bg)",
         "discount": "9",
@@ -585,7 +574,7 @@
 
       "fresh-flour": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/RSIAAOSwuT5lV~5t/s-l300.webp",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 10,
         "name": "fresh flour",
         "weight": "2kg",
@@ -597,7 +586,7 @@
       },
       "garlic": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/jnIAAOSwKFVlgySE/s-l300.webp",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 12,
         "name": "garlic loose",
         "discount": 12,
@@ -610,7 +599,7 @@
       },
       "ginger": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/9C4AAOSwRkRlEadI/s-l300.webp",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 15,
         "name": "ginger hybrid",
         "weight": "1kg",
@@ -622,7 +611,7 @@
       },
       "ginger-loose": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/UYgAAOSwv3Vj1ycF/s-l300.webp",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 13,
         "name": "ginger imported loose",
         "weight": "1kg",
@@ -635,7 +624,7 @@
 
       "onion-loose": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/0AMAAOSwP8xjSl6D/s-l500.jpg",
-        "maincategory": "cooking essentials",
+        "maincategory": "cooking-essentials",
         "price": 9,
         "name": "onion loose",
         "weight": "1kg",
@@ -648,7 +637,7 @@
     },
     "descriptions": {
       "baby-care": {
-        "header": "baby care",
+        "header": "baby-care",
         "category": {
           "baby food": "Baby foods are either a soft, liquid paste or an easily chewed food since babies lack developed muscles and teeth to effectively chew. Babies typically move to consuming baby food once nursing or formula is not sufficient for the child's appetite. Babies do not need to have teeth to transition to eating solid foods.",
           "baby accessories": "Baby Products are products intended to be used on infants and children under the age of three. Baby products are specially formulated to be mild and non-irritating and use ingredients that are selected for these properties. Baby products include baby shampoos and baby lotions, oils, powders and creams."
@@ -656,7 +645,7 @@
         "__collections__": {}
       },
       "beauty-health": {
-        "header": "beauty & health",
+        "header": "beauty-health",
         "category": {
           "shaving needs": "Health products are defined as those substances which gives energy or makes the person healthy. Health products are vitamins, minerals, herbal medicines, homeopathic preparations, probiotics and even some traditional medicines are also prescribed by doctor or any equivalent physician.",
           "skin care": "Skin care is the range of practices that support skin integrity, enhance its appearance and relieve skin conditions. Skin care is a part of the treatment of wound healing, radiation therapy and some medications.",
@@ -668,7 +657,7 @@
         "__collections__": {}
       },
       "biscuits-cakes": {
-        "header": "biscuits & cakes",
+        "header": "biscuits-cakes",
         "category": {
           "biscuits": "A biscuit is a flour-based baked food product. In most countries, particularly in the Commonwealth and Ireland, biscuits are typically hard, flat and unleavened. They are usually sweet and may be made with sugar, chocolate, icing, jam, ginger or cinnamon. They can also be savoury and similar to cracker",
           "cakes": "Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked. ... The most commonly used cake ingredients include flour, sugar, eggs, butter or oil or margarine, a liquid, and a leavening agent, such as baking soda or baking powder."
@@ -684,7 +673,7 @@
         "__collections__": {}
       },
       "cooking-essentials": {
-        "header": "cooking essentials",
+        "header": "cooking-essentials",
         "category": {
           "dry vegetable": "Any vegetable that has been dehydrated or dried in order to extend the shelf life and to concentrate the flavor. Popular dried vegetables include sun-dried tomatoes, onions, carrots, and chiles.",
           "oil": "Cooking oil is plant, animal, or synthetic fat used in frying, baking, and other types of cooking. ... Cooking oil is typically a liquid at room temperature, although some oils that contain saturated fat, such as coconut oil, palm oil and palm kernel oil are solid.",
@@ -714,14 +703,14 @@
         "__collections__": {}
       },
       "fresh-seafood": {
-        "header": "fresh seafood",
+        "header": "fresh-seafood",
         "category": {
           "fresh seafood": "A fish is an animal which lives and breathes in water. All fish are vertebrates (have a backbone) and most breathe through gills and have fins and scales. ... There are three classes of fish: jawless, cartilaginous, and bony. All fish have a backbone."
         },
         "__collections__": {}
       },
       "fruit-vegetable": {
-        "header": "fruits & vegetable",
+        "header": "fruits-vegetable",
         "category": {
           "fruits fruits": "In a botanical sense, a fruit is the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technically fruits.",
           "fresh vegetable": "Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root vegetables include beets, carrots, radishes, sweet potatoes, and turnips. Stem vegetables include asparagus and kohlrabi.",
@@ -737,7 +726,7 @@
         "__collections__": {}
       },
       "household-tools": {
-        "header": "household tools",
+        "header": "household-tools",
         "category": {
           "air freshener": "A device used to disperse chemicals intended to mask or eliminate unpleasant odors The bathrooms should also have matching towels, soap and tissue dispensers, and a candle or plug-in air freshener with a pleasant scent.",
           "laundry": "A laundry service is a service in a hotel that washes and irons clothes for guests. Almost all hotels have a laundry service. If you hand in clothes one day you should get them back a day or two later. The laundry service will wash, dry, and iron your clothes.",
@@ -997,79 +986,79 @@
     "fresh-seafood": {
       "cockles": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/cockles.jpg?alt=media&token=f821ba90-1924-408d-ac8d-62639aab0ef4",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 14,
         "name": "carribbean cooked cockles",
         "weight": "120g",
         "details": ["cockles", "seafood"],
         "id": 70,
         "stock": 17,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "crab-seafood": {
         "imgUrl": "https://media.istockphoto.com/id/482141392/photo/chilli-crab-asia-cuisine.jpg?s=612x612&w=0&k=20&c=uyNyuvKw1rxqjkw21hDtnJXt9TXdbkvQZF-XomcM4VI=",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 9,
         "name": "chicago sweet crab",
         "weight": "200g",
         "details": ["crab", "seafood"],
         "id": 64,
         "stock": 32,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "lobster": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/grilled-lobster.jpg?alt=media&token=7af94fe4-698e-4348-8f8d-9beb44c565ba",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 8,
         "name": "grilled lobster",
         "weight": "each",
         "details": ["grilled", "lobster"],
         "id": 65,
         "stock": 74,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "oyster": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/Parmesan_Crusted_Charbroiled_Oysters-scaled.jpg?alt=media&token=8d8594b4-4807-48cb-847d-9ed51d57fced",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 18,
         "name": "char-grilled oyster",
         "weight": "50g",
         "details": ["oyster", "parmesan romano"],
         "id": 69,
         "stock": 25,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "periwinkle": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/periwinkle.jpg?alt=media&token=16d38535-46f3-4c93-a040-5101f8cacf11",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 8,
         "name": "fresh edible periwinkle",
         "weight": "7ct",
         "details": ["periwinkle", "fresh"],
         "id": 71,
         "stock": 150,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "prawn": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/prawn.jpg?alt=media&token=889acd44-9e9e-4d32-b2c5-85c711df3c02",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 13,
         "name": "haitian prawn",
         "weight": "25g",
         "details": ["prawn", "seafood"],
         "id": 67,
         "stock": 0,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "shrimp": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/shrimp.jpg?alt=media&token=1ccafd26-263e-4f72-b5cb-72dc29d7fd84",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 12,
         "name": "sweet cooked shrimp",
         "discount": 5,
@@ -1077,26 +1066,26 @@
         "details": ["shrimp", "cooked"],
         "id": 66,
         "stock": 41,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       },
       "snail": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/snail.jpg?alt=media&token=e202c04d-7ab4-4259-9744-ab141a3554fa",
-        "maincategory": "fresh seafood",
+        "maincategory": "fresh-seafood",
         "price": 20,
         "name": "sweet cooked snail",
         "weight": "1Ib",
         "details": ["cooked-snail", "seafood"],
         "id": 68,
         "stock": 45,
-        "subcategory": "fresh seafood",
+        "subcategory": "fresh-seafood",
         "__collections__": {}
       }
     },
     "fruits-vegetable": {
       "acorn-squash": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/hYMAAOSwYAFkTlhE/s-l225.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "ahold acorn squash",
         "weight": "1ct",
@@ -1108,7 +1097,7 @@
       },
       "aloe-vera": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/h2EAAOSwB1RgSfhX/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "aloe vera leaf",
         "weight": "each",
@@ -1120,7 +1109,7 @@
       },
       "asparagus": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/wFkAAOSwqkRjzWf7/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "asparagus",
         "weight": "15oz",
@@ -1133,7 +1122,7 @@
 
       "baby-carrot": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/GnoAAOSw-mFjsfXf/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "organic baby root",
         "weight": "10oz",
@@ -1145,7 +1134,7 @@
       },
       "bell-pepper": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/bioAAOSwKoRZZnDF/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "organic bell pepper",
         "discount": 17,
@@ -1158,7 +1147,7 @@
       },
       "bicolor-corn": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/M0EAAOSwAqhgG4rj/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "bicolor sweet corn",
         "weight": "43ct",
@@ -1171,7 +1160,7 @@
 
       "bok-cabbage": {
         "imgUrl": "https://propagationplace.co.uk/pp/wp-content/uploads/Cabbage-Chinese-Wong-Bok-vegetable-plants-1-1000x1000.jpg",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "bok choy cabbage",
         "weight": "1ib",
@@ -1183,7 +1172,7 @@
       },
       "calabaza-squash": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/i-YAAOSw2ENkGQsi/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "calabaza squash",
         "weight": "each",
@@ -1195,7 +1184,7 @@
       },
       "cauliflower": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/Ll8AAOSwUIxjoOYc/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "cauliflower",
         "weight": "35Ib",
@@ -1207,7 +1196,7 @@
       },
       "cherry-tomato": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/IJkAAOSwoF1jVXqZ/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 0,
         "name": "organic cherry tomato",
         "weight": "5qt",
@@ -1219,7 +1208,7 @@
       },
       "chinese-broccoli": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/5bUAAOSw~2Jkcmie/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "chinese broccoli",
         "weight": "2Ib",
@@ -1231,6 +1220,7 @@
       },
       "fresh-dates": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/zFsAAOSwIAVlAXvU/s-l300.webp",
+        "maincategory": "fruits-vegetable",
         "price": 14,
         "name": "fresh dates",
         "weight": "10oz",
@@ -1242,7 +1232,7 @@
       },
       "haitian-mango": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/ab0AAOSwWQtkc-qT/s-l225.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 10,
         "name": "haitian mangoes",
         "discount": 20,
@@ -1255,7 +1245,7 @@
       },
       "clementine": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/yHQAAOSwjDZYchwq/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "rainbow chard",
         "weight": "5ct",
@@ -1267,7 +1257,7 @@
       },
       "cranberries": {
         "imgUrl": "https://i.ebayimg.com/images/g/RqEAAOSwi~JgOOk3/s-l1600.png",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "cranberries",
         "discount": 13,
@@ -1280,7 +1270,7 @@
       },
       "avocado": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/C0oAAOSw5HNiqCfi/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "avocado juice fruit",
         "weight": "11Ib",
@@ -1292,7 +1282,7 @@
       },
       "blueberry": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/~UMAAOSwxaFjdQUU/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "blueberry",
         "weight": "25qt",
@@ -1305,7 +1295,7 @@
 
       "d-iranian-loose": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnyAeabhF_0FJ5ZHlVMkqjY-uS0-VuDVFSHi2KvKh4Yg&s",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "dates iranian loose",
         "weight": "1kg",
@@ -1317,7 +1307,7 @@
       },
       "blueberry-plum": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUN3Ue_sCrwTQN_MwACHoIpQogHhQLGvXHy2L5gQaiXw&s",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "golden garden blueberry plum",
         "weight": "220g",
@@ -1329,7 +1319,7 @@
       },
       "dates-loose": {
         "imgUrl": "https://i.ebayimg.com/images/g/xeMAAOSwFSRboCAR/s-l1600.jpg",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "dates loose",
         "weight": "1kg",
@@ -1341,7 +1331,7 @@
       },
       "fig loose": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/oHUAAOSwAnxcj1Q1/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 11,
         "name": "dry fig loose",
         "weight": "1kg",
@@ -1353,7 +1343,7 @@
       },
       "dinosaur-kale": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/lLwAAOSwlstf-6Se/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "lacinato dinosaur kale",
         "weight": "1Ib",
@@ -1365,7 +1355,7 @@
       },
       "escarole": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/9jYAAOSw8cxdREx-/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 14,
         "name": "escarole",
         "discount": 7,
@@ -1378,7 +1368,7 @@
       },
       "fennel-bulb": {
         "imgUrl": "http://t2.gstatic.com/images?q=tbn:ANd9GcRNt9MQh6Hs0a_5ZshlwZbIaYr3wdctn0IUuyjWG9FwgDxWRugPkXibqUOYNzsfkNxdcPo4scvdlNMPz6MvXSivqs5ah6VAm5wr1pXr3hQ",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "fennel bulb",
         "weight": "each",
@@ -1391,7 +1381,7 @@
 
       "green-beans": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/QpsAAOSwofVjJKAU/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "fresh green beans",
         "discount": 8,
@@ -1404,7 +1394,7 @@
       },
       "green-cauliflower": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/99sAAOSwFFFlnzQ9/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "green cauliflower",
         "weight": "12ct",
@@ -1416,7 +1406,7 @@
       },
       "green-leaf": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FGreen-Leaf-Lettuce-each.jpg?alt=media&token=b6ea2763-a3a5-4b3c-9fc9-edbdd8683d49",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "green leaf lettuce",
         "discount": 7,
@@ -1430,7 +1420,7 @@
 
       "iglotex-cauliflower": {
         "imgUrl": "https://fritar.polfirms.com/img/bg/bg08.jpg",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "iglotex cauliflower",
         "discount": 7,
@@ -1443,7 +1433,7 @@
       },
       "kale-sprouts": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/Z0kAAOSwcLNe2Xff/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "kale sprouts",
         "weight": "3oz",
@@ -1455,7 +1445,7 @@
       },
       "lettuce": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/8QgAAOSwHuhjmtfh/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 14,
         "name": "lettuce",
         "weight": "1Ib",
@@ -1467,7 +1457,7 @@
       },
       "love-plum": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpVH3U8u-90wG_UbNfuQ991SUTE_vH8tfL1Ew9xiceiQ&s",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "golden garden love plum",
         "weight": "220g",
@@ -1479,7 +1469,7 @@
       },
       "mandarin-clementine": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/NhEAAOSwmCVkE9pf/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "mandarin clementine",
         "discount": 8,
@@ -1492,7 +1482,7 @@
       },
       "pineapple-import": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/wjcAAOSwz2tlp8go/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "pineapple imported",
         "weight": "5Ib",
@@ -1504,7 +1494,7 @@
       },
       "strawberry": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/yJMAAOSw6VJlYuXD/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "strawberry",
         "weight": "25oz",
@@ -1516,7 +1506,7 @@
       },
       "strawberry-pack": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/l4AAAOSwjY1kRJhI/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 14,
         "name": "strawberries package",
         "weight": "25oz",
@@ -1528,7 +1518,7 @@
       },
       "mini-pumpkin": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/LoUAAOSwk3Blf2fc/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "pumpkin",
         "discount": 17,
@@ -1541,7 +1531,7 @@
       },
       "mint": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/hRAAAOSwPKNgQ2VD/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "Mint Dried",
         "weight": "5ct",
@@ -1553,7 +1543,7 @@
       },
       "og-cauliflower": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/bocAAOSwGctjYFwo/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "organic green cauliflower",
         "weight": "1Ib",
@@ -1565,7 +1555,7 @@
       },
       "og-ginger-root": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/MhkAAOSw7ztgTr0e/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "organic ginger root",
         "weight": "1Ib",
@@ -1577,7 +1567,7 @@
       },
       "organic-broccoli": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/pM0AAOSwd5RlnWi-/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "organic broccoli",
         "weight": "10oz",
@@ -1589,7 +1579,7 @@
       },
       "organic-kale": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/k5gAAOSwRbZll0os/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 16,
         "name": "organic kale powder",
         "weight": "8oz",
@@ -1601,7 +1591,7 @@
       },
       "parsley": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/6CoAAOSw63divL3v/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "parsley",
         "weight": "each",
@@ -1614,7 +1604,7 @@
 
       "pinkerton-avocado": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/Vt0AAOSwmWNkYY~g/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 14,
         "name": "organic pinkerton avocado",
         "weight": "each",
@@ -1626,7 +1616,7 @@
       },
       "potatoes": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/Ev0AAOSwsD5j2yH7/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 11,
         "name": "potatoes",
         "weight": "2Ib",
@@ -1638,7 +1628,7 @@
       },
       "purple-cauliflower": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/EtcAAOSwDgljUENv/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 11,
         "name": "organic purple cauliflower",
         "weight": "1Ib",
@@ -1650,7 +1640,7 @@
       },
       "radicchio": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/otUAAMXQWzNSkQa4/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "radicchio",
         "weight": "12ct",
@@ -1662,7 +1652,7 @@
       },
       "rainbow-chard": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FRainbow-Chard-Package-per-lb.jpg?alt=media&token=273d84f3-6dd8-44c3-a788-da9e0cfc3679",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 12,
         "name": "rainbow chard",
         "weight": "1Ib",
@@ -1674,7 +1664,7 @@
       },
       "rainbow-peppers": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FRainbow-Peppers-4ct.jpg?alt=media&token=784683f3-376d-4346-8888-156ef0aa0eb5",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "name": "rainbow peppers",
         "weight": "4ct",
         "details": ["rainbow-peppers", "fresh vegetable"],
@@ -1685,7 +1675,7 @@
       },
       "red-kale": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/uvQAAOSwDiZjd8pW/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 14,
         "name": "organic greens red kale",
         "weight": "1Ib",
@@ -1698,7 +1688,7 @@
 
       "sweet-corn": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/nmUAAOSw4sxjOwRT/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "yellow sweet corn",
         "weight": "each",
@@ -1710,7 +1700,7 @@
       },
       "white-raddish": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/KdUAAOSwDHxj-mWR/s-l300.webp",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "organic white raddish",
         "weight": "each",
@@ -1764,7 +1754,7 @@
     "household-tools": {
       "alchemy-spray": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpJubNqw7uefhcy5PcfkWSwdEixT8L0TBR0SaCYxMNw&s",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 7,
         "name": "natures alchemy rosewood",
         "weight": "5oz",
@@ -1776,7 +1766,7 @@
       },
       "glade-spray": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/0MAAAOSwztFkd6vZ/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 6,
         "name": "glade automatic spray",
         "weight": "4oz",
@@ -1788,7 +1778,7 @@
       },
       "glade-scents": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/d7kAAOSwmINbcDGs/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 9,
         "name": "glade refills scented",
         "weight": "",
@@ -1800,7 +1790,7 @@
       },
       "ant-killer": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/HN8AAOSwEa9lE3no/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 11,
         "name": "hot shot ant killer",
         "discount": 15,
@@ -1813,7 +1803,7 @@
       },
       "rat-trap": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/VTUAAOSwezNlc6yD/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 12,
         "name": "T-Rex Rat Traps",
         "weight": "2ct",
@@ -1825,7 +1815,7 @@
       },
       "bayer-killed": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/2pIAAOxyjNlR3D8~/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 12,
         "name": "bayer insect control",
         "weight": "75oz",
@@ -1837,7 +1827,7 @@
       },
       "brita-dispenser": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/r00AAOSwzgBhpJSF/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 11,
         "name": "BRITA water filter dispenser",
         "weight": "each",
@@ -1849,7 +1839,7 @@
       },
       "brita-filter": {
         "imgUrl": "https://i.ebayimg.com/images/g/5wQAAOSwYKBlnucg/s-l1600.jpg",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 14,
         "name": "BRITA replacement water filter",
         "weight": "3each",
@@ -1861,7 +1851,7 @@
       },
       "casabella-brush": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/Hd4AAOSwI9Rjbmxo/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 7,
         "name": "casabella sponge brush",
         "weight": "each",
@@ -1873,7 +1863,7 @@
       },
       "pad-brush": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/EmUAAOSwJKNliHkE/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 12,
         "name": "scrubbing pad brush",
         "weight": "1ct",
@@ -1885,7 +1875,7 @@
       },
       "chinese-clean": {
         "imgUrl": "https://suramtrade.com/assets/images/products/1689869949S4BNW3aq.png",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 7,
         "name": "artik mandarine cleaner",
         "weight": "8oz",
@@ -1897,7 +1887,7 @@
       },
       "clean-it": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/y4QAAOSwHSllLsQC/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 8,
         "name": "clean it cleaner",
         "weight": "32oz",
@@ -1909,7 +1899,7 @@
       },
       "clean-wipes": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/-kEAAOSwpNNlfJOJ/s-l225.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 9,
         "name": "good clean wipes",
         "weight": "24ct",
@@ -1921,7 +1911,7 @@
       },
       "fabreze-dirt": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/59cAAOSw58tlRWSK/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 13,
         "name": "fabreze moonlit lavender",
         "weight": "9oz",
@@ -1934,7 +1924,7 @@
 
       "hammer-detergent": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/1A4AAOSwK6RlSOHv/s-l300.webp",
-        "maincategory": "household tools",
+        "maincategory": "household-tools",
         "price": 12,
         "name": "arm hammer detergent",
         "weight": "9oz",
@@ -1948,7 +1938,7 @@
     "jam-jelly": {
       "ahmed-jelly": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/vXcAAOSwR11dKKpr/s-l300.webp",
-        "maincategory": "jam & jelly",
+        "maincategory": "jam-jelly",
         "price": 13,
         "name": "ahmed fruit jelly",
         "weight": "500g",
@@ -1960,7 +1950,7 @@
       },
       "foster-clark": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/oaUAAOSwwM5ljabX/s-l300.webp",
-        "maincategory": "jam & jelly",
+        "maincategory": "jam-jelly",
         "price": 12,
         "name": "foster clark jelly",
         "weight": "450g",
@@ -1972,7 +1962,7 @@
       },
       "pran-jelly": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/WYwAAOSwVEBgzxCM/s-l300.webp",
-        "maincategory": "jam & jelly",
+        "maincategory": "jam-jelly",
         "price": 13,
         "name": "pran mango jelly",
         "weight": "375g",
@@ -1986,7 +1976,7 @@
     "milk-diary": {
       "aarong-ghee": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBX4l3pr8NKIlkWn4JnP5l8ptErm1eNDAHTCmbQYLx4A&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 10,
         "name": "aarong ghee",
         "weight": "200gm",
@@ -1998,7 +1988,7 @@
       },
       "assel-ghee": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQucdv6BEn-HW_Yc0J8oUykMNOHWvU_DGs-vzOuN7jdKA&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 9,
         "name": "aseel vegetable-ghee",
         "weight": "500gm",
@@ -2010,7 +2000,7 @@
       },
       "ultra-ghee": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/qp0AAOSwB2NkFUx5/s-l300.webp",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 10,
         "name": "ultra ghee",
         "weight": "200gm",
@@ -2022,7 +2012,7 @@
       },
       "exotic-swiss": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS28HF07JyA8-pObjCDDflAqxHCG52X2Fty3gjZrM9y8w&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 11,
         "name": "igloo exotic swiss",
         "weight": "100ml",
@@ -2035,7 +2025,7 @@
       },
       "igloo cream": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxqC-6UYsjaupkYDzi0i5OP9v_tRHSYkxiD4fV3WKNA&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 9,
         "name": "igloo container vanilla",
         "weight": "900ml",
@@ -2048,7 +2038,7 @@
       },
       "kheer-malai": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8Qst3Of5T4GigjmKYFE3vS8TK0wD-ZhnCwLjpmW2WQ&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 10,
         "name": "igloo kheer malia",
         "weight": "1ltr",
@@ -2060,7 +2050,7 @@
       },
       "mexico-yoghurt": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-JNYuWPFrRiyEPr9fcdUBtAHHmaA9yN4s-EaiywGG9XqVR7z90jyZVKVBA&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 9,
         "name": "el mexicano yoghurt",
         "weight": "each",
@@ -2072,7 +2062,7 @@
       },
       "shurfine-yoghurt": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/xgcAAOSw~kllHtFD/s-l225.webp",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 11,
         "name": "shurfine vanilla yoghurt",
         "weight": "60oz",
@@ -2086,7 +2076,7 @@
     "organic-food": {
       "gerber-organic": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/0f8AAOSww7llRmPH/s-l300.webp",
-        "maincategory": "organic food",
+        "maincategory": "organic-food",
         "price": 12,
         "name": "gerber organic",
         "weight": "220ml",
@@ -2098,7 +2088,7 @@
       },
       "guava-jelly": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/xg0AAOSw541jkpbc/s-l300.webp",
-        "maincategory": "organic food",
+        "maincategory": "organic-food",
         "price": 11,
         "name": "sugar free guava jelly",
         "weight": "375g",
@@ -2110,7 +2100,7 @@
       },
       "orange-jelly": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/VWwAAOSwjaNkUNl0/s-l300.webp",
-        "maincategory": "organic food",
+        "maincategory": "organic-food",
         "price": 12,
         "name": "sugar free orange jelly",
         "discount": 17,
@@ -2123,7 +2113,7 @@
       },
       "pawapaw": {
         "imgUrl": "https://dailygoods.shop/cdn/shop/products/PakaPape_grande.jpg?v=1661334825",
-        "maincategory": "organic food",
+        "maincategory": "organic-food",
         "price": 12,
         "name": "paka-pape pawpaw",
         "weight": "1kg",
@@ -2137,7 +2127,7 @@
     "pet-care": {
       "bird-food": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/YiQAAOSwXyNlTIrI/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 7,
         "name": "kaytee bird food",
         "weight": "8Ib",
@@ -2149,7 +2139,7 @@
       },
       "bird-toy": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/lzsAAOSwnTdjXp6N/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 12,
         "name": "bird toy",
         "weight": "each",
@@ -2161,7 +2151,7 @@
       },
       "foraging-pouch": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/UoAAAOSwpBxkx6Bm/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 13,
         "name": "foraging pouch bird toy",
         "weight": "each",
@@ -2173,7 +2163,7 @@
       },
       "cat-food": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/zj4AAOSwpwJi3jtP/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 12,
         "name": "premium cat food",
         "weight": "16Ib",
@@ -2185,7 +2175,7 @@
       },
       "leaps-cat": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/f2oAAOSwdJJlASaN/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 14,
         "name": "leaps bounds cat toy",
         "discount": 12,
@@ -2198,7 +2188,7 @@
       },
       "dog-collar": {
         "imgUrl": "https://i.ebayimg.com/images/g/N2kAAOSwUBRljjo-/s-l1600.jpg",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 13,
         "name": "colorado dog collar",
         "discount": 9,
@@ -2211,7 +2201,7 @@
       },
       "dog-diet": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/moEAAOSw6PVlKCts/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 11,
         "name": "hill science dog diet",
         "weight": "each",
@@ -2225,7 +2215,7 @@
     "fish-meat": {
       "atlantic-salmon": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/g04AAOSwYmhirlsD/s-l300.webp",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 9,
         "name": "atlantic salmon",
         "weight": "1b",
@@ -2237,7 +2227,7 @@
       },
       "beef-stew": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/JNcAAOSwvslkfzxY/s-l300.webp",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 18,
         "name": "beef stew",
         "weight": "1Ib",
@@ -2249,7 +2239,7 @@
       },
       "bone-chuck": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaj7vmikR0FxFzennzoY4-SAHIpp7qEk4qDAhz7W3qPA&s",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 18,
         "name": "bone in chuck",
         "weight": "1Ib",
@@ -2261,7 +2251,7 @@
       },
       "boneless-beef": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FBoneless-Beef-Chuck-Roast-per-lb.jpg?alt=media&token=3e42136d-a88f-4ca0-85cb-5b192562a4a3",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 19,
         "name": "boneless beef",
         "discount": 14,
@@ -2274,7 +2264,7 @@
       },
       "canada-salmon": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FFresh-Whole-Canada-Salmon-25-5-oz.jpg?alt=media&token=43b45125-3374-4979-ace2-1d18ac3609d9",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 12,
         "name": "canada salmon",
         "discount": 8,
@@ -2287,7 +2277,7 @@
       },
       "chilean-bass": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FAhi-Tuna-Steaks-per-lb.jpg?alt=media&token=88d9985e-c53d-422d-aca8-e8e96c894774",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 14,
         "name": "chilean sea bass",
         "weight": "1Ib",
@@ -2299,7 +2289,7 @@
       },
       "duck-meat": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FDuck-Hash-Meat-Regular-Kg.jpg?alt=media&token=f5e41442-eee9-4782-9dc3-0e6473da0e48",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 15,
         "name": "duck meat",
         "weight": "1Ib",
@@ -2311,7 +2301,7 @@
       },
       "ground-turkey": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FGround-Turkey-per-lb.jpg?alt=media&token=6b85096b-7352-46f5-8e6a-90f803d12526",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 19,
         "name": "ground turkey",
         "weight": "1Ib",
@@ -2323,7 +2313,7 @@
       },
       "ling-cod": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FLing-Cod-Steak-1lb.jpg?alt=media&token=de341e61-418f-4a24-a8c3-77c98e6fe079",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 11,
         "name": "ling cod steak",
         "weight": "1Ib",
@@ -2335,7 +2325,7 @@
       },
       "peeled-shrimp": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FCooked-Peeled-Deveined-Shrimp-2lb.jpg?alt=media&token=c7268de4-1132-4540-8b88-e885e503b431",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 12,
         "name": "peeled deveined shrimp",
         "weight": "2Ib",
@@ -2347,7 +2337,7 @@
       },
       "salmon-fillet": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2Fsalmon%20fillet.jpg?alt=media&token=d681be9b-3db3-4036-b0c2-526218ffb99a",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 12,
         "name": "salmon fillet portion",
         "weight": "6oz",
@@ -2359,7 +2349,7 @@
       },
       "wild-king": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FFresh-Wild-King-Salmon-Steak-1lb.jpg?alt=media&token=de8beef7-b2c5-4ac4-a29f-e406013d076a",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 12,
         "name": "wild king salmon steak",
         "weight": "1Ib",
@@ -2373,7 +2363,7 @@
     "sauces-pickles": {
       "apple-cider": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/YicAAOSwlBRk7QS~/s-l300.webp",
-        "maincategory": "sauces & pickles",
+        "maincategory": "sauces-pickles",
         "price": 12,
         "name": "american apple cider vinegar",
         "weight": "473g",
@@ -2385,7 +2375,7 @@
       },
       "mango-pickle": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/V5gAAOSw3BRekOOx/s-l300.webp",
-        "maincategory": "sauces & pickles",
+        "maincategory": "sauces-pickles",
         "price": 13,
         "name": "ahmed mango pickle",
         "weight": "400g",
@@ -2397,7 +2387,7 @@
       },
       "heinz-cider": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/fU0AAOSwaVBlouAU/s-l300.webp",
-        "maincategory": "sauces & pickles",
+        "maincategory": "sauces-pickles",
         "price": 14,
         "name": "heinz apple cider vinegar",
         "weight": "473",
@@ -2409,7 +2399,7 @@
       },
       "calypso-sauce": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/chUAAOSwmTllqPp8/s-l300.webp",
-        "maincategory": "sauces & pickles",
+        "maincategory": "sauces-pickles",
         "price": 12,
         "name": "calypso sauce",
         "weight": "200ml",
@@ -2421,7 +2411,7 @@
       },
       "life-ketchup": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/ahUAAOSwhMdlppDU/s-l300.webp",
-        "maincategory": "sauces & pickles",
+        "maincategory": "sauces-pickles",
         "price": 10,
         "name": "life tomato ketchup",
         "weight": "330gm",
@@ -2433,7 +2423,7 @@
       },
       "soya-sauce": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/8VwAAOSwUZJlqyQD/s-l300.webp",
-        "maincategory": "sauces & pickles",
+        "maincategory": "sauces-pickles",
         "price": 10,
         "name": "kikkoman soya sauce",
         "weight": "150ml",
@@ -2447,7 +2437,7 @@
     "snacks-instant": {
       "borges-green": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/OcwAAOSwIl1kV0ZQ/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 13,
         "name": "borges green olives",
         "weight": "330g",
@@ -2459,7 +2449,7 @@
       },
       "mushroom-US": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/wSYAAOSwfRRj~sxk/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 12,
         "name": "american mushroom",
         "weight": "425g",
@@ -2471,7 +2461,7 @@
       },
       "hibiscus-corn": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/6y0AAOSwSAZkMda4/s-l225.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 19,
         "name": "hibiscus baby corn",
         "weight": "425g",
@@ -2483,7 +2473,7 @@
       },
       "kukure-crackers": {
         "imgUrl": "https://i.ebayimg.com/images/g/~JMAAOSwigNi3Cur/s-l1600.jpg",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 10,
         "name": "kurkure crackers",
         "weight": "25g",
@@ -2495,7 +2485,7 @@
       },
       "smoked-almond": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/6~UAAOSweoxlMFff/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 12,
         "name": "camel smoked almonds nuts",
         "weight": "40g",
@@ -2507,7 +2497,7 @@
       },
       "lotte-choco": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/MjkAAOSwo4pYU8PW/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 13,
         "name": "lotte almond chocoball",
         "discount": 12,
@@ -2520,7 +2510,7 @@
       },
       "mm-choco": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/5aUAAOSwjtdkELlk/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 9,
         "name": "m&m's choolate",
         "weight": "45g",
@@ -2532,7 +2522,7 @@
       },
       "maggi-noodles": {
         "imgUrl": "https://i.ebayimg.com/images/g/ycIAAOSwMZtlK6u1/s-l1600.jpg",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 15,
         "name": "maggi noodles",
         "weight": "260g",
@@ -2544,7 +2534,7 @@
       },
       "mama-noodles": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/tRoAAOSwOU9lnJ5C/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 17,
         "name": "mama hot spicy noodles",
         "weight": "496g",
@@ -2557,7 +2547,7 @@
 
       "mr-magic": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/cPwAAOSwU8Rkw27p/s-l225.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 10,
         "name": "YiPPee magic masala",
         "weight": "40g",
@@ -2572,7 +2562,7 @@
     "Popular-items": {
       "biomil": {
         "imgUrl": "https://images.othoba.com/images/thumbs/0596304_biomil-3-baby-milk-powder-103232-350-g.jpeg",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 16,
         "name": "biomil-1 food",
         "discount": 13,
@@ -2585,7 +2575,7 @@
       },
       "borges-green": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/OcwAAOSwIl1kV0ZQ/s-l300.webp",
-        "maincategory": "snacks & instant",
+        "maincategory": "snacks - instant",
         "price": 13,
         "name": "borges green olives",
         "weight": "330g",
@@ -2597,10 +2587,10 @@
       },
       "after-shave": {
         "imgUrl": "https://media.istockphoto.com/id/967799712/photo/a-man-putting-perfume-in-the-bathroom.jpg?s=612x612&w=0&k=20&c=BqfeucboCZ3nvwsHBPK50a6gBtaSPa4luK0TzNv9jHg=",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 8,
         "name": "denim after shave",
-        "discount":4,
+        "discount": 4,
         "weight": "100ml",
         "details": ["shave", "after-shave"],
         "id": 187,
@@ -2610,10 +2600,10 @@
       },
       "bisk-club-food": {
         "imgUrl": "https://www.pranfoods.net/sites/default/files/2023-09/Fruit%20FUn%20750%20Pineapple.png",
-        "maincategory": "biscuits & cakes",
+        "maincategory": "biscuits-cakes",
         "price": 11,
         "name": "bisk club cream biscuit",
-        "discount":20,
+        "discount": 20,
         "weight": "1pac",
         "details": ["biscuits", "bisk-food"],
         "id": 153,
@@ -2621,21 +2611,10 @@
         "subcategory": "biscuits",
         "__collections__": {}
       },
-      "bread": {
-        "imgUrl": "https://i.ebayimg.com/thumbs/images/g/LnQAAOSwxUpjAsNw/s-l500.jpg",
-        "maincategory": "breakfast",
-        "price": 9,
-        "name": "bread",
-        "weight": "1pc",
-        "details": ["breakfast", "bread"],
-        "id": 93,
-        "stock": 78,
-        "subcategory": "bread",
-        "__collections__": {}
-      },
+
       "atlantic-salmon": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FBlack-Pearls-Salmon-Filet-Portion-6-oz.jpg?alt=media&token=67fdedcd-dbec-44e9-af6a-687decd2fa1d",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 9,
         "name": "atlantic salmon",
         "weight": "1b",
@@ -2647,7 +2626,7 @@
       },
       "beef-stew": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FNiman-Ranch-Angus-Beef-Stew-Meat-per-lb.jpg?alt=media&token=c78f13b7-33e4-4251-8f34-4601d82b469f",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 18,
         "name": "beef stew",
         "weight": "1Ib",
@@ -2659,7 +2638,7 @@
       },
       "blueberry-plum": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUN3Ue_sCrwTQN_MwACHoIpQogHhQLGvXHy2L5gQaiXw&s",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 13,
         "name": "golden garden blueberry plum",
         "weight": "220g",
@@ -2671,7 +2650,7 @@
       },
       "bok-cabbage": {
         "imgUrl": "https://propagationplace.co.uk/pp/wp-content/uploads/Cabbage-Chinese-Wong-Bok-vegetable-plants-1-1000x1000.jpg",
-        "maincategory": "fruits & vegetable",
+        "maincategory": "fruits-vegetable",
         "price": 15,
         "name": "bok choy cabbage",
         "weight": "1ib",
@@ -2734,7 +2713,7 @@
     "Discounts": {
       "biomil": {
         "imgUrl": "https://images.othoba.com/images/thumbs/0596304_biomil-3-baby-milk-powder-103232-350-g.jpeg",
-        "maincategory": "baby care",
+        "maincategory": "baby-care",
         "price": 16,
         "name": "biomil-1 food",
         "discount": 13,
@@ -2745,7 +2724,7 @@
         "subcategory": "baby food",
         "__collections__": {}
       },
-  
+
       "kimbo-coffe": {
         "imgUrl": "https://www.kimbocoffee.com/cdn/shop/collections/K-CUP_Static_6_650x.png?v=1692619365",
         "maincategory": "drinks",
@@ -2774,7 +2753,7 @@
       },
       "pantene-care": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhzSd_GBg9a--cqI7MM1eURNolGb61qTJNp18rlaAh8VVOVUJcDoh7EfL6A&s",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 9,
         "name": "pantene hair care",
         "discount": 16,
@@ -2787,7 +2766,7 @@
       },
       "exotic-swiss": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS28HF07JyA8-pObjCDDflAqxHCG52X2Fty3gjZrM9y8w&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 11,
         "name": "igloo exotic swiss",
         "weight": "100ml",
@@ -2800,7 +2779,7 @@
       },
       "igloo cream": {
         "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxqC-6UYsjaupkYDzi0i5OP9v_tRHSYkxiD4fV3WKNA&s",
-        "maincategory": "milk & dairy",
+        "maincategory": "milk-dairy",
         "price": 9,
         "name": "igloo container vanilla",
         "weight": "900ml",
@@ -2826,7 +2805,7 @@
       },
       "leaps-cat": {
         "imgUrl": "https://i.ebayimg.com/thumbs/images/g/f2oAAOSwdJJlASaN/s-l300.webp",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 14,
         "name": "leaps bounds cat toy",
         "discount": 12,
@@ -2839,7 +2818,7 @@
       },
       "dog-collar": {
         "imgUrl": "https://i.ebayimg.com/images/g/N2kAAOSwUBRljjo-/s-l1600.jpg",
-        "maincategory": "pet care",
+        "maincategory": "pet-care",
         "price": 13,
         "name": "colorado dog collar",
         "discount": 9,
@@ -2852,7 +2831,7 @@
       },
       "boneless-beef": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FBoneless-Beef-Chuck-Roast-per-lb.jpg?alt=media&token=3e42136d-a88f-4ca0-85cb-5b192562a4a3",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 19,
         "name": "boneless beef",
         "discount": 14,
@@ -2865,7 +2844,7 @@
       },
       "canada-salmon": {
         "imgUrl": "https://firebasestorage.googleapis.com/v0/b/grocery-app-store-57f4d.appspot.com/o/productImgs%2FFresh-Whole-Canada-Salmon-25-5-oz.jpg?alt=media&token=43b45125-3374-4979-ace2-1d18ac3609d9",
-        "maincategory": "fish & meat",
+        "maincategory": "fish-meat",
         "price": 12,
         "name": "canada salmon",
         "discount": 8,
@@ -2878,7 +2857,7 @@
       },
       "after-shave": {
         "imgUrl": "https://media.istockphoto.com/id/967799712/photo/a-man-putting-perfume-in-the-bathroom.jpg?s=612x612&w=0&k=20&c=BqfeucboCZ3nvwsHBPK50a6gBtaSPa4luK0TzNv9jHg=",
-        "maincategory": "beauty & health",
+        "maincategory": "beauty-health",
         "price": 8,
         "name": "denim after shave",
         "discount": 4,
@@ -2889,6 +2868,61 @@
         "subcategory": "shaving needs",
         "__collections__": {}
       }
+    },
+    "descriptionss": {
+      "baby food": "Baby foods are either a soft, liquid paste or an easily chewed food since babies lack developed muscles and teeth to effectively chew. Babies typically move to consuming baby food once nursing or formula is not sufficient for the child's appetite. Babies do not need to have teeth to transition to eating solid foods.",
+      "baby accessories": "Baby Products are products intended to be used on infants and children under the age of three. Baby products are specially formulated to be mild and non-irritating and use ingredients that are selected for these properties. Baby products include baby shampoos and baby lotions, oils, powders and creams.",
+      "shaving needs": "Health products are defined as those substances which gives energy or makes the person healthy. Health products are vitamins, minerals, herbal medicines, homeopathic preparations, probiotics and even some traditional medicines are also prescribed by doctor or any equivalent physician.",
+      "skin care": "Skin care is the range of practices that support skin integrity, enhance its appearance and relieve skin conditions. Skin care is a part of the treatment of wound healing, radiation therapy and some medications.",
+      "hair care": "Hair Care products are those that help to control the properties and behavior of the hair so that it can be maintained in a controlled and desirable manner. This can include hair conditioners, hair sprays, hair straighteners and relaxers, permanent waves, shampoos, rinses, tonics and dressings.",
+      "oral care": "Oral Care Products are intended to cleanse the oral cavity, freshen the breath, and maintain good oral hygiene. Some products also include ingredients to protect against the formation of cavities.",
+      "bath": "bathroom accessories are items specifically designed for use in a bathroom, such as soap dishes, towel racks, etc. bathroom accessories accessories typically have durable, decorative finishes.",
+      "cosmetics": "A cosmetic product shall mean any substance or mixture intended to be placed in contact with the various external parts of the human body (epidermis, hair system, nails, lips and external genital organs) or with the teeth and the mucous membranes of the oral cavity with a view exclusively or mainly to cleaning them",
+      "biscuits": "A biscuit is a flour-based baked food product. In most countries, particularly in the Commonwealth and Ireland, biscuits are typically hard, flat and unleavened. They are usually sweet and may be made with sugar, chocolate, icing, jam, ginger or cinnamon. They can also be savoury and similar to cracker",
+      "cakes": "Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked. ... The most commonly used cake ingredients include flour, sugar, eggs, butter or oil or margarine, a liquid, and a leavening agent, such as baking soda or baking powder.",
+      "bread": "The definition of a breakfast food is a food that is eaten primarily for the first meal of the day commonly including: cereal, toast, eggs, pancakes, waffles, pastries, sausage or bacon. An example of a breakfast food is oatmeal. An example of a breakfast food is french toast with scrambled eggs.",
+      "cereal": "The definition of a breakfast food is a food that is eaten primarily for the first meal of the day commonly including: cereal, toast, eggs, pancakes, waffles, pastries, sausage or bacon. An example of a breakfast food is oatmeal. An example of a breakfast food is french toast with scrambled eggs.",
+      "dry vegetable": "Any vegetable that has been dehydrated or dried in order to extend the shelf life and to concentrate the flavor. Popular dried vegetables include sun-dried tomatoes, onions, carrots, and chiles.",
+      "oil": "Cooking oil is plant, animal, or synthetic fat used in frying, baking, and other types of cooking. ... Cooking oil is typically a liquid at room temperature, although some oils that contain saturated fat, such as coconut oil, palm oil and palm kernel oil are solid.",
+      "flour": "Flour, finely ground cereal grains or other starchy portions of plants, used in various food products and as a basic ingredient of baked goods. Flour made from wheat grains is the most satisfactory type for baked products that require spongy structure. ... The outer layers and internal structures of a kernel of wheat.",
+      "rice": "Rice, (Oryza sativa), edible starchy cereal grain and the grass plant (family Poaceae) by which it is produced. ... Rice is cooked by boiling, or it can be ground into a flour. It is eaten alone and in a great variety of soups, side dishes, and main dishes in Asian, Middle Eastern, and many other cuisines.",
+      "spices & mixes": "Spice mixes are blended spices or herbs. ... Blends such as chili powder, curry powder, herbes de Provence, garlic salt, and other seasoned salts are traditionally sold pre-made by grocers, and sometimes baking blends such as pumpkin pie spice are also available.",
+      "tea": "Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis, an evergreen shrub native to China and East Asia. After water, it is the most widely consumed drink in the world. ... Tea has a stimulating effect in humans primarily due to its caffeine content.",
+      "energy drinks": "Energy drink, any beverage that contains high levels of a stimulant ingredient, usually caffeine, as well as sugar and often supplements, such as vitamins or carnitine, and that is promoted as a product capable of enhancing mental alertness and physical performance.",
+      "coffee": "Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. ... Coffee is darkly colored, bitter, slightly acidic and has a stimulating effect in humans, primarily due to its caffeine content.",
+      "juice": "Juice is a drink made from the extraction or pressing of the natural liquid contained in fruit and vegetables. It can also refer to liquids that are flavored with concentrate or other biological food sources, such as meat or seafood, such as clam juice.",
+      "water": "water, a substance composed of the chemical elements hydrogen and oxygen and existing in gaseous, liquid, and solid states. It is one of the most plentiful and essential of compounds. A tasteless and odourless liquid at room temperature, it has the important ability to dissolve many other substances.",
+      "fish": "A fish is an animal which lives and breathes in water. All fish are vertebrates (have a backbone) and most breathe through gills and have fins and scales. ... There are three classes of fish: jawless, cartilaginous, and bony. All fish have a backbone.",
+      "meat": "Beef, flesh of mature cattle, as distinguished from veal, the flesh of calves. The best beef is obtained from early maturing, special beef breeds. High-quality beef has firm, velvety, fine-grained lean, bright red in colour and well-marbled. The fat is smooth, creamy white, and well distributed.",
+      "fresh seafood": "A fish is an animal which lives and breathes in water. All fish are vertebrates (have a backbone) and most breathe through gills and have fins and scales. ... There are three classes of fish: jawless, cartilaginous, and bony. All fish have a backbone.",
+      "fruits fruits": "In a botanical sense, a fruit is the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technically fruits.",
+      "fresh fruits": "In a botanical sense, a fruit is the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Apricots, bananas, and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and (in their shells) acorns and almonds, are all technically fruits.",
+
+      "fresh vegetable": "Most fresh vegetables are low in calories and have a water content in excess of 70 percent, with only about 3.5 percent protein and less than 1 percent fat. ... The root vegetables include beets, carrots, radishes, sweet potatoes, and turnips. Stem vegetables include asparagus and kohlrabi.",
+      "dry fruits": "Dried fruit is fruit from which the majority of the original water content has been removed either naturally, through sun drying, or through the use of specialized dryers or dehydrators. ... Nearly half of the dried fruits sold are raisins, followed by dates, prunes, figs, apricots, peaches, apples, and pears.",
+      "honey": "Honey, sweet, viscous liquid food, dark golden in colour, produced in the honey sacs of various bees from the nectar of flowers. Flavour and colour are determined by the flowers from which the nectar is gathered. Some of the most commercially desirable honeys are produced from clover by the domestic honeybee.",
+      "air freshener": "A device used to disperse chemicals intended to mask or eliminate unpleasant odors The bathrooms should also have matching towels, soap and tissue dispensers, and a candle or plug-in air freshener with a pleasant scent.",
+      "laundry": "A laundry service is a service in a hotel that washes and irons clothes for guests. Almost all hotels have a laundry service. If you hand in clothes one day you should get them back a day or two later. The laundry service will wash, dry, and iron your clothes.",
+      "cleaner": "A Cleaner, or Custodian, is responsible for keeping offices, homes, hotels or other public areas neat and organized. Their main duties include sweeping, mopping and vacuuming floors, dusting countertops, ceilings and furniture and sanitizing bathrooms, kitchens or other public areas.",
+      "water filter": "Water filtering is a method used to filter out undesired chemical compounds, organic and inorganic materials, and biological contaminants from water. The purpose of water filtration is to provide clean drinking water.",
+      "cleaning tools": "A variety of accurate and specific tools and products created and designed in various colors, materials, mechanisms, shapes, sizes and styles to clean easily, effectively and efficiently. Cleaning tools are vital to clean especially when your form of employment involves cleaning.",
+      "pest control": "Pest control is the regulation or management of a species defined as a pest, a member of the animal kingdom that impacts adversely on human activities. ... This can be achieved by monitoring the crop, only applying insecticides when necessary, and by growing varieties and crops which are resistant to pests",
+      "jam & jelly": "Jams and jellies are spreads typically made from fruit, sugar, and pectin. Jelly is made with the juice of the fruit; jam uses the meat of the fruit as well. Some vegetable jellies are also produced.",
+      "butter & ghee": "Butter, a yellow-to-white solid emulsion of fat globules, water, and inorganic salts produced by churning the cream from cows' milk. ... Butter is a high-energy food, containing approximately 715 calories per 100 grams. It has a high content of butterfat, or milk fat (at least 80 percent), but is low in protein.",
+      "ice cream": "Ice cream is a frozen dairy dessert obtained by freezing the ice cream mix with continuous agitation. It contains milk products, sweetening materials, stabilizers, colors, flavors, and egg products. Ice cream had its origins in Europe and was introduced later in the United States where it developed into an industry.",
+      "dairy": "Dairy products or milk products,, are food products made from (or containing) milk. The most common dairy animals are cow, water buffalo, nanny goat, and ewe. Dairy products include common grocery store food items in the Western world such as yogurt, cheese and milk.A facility that produces dairy products is known as a dairy. ",
+      "organic food": "Organic food is food produced by methods complying with the standards of organic farming. Standards vary worldwide, but organic farming features practices that cycle resources, promote ecological balance, and conserve biodiversity.",
+      "bird care": "Many species of birds make fun, engaging pets. If you're considering bird ownership, the care requirements include providing good housing, nutritious food, and keeping an eye on the bird's health. You'll also need to provide plenty of enrichment and interaction, to keep your pet bird happy and alert.",
+      "dog care": "Dog Sitters supervise pets and take care of them in their owners' absence. Typical activities seen on a Dog Sitter example resume are grooming, providing food and water, taking dogs out for walk, taking dogs to vet appointments, administering medication, providing companionship, and following owner instructions.",
+      "cat care": "Provide plenty of human companionship. Provide regular, suitable meals with a constant supply of fresh water. Provide a clean and comfortable bed. Provide the cat with outdoor access or be prepared to empty and clean a litter tray on a daily basis.",
+      "sauces": "Sauce, liquid or semiliquid mixture that is added to a food as it cooks or that is served with it. Sauces provide flavour, moisture, and a contrast in texture and colour. They may also serve as a medium in which food is contained, for example, the velouté sauce of creamed chicken.",
+      "pickles & condiments": "The acetic acid in vinegar or the lactic acid produced by brine gives the pickle its salty, sour taste. ... Bread-and-butter pickles, for example, have a distinctly sweet taste because sugar and other sweeteners are added to the brine. Like tomatoes, cucumbers (and thus, pickles) are technically fruits",
+      "chips & nuts": " A small, thin, crisp, usually salty piece of food typically prepared by frying, baking, or drying banana chips especially; potato chip",
+      "noodles": "Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings. ... Noodles are usually cooked in boiling water, sometimes with cooking oil or salt added. They are also often pan-fried or deep-fried.",
+      "canned food": "Canned food - food preserved by canning. canned foods, canned goods, tinned goods. food product, foodstuff - a substance that can be used or prepared for use as food. canned meat, tinned meat - meat preserved in a can or tin.",
+      "chocolate": "Chocolate is a food product made from roasted and ground cacao pods, that is available as a liquid, solid or paste, on its own or as a flavoring agent in other foods.",
+      "sports": "Sporting equipment, also called sporting goods, are the tools, materials, apparel, and gear used to compete in a sport and varies depending on the sport. The equipment ranges from balls, nets, and protective gear like helmets. Sporting equipment can be used as protective gear or a tool used to help the athletes play the sport.",
+      "fitness": "Fitness generally means optimal health and overall well-being. It includes five essential components, flexibility, cardiorespiratory fitness, muscular endurance, muscular strength, and body composition.. Smart eating and active living are fundamental to fitness."
     }
   }
 ]
