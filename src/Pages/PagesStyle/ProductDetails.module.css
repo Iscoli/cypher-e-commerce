@@ -6,6 +6,31 @@
 
 .navItem span {
   padding: 0 0.27rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+.navItem :link {
+ text-decoration: none;
+}
+.navItem2{
+     color: #6c757d;
+}
+
+.stockIn{
+    font-size: 1rem !important;
+    padding: 0.32rem 0.75rem;
+    color: rgb(5, 150, 105);
+    background: rgb(209, 250, 229);
+    border-radius: 12px;
+}
+
+.stockOut{
+   font-size: 1rem !important;
+    padding: 0.32rem 0.75rem;
+    border-radius: 12px;
+      color: rgb(220, 38, 38);
+    background: rgb(254, 226, 226);
 }
 
 .section1 {

@@ -74,7 +74,7 @@ function ProductDetails() {
       }
     };
     getMainCategories();
-  }, [param.name, setCategories]);
+  }, [param.name]);
 
   return (
     <div className={styles.product}>
@@ -93,7 +93,9 @@ function ProductDetails() {
         <span>
           <FontAwesomeIcon className="category-pionter" icon={faAngleRight} />
         </span>
-        <span>{name}</span>
+        <span style={{ color: "#6c757d" }} className={styles.navItem2}>
+          {name}
+        </span>
       </nav>
 
       <section className={styles.section1}>
@@ -103,9 +105,13 @@ function ProductDetails() {
 
         <div className={styles.flex2}>
           <div className={styles.flex11}>
-            <h4 style={{ marginBottom: "-9px" }}>{name}</h4>
-            <h4 style={{ marginBottom: "8px" }}>${price}</h4>
-            {stock > 0 ? <span>In Stock </span> : <span>Stock Out </span>}
+            <h2 style={{ marginBottom: "-9px" }}>{name}</h2>
+            <h2 style={{ marginBottom: "8px" }}>${price}</h2>
+            {stock > 0 ? (
+              <span className={styles.stockIn}>In Stock </span>
+            ) : (
+              <span className={styles.stockOut}>Stock Out </span>
+            )}
             {/* {console.log(subcategory, "iiiss")} */}
             <Description subcategory={subcategory} />
             <div>
