@@ -34,7 +34,7 @@ function Swipper() {
       >
         <div className="mySwipper-container">
           <SwiperSlide style={{ position: "relative" }}>
-            <img className="swipper-imgs" src={Basket1} alt="Basket one" />
+            <img loading="lazy" className="swipper-imgs" src={Basket1} alt="Basket one" />
             <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
@@ -47,7 +47,7 @@ function Swipper() {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
-            <img className="swipper-imgs" src={Basket2} alt="Basket two" />
+            <img loading="lazy" className="swipper-imgs" src={Basket2} alt="Basket two" />
             <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
@@ -60,7 +60,7 @@ function Swipper() {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
-            <img className="swipper-imgs" src={Basket3} alt="Basket three" />
+            <img loading="lazy" className="swipper-imgs" src={Basket3} alt="Basket three" />
             <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
@@ -73,7 +73,7 @@ function Swipper() {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
-            <img className="swipper-imgs" src={Basket4} alt="Basket four" />
+            <img loading="lazy" className="swipper-imgs" src={Basket4} alt="Basket four" />
             <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
@@ -86,7 +86,7 @@ function Swipper() {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
-            <img className="swipper-imgs" src={Basket5} alt="Basket five" />
+            <img loading="lazy" className="swipper-imgs" src={Basket5} alt="Basket five" />
             <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
