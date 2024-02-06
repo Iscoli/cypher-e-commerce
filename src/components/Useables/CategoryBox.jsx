@@ -11,7 +11,7 @@ function CategoryBox(props) {
       {props.category?.map((category, index) => (
         <div className="box-contain" key={index}>
           <div>
-            <img className="category-img" src={category.img} alt="" />
+            <img loading='lazy' className="category-img" src={category.img} alt="" />
           </div>
           <div className="category-text">
             <Link

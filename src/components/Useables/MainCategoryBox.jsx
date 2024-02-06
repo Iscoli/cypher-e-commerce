@@ -48,6 +48,7 @@ function MainCategoryBox(props) {
       <div className="product-img-container">
         <Link to={`/product/${suna}`}>
           <img
+            loading='lazy'
             className="products-img"
             src={props.product.imgUrl}
             alt="products"

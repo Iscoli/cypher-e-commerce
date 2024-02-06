@@ -24,7 +24,6 @@ function ProductDetails() {
 
   const [categories, setCategories] = useState([]);
   const [count, setCount] = useState(0);
-  const [isStockOut, setIsStockOut] = useState(false);
 
   const { name, imgUrl, maincategory, price, stock, subcategory } =
     categories;
@@ -111,26 +110,21 @@ function ProductDetails() {
             <Description subcategory={subcategory} />
             <div>
               <button
-                disabled={stock > 0}
+                disabled={stock === 0}
                 onClick={() => handlePlus()}
                 style={{ cursor: "pointer" }}
               >
                 +
               </button>
               <span>{count}</span>
-              <button onClick={() => handleMinus()}>-</button>
+              <button disabled={stock === 0} onClick={() => handleMinus()}>
+                -
+              </button>
 
               <button
+                disabled={stock === 0}
                 style={{ cursor: "pointer" }}
-                onClick={() => {
-                  if (stock === 0) {
-                    setIsStockOut(true);
-                  } else {
-                    handleAdd(categories);
-                  }
-                }}
-                
-                disabled={isStockOut}
+                onClick={() => handleAdd(categories)}
               >
                 Add Cart
               </button>

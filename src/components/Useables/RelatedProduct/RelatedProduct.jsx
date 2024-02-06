@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import MainCategoryBox from "../../Useables/MainCategoryBox";
-import RelatedProductBox from "./RelatedProductBox";
+
 
 function RelatedProduct({ maincategory }) {
   const [mainCategory, setMainCategory] = useState();
