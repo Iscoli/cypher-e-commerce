@@ -30,7 +30,7 @@ function CheckOut() {
 
     setDiscountedPrice(updatedDiscountedPrices);
     // eslint-disable-next-line
-  },[cart[0]]);
+  }, [cart[0]]);
 
   const [totalDiscountedPriceSum, setTotalDiscountedPriceSum] = useState(0);
 
@@ -113,7 +113,9 @@ function CheckOut() {
                 ) : (
                   <span>
                     ${TotalAmount}
-                    {roundedTotalDiscountedPriceSum === "0.00" ? ".00" : ""}{" "}
+                    {roundedTotalDiscountedPriceSum === "0.00"
+                      ? ".00"
+                      : ""}{" "}
                   </span>
                 )}
               </h2>

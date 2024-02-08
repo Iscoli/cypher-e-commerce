@@ -41,14 +41,19 @@ function ProductDetails() {
   
   const numOfItemsPurchased = count;
   const handleAdd = ({ id, count, imgUrl, price, name, discount }) => {
-    const discountValue = discount || 0;
-    dispatch(
-      fetchCartData(
-        { id, count, imgUrl, price, name, discountValue },
-        numOfItemsPurchased
-      )
-    );
-    setCount(0);
+
+   
+    if (numOfItemsPurchased > 0) {
+      const discountValue = discount || 0;
+      dispatch(
+        fetchCartData(
+          { id, count, imgUrl, price, name, discountValue },
+          numOfItemsPurchased
+        )
+      );
+      setCount(0);
+    }
+   
   };
 
   // console.log(categories, "categgew");
@@ -185,8 +190,12 @@ function ProductDetails() {
         </div>
       </section>
 
-      <section>
-        <p>Related Product</p>
+      <section
+      style={{width:'101%', margin:'0 auto'}}
+      >
+        <p
+        style={{paddingLeft:'20px'}}
+        >Related Product</p>
         {console.log(maincategory, "iiiss")}
         <RelatedProduct maincategory={maincategory} />
       </section>
