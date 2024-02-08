@@ -114,30 +114,46 @@ function ProductDetails() {
             )}
             {/* {console.log(subcategory, "iiiss")} */}
             <Description subcategory={subcategory} />
-            <div>
-              <button
-                disabled={stock === 0}
-                onClick={() => handlePlus()}
-                style={{ cursor: "pointer" }}
-              >
-                +
-              </button>
-              <span>{count}</span>
-              <button disabled={stock === 0} onClick={() => handleMinus()}>
-                -
-              </button>
-
-              <button
-                disabled={stock === 0}
-                style={{ cursor: "pointer" }}
-                onClick={() => handleAdd(categories)}
-              >
-                Add Cart
-              </button>
+            <div className={styles.calContainer}>
+              <div className={styles.cal1}>
+                <button
+                  disabled={stock === 0}
+                  onClick={() => handlePlus()}
+                  style={{ cursor: "pointer" }}
+                >
+                  +
+                </button>
+                <span>{count}</span>
+                <button
+                  style={{ cursor: "pointer" }}
+                  disabled={stock === 0}
+                  onClick={() => handleMinus()}
+                >
+                  -
+                </button>
+              </div>
+              <div className={styles.cal2}>
+                <button
+                  className={styles.btnn2}
+                  disabled={stock === 0}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => handleAdd(categories)}
+                >
+                  Add Cart
+                </button>
+              </div>
             </div>
-            <p>Category:{subcategory}</p>
-            <span>{name}</span>
-            <span>{maincategory}</span>
+            <p>
+              <span
+              style={{color:'#374151'}}
+              >Category:</span>
+             <span
+             style={{color: '#6b7280',
+                fontWeight:500}}
+             >{subcategory} </span>
+            </p>
+            <span className={styles.bottom1}>{name}</span>
+            <span className={styles.bottom2}>{maincategory}</span>
           </div>
 
           <div className={styles.flex12}>
