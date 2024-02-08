@@ -76,6 +76,7 @@
 .calContainer {
   display: flex;
   justify-content: space-between;
+  align-items:center;
 }
 
 .cal1 {
@@ -99,7 +100,7 @@
   color: #fff;
   display: block;
   letter-spacing: 0.1px;
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   width: 100%;
   border: none;
   border-radius:0.4rem;
