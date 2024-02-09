@@ -54,7 +54,7 @@ function App() {
                 backgroundColor: "#f5f5f5",
                 borderRadius: "8px",
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-                overflow: "hidden",
+                
               }}
             >
               <Navbar
