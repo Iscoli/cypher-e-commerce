@@ -59,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 12px;
+  align-items: center;
 }
 .price-container {
   display: flex;
@@ -82,5 +83,4 @@
   height: 1.25rem;
   justify-content: center;
   width: 1.25rem;
-  margin-top: 20px;
 }

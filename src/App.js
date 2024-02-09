@@ -48,13 +48,12 @@ function App() {
               className="major-container"
               style={{
                 maxWidth: "1400px",
-               
                 minWidth: "300px",
                 margin: "0 auto",
                 backgroundColor: "#f5f5f5",
                 borderRadius: "8px",
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-                
+                paddingBottom:'1rem'
               }}
             >
               <Navbar

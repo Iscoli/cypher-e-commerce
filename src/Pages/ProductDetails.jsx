@@ -9,6 +9,8 @@ import IconLink from "../components/Useables/IconLink/IconLink";
 import { fetchCartData } from "../Redux";
 import { useDispatch } from "react-redux";
 import Description from "../components/Useables/Description/Description";
+import { ReactComponent as Plus } from "../components/assets/plus.svg";
+import { ReactComponent as Minus } from "../components/assets/minus.svg";
 import car from "../components/assets/moto.svg";
 import house from "../components/assets/house.svg";
 import dollar from "../components/assets/dollar.svg";
@@ -126,7 +128,7 @@ function ProductDetails() {
                   onClick={() => handlePlus()}
                   style={{ cursor: "pointer" }}
                 >
-                  +
+                 <Plus/>
                 </button>
                 <span>{count}</span>
                 <button
@@ -134,7 +136,7 @@ function ProductDetails() {
                   disabled={stock === 0}
                   onClick={() => handleMinus()}
                 >
-                  -
+                  <Minus/>
                 </button>
               </div>
               <div className={styles.cal2}>

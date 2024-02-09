@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../UsablesCss/MainCategoryBoxModule.css";
 import { ReactComponent as AddCart } from "../assets/button.svg";
+import { ReactComponent as Plus } from "../assets/plus.svg";
+import { ReactComponent as Minus } from "../assets/minus.svg";
 import { fetchCartData, decreaseProductQuantity } from "../../Redux";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -41,14 +43,12 @@ function MainCategoryBox(props) {
 
   const suna = props.name;
 
-
-
   return (
     <div className="category-box">
       <div className="product-img-container">
         <Link to={`/product/${suna}`}>
           <img
-            loading='lazy'
+            loading="lazy"
             className="products-img"
             src={props.product.imgUrl}
             alt="products"
@@ -91,14 +91,14 @@ function MainCategoryBox(props) {
               style={{ cursor: "pointer" }}
               onClick={() => handleAdd(props.product)}
             >
-              +
+              <Plus/>
             </button>
             <span>{cartCount(props.product.id)}</span>
             <button
               style={{ cursor: "pointer" }}
               onClick={() => handleDecrease(props.product)}
             >
-              -
+              <Minus/>
             </button>
           </div>
         ) : (
