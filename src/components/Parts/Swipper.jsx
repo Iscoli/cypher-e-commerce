@@ -40,7 +40,7 @@ function Swipper() {
               src={Basket1}
               alt="Basket one"
             />
-            <div className="sliderText">
+            {/* <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
                 Intrinsically fashion performance based products rather than
@@ -49,7 +49,7 @@ function Swipper() {
               <Link to="/main-category/fish-meat">
                 <button className="btn1">Shop Now</button>
               </Link>
-            </div>
+            </div> */}
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
             <img
@@ -58,7 +58,7 @@ function Swipper() {
               src={Basket2}
               alt="Basket two"
             />
-            <div className="sliderText">
+            {/* <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
                 Intrinsically fashion performance based products rather than
@@ -67,7 +67,7 @@ function Swipper() {
               <Link to="/main-category/snacks-instant">
                 <button className="btn1">Shop Now</button>
               </Link>
-            </div>
+            </div> */}
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
             <img
@@ -76,7 +76,7 @@ function Swipper() {
               src={Basket3}
               alt="Basket three"
             />
-            <div className="sliderText">
+            {/* <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
                 Intrinsically fashion performance based products rather than
@@ -85,7 +85,7 @@ function Swipper() {
               <Link to="/main-category/household-tools">
                 <button className="btn1">Shop Now</button>
               </Link>
-            </div>
+            </div> */}
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
             <img
@@ -94,7 +94,7 @@ function Swipper() {
               src={Basket4}
               alt="Basket four"
             />
-            <div className="sliderText">
+            {/* <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
                 Intrinsically fashion performance based products rather than
@@ -103,7 +103,7 @@ function Swipper() {
               <Link to="/main-category/fruits-vegetable">
                 <button className="btn1">Shop Now</button>
               </Link>
-            </div>
+            </div> */}
           </SwiperSlide>
           <SwiperSlide style={{ position: "relative" }}>
             <img
@@ -112,7 +112,7 @@ function Swipper() {
               src={Basket5}
               alt="Basket five"
             />
-            <div className="sliderText">
+            {/* <div className="sliderText">
               <h2>Quality Freshness Guaranteed</h2>
               <p>
                 Intrinsically fashion performance based products rather than
@@ -121,7 +121,7 @@ function Swipper() {
               <Link to="/main-category/breakfast">
                 <button className="btn1">Shop Now</button>
               </Link>
-            </div>
+            </div> */}
           </SwiperSlide>
         </div>
       </Swiper>

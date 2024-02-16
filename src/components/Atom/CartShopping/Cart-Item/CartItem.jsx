@@ -41,7 +41,7 @@ function CartItem() {
           <div key={id}>
             <div className="cart-container">
               <div className="cart-imagediv">
-                <img className="cart-img" alt='cart-pic'src={imgUrl} />
+                <img className="cart-img" alt="cart-pic" src={imgUrl} />
               </div>
               <div className="cart-details">
                 <div>
@@ -64,18 +64,21 @@ function CartItem() {
                         handleAdd({ imgUrl, id, name, price, count })
                       }
                     >
-                      <Plus style={{ marginTop: "-6px" }} />
+                      <Plus style={{ marginTop: "-6px", cursor: "pointer" }} />
                     </button>
                     <span>{count}</span>
 
-                    <button onClick={() => handleDecrease({ id })}>
+                    <button
+                      style={{ cursor: "pointer" }}
+                      onClick={() => handleDecrease({ id })}
+                    >
                       <Minus style={{ marginTop: "-6px" }} />
                     </button>
                   </div>
 
                   <img
                     className="del-btn"
-                    style={{ fill: "red" }}
+                    style={{ fill: "red", cursor: "pointer" }}
                     onClick={() => handleDelete({ id })}
                     src={Delete}
                     alt="delete-btn"

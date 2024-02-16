@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import MainCategoryBox from "../../Useables/MainCategoryBox";
 
-
 function RelatedProduct({ maincategory }) {
   const [mainCategory, setMainCategory] = useState();
 
@@ -15,10 +14,9 @@ function RelatedProduct({ maincategory }) {
         const category = Object.entries(data[0][maincategory]);
 
         console.log(category, "category");
-       
+
         // for the Category
         setMainCategory(category);
-
       } catch (error) {
         console.log("an eroo occured");
       }
@@ -27,7 +25,7 @@ function RelatedProduct({ maincategory }) {
   }, [maincategory]);
 
   return (
-   <>
+    <>
       {console.log(mainCategory, "mainsgs w")}
       <div className="product">
         {mainCategory &&
@@ -35,7 +33,7 @@ function RelatedProduct({ maincategory }) {
             <MainCategoryBox name={name} product={product} key={index} />
           ))}
       </div>
-  </>
+    </>
   );
 }
 
